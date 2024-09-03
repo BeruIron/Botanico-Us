@@ -1,20 +1,35 @@
 import React from 'react';
-function Navbar () {
+import { Link } from 'react-router-dom';
+
+function Navbar() {
     return (
         <nav className="bg-gray-800 p-4">
             <div className="container mx-auto flex justify-between items-center">
-                <div className="text-red-500 text-lg">
-                    BOTANICO
+                <div className="text-lg">
+                    <Link to="/">
+                        <img src="path/to/your/logo.png" alt="BOTANICO Logo" className="h-10" />
+                    </Link>
                 </div>
-                <div className="flex gap-6"> 
-                    <a href="#home" className="text-gray-300 hover:text-white">Home</a>
-                    <a href="#about" className="text-gray-300 hover:text-white">About</a>
-                    <a href="#services" className="text-gray-300 hover:text-white">Services</a>
-                    <a href="#contact" className="text-gray-300 hover:text-white">Contact</a>
+                <div className="flex gap-6 text-center">
+                    <Link to="/" className="text-gray-300 hover:text-white">HOME</Link>
+                    <Link to="/story" className="text-gray-300 hover:text-white">STORY</Link>
+                    <div className="relative group">
+                        <button className="text-gray-300 hover:text-white focus:outline-none">
+                            SERVICE
+                        </button>
+                        <div className="absolute left-0 mt-2 w-48 bg-gray-700 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <Link to="/service1" className="block px-4 py-2 hover:bg-gray-600">Service 1</Link>
+                            <Link to="/service2" className="block px-4 py-2 hover:bg-gray-600">Service 2</Link>
+                        </div>
+                    </div>
+                    <Link to="/beer-finder" className="text-gray-300 hover:text-white">BEER FINDER</Link>
+                    <Link to="/tap-room" className="text-gray-300 hover:text-white">TAP ROOM</Link>
+                    <Link to="/contact" className="text-gray-300 hover:text-white">CONTACT</Link>
+                    <Link to="/blog" className="text-gray-300 hover:text-white">BLOG</Link>
                 </div>
             </div>
         </nav>
     );
-};
+}
 
 export default Navbar;
