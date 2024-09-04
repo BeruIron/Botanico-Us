@@ -1,15 +1,12 @@
 import React from 'react';
-// import Navbar from '../../Components/Navbar';
-import Header from '../../Components/Header';
+import Navbar from '../../Components/Navbar';
 
 
 function Home() {
     return(
        
         <div>
-             <Header></Header>
-       
-        {/* <Navbar></Navbar> */}
+        <Navbar></Navbar>
        
         </div>
 
