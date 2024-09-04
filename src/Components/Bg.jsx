@@ -1,9 +1,7 @@
 import React from "react";
-import Navbar from "../../Components/Navbar";
-import video from "../PlayVideo/Botanico.mp4"
-function Story() {
+import video from "../Components/Botanico.mp4"
+function Hb() {
     return (
-           
             <div className="BgContainer">
                 <div className="overlay">
                     <video src={video} autoPlay loop muted />
@@ -11,9 +9,9 @@ function Story() {
                 <div className="container">
 
                 </div>
-            </div>
-            
+               
+            </div>    
     );
 }
 
-export default Story;
+export default Hb;

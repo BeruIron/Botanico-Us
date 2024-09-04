@@ -8,23 +8,38 @@ function Sa () {
             url: "https://staticg.sportskeeda.com/editor/2022/08/812fc-16598097467269.png",
         },
         {
-            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToLocgAwiXv21uj-x2T5qfGk8ECL2rqkg1kJN8ineE0we536qYn2QTQm_XZcDhmgYwijI&usqp=CAU",
+            url: "https://wallpapercrafter.com/desktop1/567704-anime-cool-back-red-bleach-final-getsuga-widescreen.jpg",
         },
         {
-            url: "https://staticg.sportskeeda.com/editor/2024/03/79292-17111972560082-1920.jpg",
+            url: "https://img.goodfon.com/original/1680x1050/2/cd/naruto-akatsuki-konan-payne.jpg",
         },
         {
-            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTKeIm1bngF2mNrLE6_WA8wM8ozBHstVgiBp3EsP8vtRhyWbXLEk9gbiq5DL8rHEyn_1E&usqp=CAU",
+            url: "https://i.pinimg.com/originals/19/2b/dc/192bdc10828a0d90a456d1f562b58950.jpg",
         },
         {
-            url: "https://wallpapers-clan.com/wp-content/uploads/2024/05/obito-scary-eyes-naruto-desktop-wallpaper-cover.jpg",
+            url: "https://images4.alphacoders.com/135/1357584.png",
         },
         {
             url: "https://staticg.sportskeeda.com/editor/2024/02/e19d7-17067790349227-1920.jpg",
         },
     ];
+
+    useEffect(() => {
+        const autoplay = setInterval(() => {
+            nextSlide();
+
+        }, 3000);
+        return () => clearInterval(autoplay)
+    }, [currentIndex]);
+
+    const preSlide = () => {
+        setCurrentindex((preIndex) => (preIndex === 0 ? slides.length - 1: preIndex - 1))
+    }
+    const nextSlide = () => {
+        setCurrentindex((preIndex) => (preIndex === slides.length -1 ? 0: preIndex + 1))
+    }
     return(
-        <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group">
+        <div className="max-w-[1800px] h-[980px] w-full m-auto relative group">
             <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className="w-full h-full bg-cover duration-500"></div>
         </div>
 
