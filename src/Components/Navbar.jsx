@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
+
+        <nav className="bg-white p-4">
         <nav>
+
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-lg">
                     <Link to="/">
@@ -11,10 +14,10 @@ function Navbar() {
                     </Link>
                 </div>
                 <div className="flex gap-6 text-center">
-                    <Link to="/" className="text-gray-300 hover:text-white">HOME</Link>
-                    <Link to="/story" className="text-gray-300 hover:text-white">STORY</Link>
+                    <Link to="/" className="text-gray-700 hover:text-white">HOME</Link>
+                    <Link to="/Story" className="text-gray-700 hover:text-white">STORY</Link>
                     <div className="relative group">
-                        <button className="text-gray-300 hover:text-white focus:outline-none">
+                        <button className="text-gray-700 hover:text-white focus:outline-none">
                             SERVICE
                         </button>
                         <div className="absolute left-0 mt-2 w-48 bg-gray-700 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -22,10 +25,10 @@ function Navbar() {
                             <Link to="/service2" className="block px-4 py-2 hover:bg-gray-600">Service 2</Link>
                         </div>
                     </div>
-                    <Link to="/beer-finder" className="text-gray-300 hover:text-white">BEER FINDER</Link>
-                    <Link to="/tap-room" className="text-gray-300 hover:text-white">TAP ROOM</Link>
-                    <Link to="/contact" className="text-gray-300 hover:text-white">CONTACT</Link>
-                    <Link to="/blog" className="text-gray-300 hover:text-white">BLOG</Link>
+                    <Link to="/BeerFinder" className="text-gray-700 hover:text-white">BEER FINDER</Link>
+                    <Link to="/tap-room" className="text-gray-700 hover:text-white">TAP ROOM</Link>
+                    <Link to="/contact" className="text-gray-700 hover:text-white">CONTACT</Link>
+                    <Link to="/blog" className="text-gray-700 hover:text-white">BLOG</Link>
                 </div>
             </div>
         </nav>
