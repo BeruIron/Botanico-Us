@@ -12,7 +12,7 @@ function Footer() {
             src="https://i.pinimg.com/originals/d5/ea/70/d5ea7077bc2c1775edfda58a8d50ae26.png"
             alt="logo"
           />
-          <div className="text-white space-y-2">
+          <div className="text-gray-200 space-y-2">
             <a
               href="https://www.facebook.com"
               target="_blank"
@@ -45,32 +45,32 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex text-white space-x-52">
+        <div className="flex text-gray-200 space-x-52">
           <div className="flex flex-col space-y-2">
             <h5 className="font-semibold">PRODUCTS</h5>
-            <ul className="space-y-1">
-              <li>Splash</li>
-              <li>Blonde Ale</li>
-              <li>Helles Lager</li>
-              <li>Centurion</li>
+            <ul className="space-y-2">
+              <li>CENTURION </li>
+              <li>SPLASH</li>
+              <li>KHMER HONEY</li>
+              <li>CHAMTIK</li>
             </ul>
           </div>
           <div className="flex flex-col space-y-2">
             <h5 className="font-semibold">MENU</h5>
-            <ul className="space-y-1">
-              <li>Home</li>
-              <li>Story</li>
-              <li>Our Beer</li>
-              <li>Beer Finder</li>
-              <li>Tap Room</li>
-              <li>Services</li>
-              <li>Contact</li>
-              <li>Blog</li>
+            <ul className="space-y-2">
+              <li>HOME</li>
+              <li>STORY</li>
+              <li>OUR BEER</li>
+              <li>BEER FINDER</li>
+              <li>TAP ROOM</li>
+              <li>SERVICES</li>
+              <li>CONTACT</li>
+              <li>BLOG</li>
             </ul>
           </div>
         </div>
       </div>
-      <p className="text-white text-center">
+      <p className="text-gray-200 text-center">
         #9B St. 29 (Near St. 294) Tonle Bassac Chamkarmon Phnom Penh
       </p>
     </div>
