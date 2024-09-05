@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 function Button({ name, color, onClick }) {
   return (
     <button
-      className={`px-8 py-3 text-white bg-slate-400 my-1 rounded-lg hover:bg-gray-600 ${color}`}
+      className={`px-16 py-6 text-white my-1 rounded-lg hover:bg-gray-600 ${color}`}
       onClick={onClick}
     >
       {name}
@@ -12,3 +13,4 @@ function Button({ name, color, onClick }) {
 }
 
 export default Button;
+
