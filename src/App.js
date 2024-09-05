@@ -4,7 +4,7 @@ import './index.css'
 import Story from './pages/StoryPage/Story';
 
 import BeerFinder from './pages/BeerFinder/BeerFinder';
-=======
+
 import Beerfinder from './Components/BeerFinder';
 
  
