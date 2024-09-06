@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaMapMarkerAlt } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <div className="bg-black h-[500px] text-2xl">
+    <div className="bg-black h-[500px] text-2xl mt-14">
       <div className="flex justify-between p-8">
         <div className="flex justify-between space-x-52">
           <img
