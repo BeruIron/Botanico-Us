@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 function Navbar() {
     return (
 
-        
         <nav>
 
             <div className="container mx-auto flex justify-between items-center">
