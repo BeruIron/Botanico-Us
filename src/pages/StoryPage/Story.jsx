@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "../../Components/Navbar";
 import Hb from "../../Components/Bg";
 function Story() {
-    return (<>
+    return (
+    <>
             <Navbar />
             <Hb></Hb>
             <h1 className="text-center  text-2xl ">Do not forget to make yourself happy with little things</h1>
