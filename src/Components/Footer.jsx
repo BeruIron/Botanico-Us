@@ -1,15 +1,16 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaMapMarkerAlt } from 'react-icons/fa';
-
+import Image from '../image/Botanico_BBox_logo.png'
 
 function Footer() {
   return (
     <div className="bg-black h-[500px] text-2xl mt-14">
+
       <div className="flex justify-between p-8">
         <div className="flex justify-between space-x-52">
           <img
-            className="w-[100px] h-[100px] mb-4"
-            src="https://i.pinimg.com/originals/d5/ea/70/d5ea7077bc2c1775edfda58a8d50ae26.png"
+            className="w-[160px] h-[160px] mb-4"
+            src={Image}
             alt="logo"
           />
           <div className="text-gray-200 space-y-2">
@@ -45,7 +46,8 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex text-gray-200 space-x-52">
+        <div className="flex text-white space-x-52 mr-[50px]">
+
           <div className="flex flex-col space-y-2">
             <h5 className="font-semibold">PRODUCTS</h5>
             <ul className="space-y-2">

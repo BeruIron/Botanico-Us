@@ -1,13 +1,13 @@
 import Image from '../image/Botanico_BBox_logo-01.png';
 
-function Title() {
+function Title({ titleText }) {
     return (
         <div>
             <div className='flex justify-between items-center'>
-                <h1 className='ml-[50px] -mb-[10px] text-2xl font-bold'>BOTANICO</h1>
-                <img className='h-[90px] mr-[50px]' src={Image} alt="logo" />
+                <h1 className='ml-[50px] -mb-[10px] text-2xl font-bold'>{titleText}</h1>
+                <img className='w-[80px] mr-[50px]' src={Image} alt="logo" />
             </div>
-            <hr className='bg-black py-1 w-[90%]' />
+            <hr className='bg-black h-[3px] w-[85%] ml-[50px]' />
         </div>
     );
 }
