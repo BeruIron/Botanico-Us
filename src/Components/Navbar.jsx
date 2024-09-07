@@ -27,7 +27,7 @@ function Navbar() {
                         </div>
                     </div>
                     <Link to="/BeerFinder" className=" hover:text-white">BEER FINDER</Link>
-                    <Link to="/tap-room" className=" hover:text-white">TAP ROOM</Link>
+                    <Link to="/Taproom" className=" hover:text-white">TAP ROOM</Link>
                     <Link to="/contact" className=" hover:text-white">CONTACT</Link>
                     <Link to="/blog" className=" hover:text-white">BLOG</Link>
                 </div>
