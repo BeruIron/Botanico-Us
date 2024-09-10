@@ -13,24 +13,21 @@ function Home() {
       </div>
        <div className="relative">
       <Bg />
-      <div className="absolute top-0 left-0 w-full">
-      </div>
+      {/* <div className="absolute top-0 left-0 w-full">  </div> */}
     </div>
      <Title
      titleText="BOTANICO"/>
-
-      {/* Content Section */}
+     
       <div className="relative z-10">
         <div className="flex items-center w-full">
           {/* Left Section */}
           <div className="w-[45%] h-[700px]  p-8">
             <img
-              className="w-[561px] h-[606px] ml-[100px]"
-              src="https://i.pinimg.com/736x/3b/0a/e5/3b0ae56494b99e542a80e44f60b45960.jpg"
+              className="w-[680px] h-[606px] ml-[100px]"
+              src="https://lh3.googleusercontent.com/pw/AP1GczMKbawwEISRFEdhIkfqhlIUi_RMZ6h2Ol0ts5K88GhQsyae9JYGafUWOooPOfeVBcjuaXkEwejeiH9h5JWZE2wavZP6vUSE7tO8JTBVEXokJLG__1_zwvxmuQMXBjKvTBLldo4xAFyNTrKuzTUiRpji=w1452-h968-s-no?authuser=0"
               alt="example"
             />
           </div>
-          {/* Right Section */}
           <div className="w-[55%] h-[700px]  p-[25px]">
             <h1 className="text-[48px] font-montserrat font-semibold ml-[150px]">
               Botanico Brewing Co.
@@ -55,8 +52,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
       <Footer />
     </div>
   );

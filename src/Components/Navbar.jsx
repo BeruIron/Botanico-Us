@@ -18,11 +18,11 @@ function Navbar() {
                     <Link to="/" className=" hover:text-white">HOME</Link>
                     <Link to="/Story" className=" hover:text-white">STORY</Link>
                     <div className="relative group">
-                        <button className=" hover:text-white focus:outline-none">
+                        <Link to="/service" className=" hover:text-white focus:outline-none">
                             SERVICE
-                        </button>
+                        </Link>
                         <div className="absolute left-0 mt-2 w-48 bg-gray-700 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <Link to="/service1" className="block px-4 py-2 hover:bg-gray-600">Service 1</Link>
+                            <Link to="/restaurent" className="block px-4 py-2 hover:bg-gray-600">Restaurent/Bar</Link>
                             <Link to="/service2" className="block px-4 py-2 hover:bg-gray-600">Service 2</Link>
                         </div>
                     </div>
