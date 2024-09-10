@@ -6,6 +6,8 @@ import Story from './pages/StoryPage/Story';
 import BeerFinder from './pages/BeerFinder/BeerFinder';
 
 import Beerfinder from './Components/BeerFinder';
+import Event from './pages/ServicePage/Event';
+import TestingBeer from './pages/ServicePage/Testing';
 
  
 const App = () => {
@@ -18,6 +20,9 @@ const App = () => {
             <Route path="/BeerFinder" element={<BeerFinder/>} />
             <Route path="/story" element={<Story />} />
             <Route path="/beer-finder" element={<Beerfinder />} />
+            <Route path="/event" element={<Event />} />
+            <Route path="/testing" element={<TestingBeer />} />
+          
 
          </Routes>
       </>

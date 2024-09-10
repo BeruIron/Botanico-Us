@@ -4,7 +4,7 @@ import Image from '../image/Botanico_BBox_logo.png'
 
 function Footer() {
   return (
-    <div className="bg-black h-[400px] text-15px">
+    <div className="bg-black h-[400px] text-15px overflow-hidden">
       <div className="flex justify-between p-8">
         <div className="flex justify-between space-x-52">
           <img
@@ -76,6 +76,7 @@ function Footer() {
       </p>
     </div>
   );
+  
 }
 
 export default Footer;
