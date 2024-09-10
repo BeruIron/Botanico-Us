@@ -28,11 +28,13 @@ function Navbar() {
                             <Link to="/service2" className="block px-4 py-2 hover:bg-gray-600">Service 2</Link>
                         </div>
                     </div>
-                    <Link to="/BeerFinder" className="text-white hover:text-white">BEER FINDER</Link>
-                    <Link to="/tap-room" className="text-white hover:text-white">TAP ROOM</Link>
-                    <Link to="/contact" className="text-white hover:text-white">CONTACT</Link>
-                    <Link to="/blog" className="text-white hover:text-white">BLOG</Link>
 
+                    <Link to="/BeerFinder" className=" hover:text-white">BEER FINDER</Link>
+                    <Link to="/Taproom" className=" hover:text-white">TAP ROOM</Link>
+                    <Link to="/contact" className=" hover:text-white">CONTACT</Link>
+                    <Link to="/blog" className=" hover:text-white">BLOG</Link>
+
+                    
                 </div>
                 <FaLanguage className="text-white text-5xl" />
             </div>
