@@ -18,7 +18,7 @@ function Story() {
         Our Mission is all about breaking down those  barriers and making craft beer and breweries feel inclusive, not  intimidating. In world full of craft beer options. We want to bring our Khmer community together by fostering genuine connections through our shared passion for crafting amazing beers and creating unforgettable experiences.
         </p>
       </div>
-      <SmallHeader headerText="Our Sotry" />
+      <SmallHeader headerText="Our Story" />
 
       <div className="flex px-20 py-10 gap-5 ">
         <img

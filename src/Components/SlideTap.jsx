@@ -38,17 +38,18 @@ function SlideTap() {
     };
 
     return (
-        <div className="w-[1500px] h-[800px] m-auto relative">
+        <div className="relative w-full h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[80vh] px-12">
             <div
                 style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-                className="w-full h-full bg-cover bg-center duration-500"
+                className=" w-full h-full m-auto bg-cover bg-center transition-all duration-500"
             ></div>
 
             <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
-
+                {/* { Add any overlay or navigation controls here */} 
             </div>
         </div>
     );
 }
 
 export default SlideTap;
+
