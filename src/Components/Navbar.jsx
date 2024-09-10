@@ -14,11 +14,13 @@ function Navbar() {
                         <img src={Image} alt="BOTANICO Logo" className="h-50 w-[180px]" />
                     </Link>
                 </div>
-                <div className="flex gap-6 text-center text-white">
-                    <Link to="/" className=" hover:text-white">HOME</Link>
-                    <Link to="/Story" className=" hover:text-white">STORY</Link>
+                <div className="flex gap-6 text-center">
+                    <Link to="/" className="text-white hover:text-white">HOME</Link>
+                    <Link to="/Story" className="text-white hover:text-white">STORY</Link>
+                    <Link to="/OurBeer" className="text-white hover:text-white">OUR BEER</Link>
                     <div className="relative group">
-                        <button className=" hover:text-white focus:outline-none">
+                        <button className="text-white hover:text-white focus:outline-none">
+
                             SERVICE
                         </button>
                         <div className="absolute left-0 mt-2 w-48 bg-gray-700 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -26,10 +28,13 @@ function Navbar() {
                             <Link to="/service2" className="block px-4 py-2 hover:bg-gray-600">Service 2</Link>
                         </div>
                     </div>
+
                     <Link to="/BeerFinder" className=" hover:text-white">BEER FINDER</Link>
                     <Link to="/Taproom" className=" hover:text-white">TAP ROOM</Link>
                     <Link to="/contact" className=" hover:text-white">CONTACT</Link>
                     <Link to="/blog" className=" hover:text-white">BLOG</Link>
+
+                    
                 </div>
                 <FaLanguage className="text-white text-5xl" />
             </div>
