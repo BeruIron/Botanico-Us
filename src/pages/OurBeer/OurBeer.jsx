@@ -12,8 +12,13 @@ import beer2 from "../../image/beer2.png";
 import beer3 from "../../image/beer3.png";
 import beer4 from "../../image/beer4.png";
 import B from "../../image/Botanico_BBox_logo-01.png";
+import { useNavigate } from "react-router-dom";
 
 function OurBeer() {
+  const navigate = useNavigate();
+  const handleCardClick = (id) => {
+    navigate(`/detail/${id}`);
+  };
   return (
     <>
       <BackgroundSection
@@ -36,52 +41,66 @@ function OurBeer() {
             Core Beers
           </h1>
         </div>
-        <div className="container mx-auto px-4 mt-[-1.8%] ">
-          <div className="grid grid-cols-2 gap-8 max-sm:grid-cols-1">
-            <div className="flex justify-center p-4">
-              <ProductCard
-                title1="CENTURION"
-                title2="AMERICAN PALE ALE"
-                image1={logo1}
-                image2={beer1}
-                titlestyle="font-bold text-3xl text-[#E15050]"
-              />
-            </div>
-            <div className="flex justify-center p-4">
-              {" "}
-              {/* Added p-4 padding */}
-              <ProductCard
-                title1="SPLASH"
-                title2="JUICY IPA"
-                image1={logo2}
-                image2={beer2}
-                titlestyle="font-bold text-3xl text-[#1FABAB]"
-              />
-            </div>
-            <div className="flex justify-center p-4">
-              <ProductCard
-                title1="KHMER HONEY"
-                title2="BLONDE ALE"
-                image1={logo3}
-                image2={beer3}
-                titlestyle="font-bold text-3xl text-[#ED9454]"
-              />
-            </div>
-            <div className="flex justify-center p-4">
-              <ProductCard
-                title1="CHAMTIK"
-                title2="HELLES LAGER"
-                image1={logo4}
-                image2={beer4}
-                titlestyle="font-bold text-3xl text-[#3B6DC8]"
-              />
-            </div>
+
+        <div className="grid grid-cols-2 gap-8 container mx-auto px-4 mt-[-1.8%] max-sm:grid-cols-1">
+          <div
+            className="flex justify-center p-4"
+            onClick={() => handleCardClick(1)}
+          >
+            <ProductCard
+              id={1}
+              title1="CENTURION"
+              title2="AMERICAN PALE ALE"
+              image1={logo1}
+              image2={beer1}
+              titlestyle="font-bold text-3xl text-[#E15050]"
+            />
+          </div>
+          <div
+            className="flex justify-center p-4"
+            onClick={() => handleCardClick(2)}
+          >
+            {" "}
+            {/* Added p-4 padding */}
+            <ProductCard
+              id={2}
+              title1="SPLASH"
+              title2="JUICY IPA"
+              image1={logo2}
+              image2={beer2}
+              titlestyle="font-bold text-3xl text-[#1FABAB]"
+            />
+          </div>
+          <div className="flex justify-center p-4"
+          onClick={() => handleCardClick(3)}
+          >
+            
+            <ProductCard
+              id={3}
+              title1="KHMER HONEY"
+              title2="BLONDE ALE"
+              image1={logo3}
+              image2={beer3}
+              titlestyle="font-bold text-3xl text-[#ED9454]"
+            />
+          </div>
+          <div className="flex justify-center p-4"
+          onClick={() => handleCardClick(4)}
+          >
+            <ProductCard
+            id={4}
+              title1="CHAMTIK"
+              title2="HELLES LAGER"
+              image1={logo4}
+              image2={beer4}
+              titlestyle="font-bold text-3xl text-[#3B6DC8]"
+            />
           </div>
         </div>
 
         <div>
-          <div className="inline-flex items-center justify-center w-full">
-            <hr className="w-[759px] h-0.5 mx-auto my-4 bg-black border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+          <div className="">
+            <hr className="w-[759px] h-0.5 mx-auto bg-black border-0 my-10"></hr>
           </div>
           <div className="text-center">
             <h1 className="text-[#124734] mt-3 font-bold font-montserrat text-4xl">

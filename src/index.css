@@ -2,20 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  Button.Button-blue{
-    background-color: #1a73e8;
-    margin-left: 10px;
-  
-  }
-  Button.Button-red{
-    background-color: red;
-    margin-left: 10px;
-  }
-  Button.Button-black{
-    background-color: black;
-  }
+/* Add your custom styles below */
+.color-1 {
+  color: #E15050;
+}
+
+.color-2 {
+  color: #1FABAB;
+}
+
+.color-3 {
+  color: #ED9454;
+}
+
+.color-4 {
+  color: #3B6DC8;
+}
