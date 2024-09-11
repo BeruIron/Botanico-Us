@@ -17,15 +17,15 @@ function Servicepage() {
         <div className="w-[100%] h-[330px] flex justify-center absolute bottom-0 left-0 right-0 translate-y-[50%]">
           <div>
             <img
-              className="w-[250px] h-[350px]"
-              src="https://i.pinimg.com/736x/a6/94/4e/a6944e49c09650131d2a2037433bad8e.jpg"
+              className="w-[280px] h-[350px]"
+              src=""
               alt=""
             />
           </div>
 
           <div className=" mx-[10px]">
             <img
-              className="w-[250px] h-[350px]"
+              className="w-[280px] h-[350px]"
               src="https://i.pinimg.com/736x/a6/94/4e/a6944e49c09650131d2a2037433bad8e.jpg"
               alt=""
             />
@@ -33,7 +33,7 @@ function Servicepage() {
 
           <div>
             <img
-              className="w-[250px] h-[350px]"
+              className="w-[280px] h-[350px]"
               src="https://i.pinimg.com/564x/9c/7e/a2/9c7ea2faf9faa1204f5284bade8f3a44.jpg"
               alt=""
             />
