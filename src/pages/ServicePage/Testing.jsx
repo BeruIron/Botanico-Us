@@ -10,7 +10,7 @@ import Footer from "../../Components/Footer";
 
 function TestingBeer() {
   return (
-    <div className="bg-[D9D9D9]">
+    <div className="bg-slate-100">
       <div className="bg-black text-white">
         <Navbar />
       </div>

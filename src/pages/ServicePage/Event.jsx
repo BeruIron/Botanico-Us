@@ -36,33 +36,33 @@ function Event() {
           />
         </div>
       </div>
-      <div className="flex justify-between items-center h-[600px] gap-6 bg-white">
+      <div className="flex justify-between h-[650px] w-[90] bg-white">
         <div>
-        <div className="relative">
-          <img
-            className="w-[350px] h-[300px]  object-cover ml-[50px] "
-            src={img}
-            alt="Main Beer"
-          />
-          <img
-            className="absolute h-[300px] flex  object-cover ml-[50%] w-[350px]"
-            src={img1}
-            alt="Beer Event"
-          />
+          <div className="relative">
+            <img
+              className="w-[350px] h-[300px] mt-[35px]  object-cover ml-[50px] "
+              src={img}
+              alt="Main Beer"
+            />
+            <img
+              className="absolute h-[300px] flex  object-cover ml-[60%] w-[350px] -mt-[35px]  "
+              src={img1}
+              alt="Beer Event"
+            />
+          </div>
         </div>
-        </div>
-        
-        <div className="bg-red-600 py-[10%] px-[5px]"></div>
-        <div className="w-[500px]  text-gray-700 text-[20px] ">
-          <p className="mb-4 leading-7">
-            We have different mobile draft units that we regularly use to cater
-            private, as well as company events. You can rent our system with or
-            without a bartender and we take care of the installation and removal
+
+        <div className="bg-red-600 h-[50%] px-[5px] mt-[8%]"></div>
+        <div className="  text-gray-700 text-[20px] mt-[10%]">
+          <p>
+            We have different mobile draft units that we regularly use to cater <br />
+            private, as well as company events. You can rent our system with or <br />
+            without a bartender and we take care of the installation and removal <br />
             as well as the delivery of the beer.
           </p>
-          <p className="leading-7">
-            We also offer more unique, custom-made event add-ons, such as craft
-            beer tastings and food and beer pairings at your venue, moderated by
+          <p>
+            We also offer more unique, custom-made event add-ons, such as craft <br />
+            beer tastings and food and beer pairings at your venue, moderated by <br />
             our German brew master Marco.
           </p>
         </div>
