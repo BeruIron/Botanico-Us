@@ -4,10 +4,12 @@ import Image from "../image/Botanico_BBox_logo.png";
 
 function Footer() {
   return (
+
     <div className="bg-black h-[300px]  it text-white max-sm:h-[170px] ">
       <div className=" flex  justify-between  w-[95%]  max-sm:space-y-4 max-sm:text-[7px]">
     
         <div className="flex items-center mb-4 max-sm:justify-center">
+
           <img
             className="w-[160px] h-[160px] max-sm:w-[70px] max-sm:h-[70px]"
             src={Image}

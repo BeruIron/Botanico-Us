@@ -5,6 +5,7 @@ import { FaLanguage } from "react-icons/fa";
 import { RiMenu3Fill, RiArrowDownSFill } from "react-icons/ri";
 
 function Navbar() {
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -165,6 +166,7 @@ function Navbar() {
       )}
     </nav>
   );
+
 }
 
 export default Navbar;
