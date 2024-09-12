@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Image from '../image/BotanicoCBG_Logo_wbox-01.png'
-import {FaLanguage } from 'react-icons/fa';
+import Image from '../image/BotanicoCBG_Logo_wbox-01.png';
+import { FaLanguage } from 'react-icons/fa';
 
 function Navbar() {
     return (
-
-        <nav>
-
-            <div className="container  flex justify-between ml-[40px] items-center">
+        <nav className="absolute top-0 left-0 w-full z-10"> {/* Make Navbar absolute */}
+            <div className="container flex justify-between ml-[40px] items-center">
                 <div className="">
                     <Link to="/">
                         <img src={Image} alt="BOTANICO Logo" className="h-50 w-[180px]" />

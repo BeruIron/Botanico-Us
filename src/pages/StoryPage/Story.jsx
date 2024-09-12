@@ -7,10 +7,9 @@ import Footer from "../../Components/Footer";
 function Story() {
   return (
     <>
-    <div className="bg-black">
-            <Navbar />
+      <div className="bg-black">
+        <Navbar></Navbar>
       </div>
-      
       <Sa />
       <SmallHeader headerText="WE ARE BOTANICO" />
       <div>

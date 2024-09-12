@@ -47,20 +47,20 @@ function Taproom() {
             </div>
 
            
-            <div className="relative w-full h-dvh md:h-80 lg:h-[500px] xl:h-[700px]">
-            <div
-                style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-                className="w-full h-full bg-cover bg-center transition-all duration-500"
-            ></div>
+            <div className="relative w-full h-[600px] md:h-[800px] lg:h-[900px] xl:h-[1000px]">
+                <div
+                     style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+                     className="w-full h-full bg-cover bg-center transition-all duration-500"
+                ></div>
 
-            <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
-            <div className="text-center px-4 md:px-8 lg:px-16">
-                <h1 className="text-white text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
-                Botanico Brewing Company
-                </h1>
+                <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
+                     <div className="text-center px-4 md:px-8 lg:px-16">
+                         <h1 className="text-white text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
+                              Botanico Brewing Company
+                         </h1>
+                     </div>
+                </div>
             </div>
-            </div>
-        </div>
 
 
             <div className="relative w-full px-4 md:px-10 py-20">
