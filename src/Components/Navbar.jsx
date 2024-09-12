@@ -13,7 +13,6 @@ function Navbar() {
 
   const content = (
     <ul className="flex gap-6 text-center text-white ml-[100px]">
-      
       <li>
         <Link to="/" className="hover:text-gray-400">
           HOME
@@ -25,10 +24,10 @@ function Navbar() {
         </Link>
       </li>
       <li className="relative group">
-      <button className="flex items-center hover:text-gray-400 focus:outline-none">
-  <span>SERVICE</span>
-  <RiArrowDownSFill className="ml-2" />
-</button>
+        <button className="flex items-center hover:text-gray-400 focus:outline-none">
+          <span>SERVICE</span>
+          <RiArrowDownSFill className="ml-2" />
+        </button>
 
         <ul className="absolute left-0 mt-2 w-48 bg-gray-700 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <li>
@@ -74,9 +73,13 @@ function Navbar() {
   return (
     <nav className="relative  bg-gray-800">
       <div className=" flex justify-between items-center px-4 py-4">
-        <div>
+        <div className="overflow-hidden">
           <Link to="/">
-            <img src={Image} alt="BOTANICO Logo" className="mr-[50px] h-50 w-[180px]" />
+            <img
+              src={Image}
+              alt="BOTANICO Logo"
+              className="mr-[50px] h-50 w-[180px] max-sm:h-[50px] max-sm:w-[130px]"
+            />
           </Link>
         </div>
 
@@ -84,14 +87,13 @@ function Navbar() {
 
         <div className="md:hidden flex items-center">
           <RiMenu3Fill
-            className="text-white text-3xl cursor-pointer"
+            className="text-white text-2xl cursor-pointer"
             onClick={toggleMenu}
           />
         </div>
 
         <FaLanguage className="hidden md:block text-white text-5xl mr-[50px]" />
       </div>
-
 
       {isMenuOpen && (
         <div className="md:hidden bg-gray-700 text-white">
@@ -107,23 +109,32 @@ function Navbar() {
               </Link>
             </li>
             <li className="relative">
-            <button className="flex items-center hover:text-gray-400 focus:outline-none">
-  <span>SERVICE</span>
-  <RiArrowDownSFill className="ml-2" />
-</button>
+              <button className="flex items-center hover:text-gray-400 focus:outline-none">
+                <span>SERVICE</span>
+                <RiArrowDownSFill className="ml-2" />
+              </button>
               <ul className="bg-gray-600 mt-2">
                 <li>
-                  <Link to="/event" className="block px-4 py-2 hover:bg-gray-500">
+                  <Link
+                    to="/event"
+                    className="block px-4 py-2 hover:bg-gray-500"
+                  >
                     Event
                   </Link>
                 </li>
                 <li>
-                  <Link to="/testing" className="block px-4 py-2 hover:bg-gray-500">
+                  <Link
+                    to="/testing"
+                    className="block px-4 py-2 hover:bg-gray-500"
+                  >
                     Testing Beer
                   </Link>
                 </li>
                 <li>
-                  <Link to="/service2" className="block px-4 py-2 hover:bg-gray-500">
+                  <Link
+                    to="/service2"
+                    className="block px-4 py-2 hover:bg-gray-500"
+                  >
                     Service 2
                   </Link>
                 </li>
