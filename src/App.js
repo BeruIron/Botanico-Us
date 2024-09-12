@@ -2,6 +2,11 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import './index.css'
 import Story from './pages/StoryPage/Story';
+
+import Taproom from './pages/TapRoom/TapRoom';
+import BeerFinder from './pages/BeerFinder/BeerFinder';
+
+
 import BeerFinder from './pages/BeerFinder/BeerFinder';
 import Beerfinder from './Components/BeerFinder';
 
@@ -11,12 +16,12 @@ import TestingBeer from './pages/ServicePage/Testing';
 import OurBeer from './pages/OurBeer/OurBeer';
 import Detail from './pages/OurBeer/Detail';
 
-
 const App = () => {
    return (
       <>
          <Routes>
             <Route path="/" element={<Home />} />
+
             <Route path="/story" element={<Story />} />
             <Route path="/ourBeer" element={<OurBeer />} />
             <Route path="/details" element={<OurBeer />} />
@@ -26,7 +31,7 @@ const App = () => {
             <Route path="/beer-finder" element={<Beerfinder />} />
             <Route path="/event" element={<Event />} />
             <Route path="/testing" element={<TestingBeer />} />
-          
+
 
          </Routes>
       </>

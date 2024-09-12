@@ -9,7 +9,8 @@ function Story() {
   return (
     <>
       <div className="bg-black">
-        <Navbar />
+
+        <Navbar></Navbar>
       </div>
 
       <Sa />
