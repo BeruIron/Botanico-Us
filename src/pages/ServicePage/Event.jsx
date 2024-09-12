@@ -36,7 +36,7 @@ function Event() {
           />
         </div>
       </div>
-      <div className="flex justify-between h-[650px] w-[90] bg-white">
+      <div className="flex justify-between h-[650px] bg-white">
         <div>
           <div className="relative">
             <img
