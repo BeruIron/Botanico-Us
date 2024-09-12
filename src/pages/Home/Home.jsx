@@ -19,10 +19,9 @@ function Home() {
      <Title
      titleText="BOTANICO"/>
 
-      {/* Content Section */}
+   
       <div className="relative z-10">
         <div className="flex items-center w-full">
-          {/* Left Section */}
           <div className="w-[45%] h-[700px]  p-8">
             <img
               className="w-[561px] h-[606px] ml-[100px]"
@@ -30,7 +29,7 @@ function Home() {
               alt="example"
             />
           </div>
-          {/* Right Section */}
+          
           <div className="w-[55%] h-[700px]  p-[25px]">
             <h1 className="text-[48px] font-montserrat font-semibold ml-[150px]">
               Botanico Brewing Co.

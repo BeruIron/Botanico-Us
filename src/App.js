@@ -4,8 +4,13 @@ import './index.css'
 import Story from './pages/StoryPage/Story';
 import BeerFinder from './pages/BeerFinder/BeerFinder';
 import Beerfinder from './Components/BeerFinder';
+
+import Event from './pages/ServicePage/Event';
+import TestingBeer from './pages/ServicePage/Testing';
+
 import OurBeer from './pages/OurBeer/OurBeer';
 import Detail from './pages/OurBeer/Detail';
+
 
 const App = () => {
    return (
@@ -19,6 +24,9 @@ const App = () => {
             <Route path="/beerFinder" element={<BeerFinder/>} />
             <Route path="/story" element={<Story />} />
             <Route path="/beer-finder" element={<Beerfinder />} />
+            <Route path="/event" element={<Event />} />
+            <Route path="/testing" element={<TestingBeer />} />
+          
 
          </Routes>
       </>
