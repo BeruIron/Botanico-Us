@@ -1,24 +1,26 @@
-import React from "react";
-import ProductCard from "../../Components/ProductCard";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import BackgroundSection from "../../Components/Background-img";
 import Footer from "../../Components/Footer";
-import logo1 from "../../image/logo1.png";
-import logo2 from "../../image/logo2.png";
-import logo3 from "../../image/logo3.png";
-import logo4 from "../../image/logo4.png";
-import beer1 from "../../image/beer1.png";
-import beer2 from "../../image/beer2.png";
-import beer3 from "../../image/beer3.png";
-import beer4 from "../../image/beer4.png";
 import B from "../../image/Botanico_BBox_logo-01.png";
-import { useNavigate } from "react-router-dom";
+import Button from "../../Components/Button";
 
 function OurBeer() {
+  const [products, setProducts] = useState([]);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch("/data.json")
+      .then((response) => response.json())
+      .then((data) => setProducts(data))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
   const handleCardClick = (id) => {
     navigate(`/detail/${id}`);
   };
+
   return (
     <>
       <BackgroundSection
@@ -34,82 +36,69 @@ function OurBeer() {
       </BackgroundSection>
 
       <div className="min-w-full min-h-full">
-        <div className="flex justify-center items-center w-full text-center h-[200px]">
-          <img className="w-[5%] absolute right-0 mb-14 mr-5" src={B} alt="" />
-
-          <h1 className="text-[#124734] font-bold font-montserrat text-4xl">
+        <div className="flex justify-center items-center w-full text-center h-[200px] mt-[95px]">
+          <img
+            className="w-[4%] absolute right-0 mb-[90px] mr-7 max-sm:mb-[100px] "
+            src={B}
+            alt="Botanico Logo"
+          />
+          <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] mb-[95px]">
             Core Beers
           </h1>
         </div>
 
-        <div className="grid grid-cols-2 gap-8 container mx-auto px-4 mt-[-1.8%] max-sm:grid-cols-1">
-          <div
-            className="flex justify-center p-4"
-            onClick={() => handleCardClick(1)}
-          >
-            <ProductCard
-              id={1}
-              title1="CENTURION"
-              title2="AMERICAN PALE ALE"
-              image1={logo1}
-              image2={beer1}
-              titlestyle="font-bold text-3xl text-[#E15050]"
-            />
-          </div>
-          <div
-            className="flex justify-center p-4"
-            onClick={() => handleCardClick(2)}
-          >
-            {" "}
-            {/* Added p-4 padding */}
-            <ProductCard
-              id={2}
-              title1="SPLASH"
-              title2="JUICY IPA"
-              image1={logo2}
-              image2={beer2}
-              titlestyle="font-bold text-3xl text-[#1FABAB]"
-            />
-          </div>
-          <div className="flex justify-center p-4"
-          onClick={() => handleCardClick(3)}
-          >
-            
-            <ProductCard
-              id={3}
-              title1="KHMER HONEY"
-              title2="BLONDE ALE"
-              image1={logo3}
-              image2={beer3}
-              titlestyle="font-bold text-3xl text-[#ED9454]"
-            />
-          </div>
-          <div className="flex justify-center p-4"
-          onClick={() => handleCardClick(4)}
-          >
-            <ProductCard
-            id={4}
-              title1="CHAMTIK"
-              title2="HELLES LAGER"
-              image1={logo4}
-              image2={beer4}
-              titlestyle="font-bold text-3xl text-[#3B6DC8]"
-            />
-          </div>
+        <div className="grid grid-cols-2 gap-8 container mx-auto px-4 mt-[-1.8%] max-sm:grid-cols-1 ">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="flex justify-center p-4 "
+              onClick={() => handleCardClick(product.id)}
+            >
+              {/* Card container with fixed size */}
+              <div className="p-4 shadow-md hover:shadow-lg transition w-[500px] h-[600px]  max-sm:h-[90%] mb-[90px]">
+                {/* Image container */}
+                <div className="flex justify-between items-center gap-1 h-[70%]">
+                  {/* Image 1 - Left */}
+                  <div className="w-full h-full bg-slate-400">
+                    <img
+                      src={product.image1}
+                      alt={`${product.title1} Image 1`}
+                      className="w-fu h-full object-cover"
+                    />
+                  </div>
+
+                  {/* Image 2 - Right */}
+                  <div className="w-full h-full bg-slate-300">
+                    <img
+                      src={product.image2}
+                      alt={`${product.title1} Image 2`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                {/* Titles */}
+                <div className="p-4 text-centerp-4 text-center  flex justify-center items-center flex-col  h-[155px] max-sm:h-[100px]">
+                  <h2 className="font-bold text-2xl">{product.title1}</h2>
+                  <h2 className=" font-bold text-2xl max-sm:text-[20px]" style={{ color: product.color }}>
+                    {product.title2}
+                  </h2>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div>
-          <div className="">
-            <hr className="w-[759px] h-0.5 mx-auto bg-black border-0 my-10"></hr>
-          </div>
+          <hr className="w-[759px] h-0.5  mx-auto bg-black border-0 my-1 max-sm:w-[250px]" />
           <div className="text-center">
-            <h1 className="text-[#124734] mt-3 font-bold font-montserrat text-4xl">
-              Other Beer We Brewed
+            <h1 className="text-[#124734] mt-[80px] font-bold font-montserrat text-4xl max-sm:text-[20px]">
+              Other Beers We Brewed
             </h1>
           </div>
-          <div className="font-montserrat font-regular mx-auto container flex max-sm:flex-col mt-[50px]">
-            <div className="flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px]">
+          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:ml-[15px]">
+            <div className=" flex-1 flex justify-center items-center">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] ">
                 <p>Cambodian Amber Ale / w palm sugar</p>
                 <p>Reahoo Wheat Beer</p>
                 <p>Princeps Imperial IPA</p>
@@ -118,7 +107,7 @@ function OurBeer() {
               </div>
             </div>
             <div className="flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px] max-sm:mr-[120px]">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px]">
                 <p>Bassac Hoppy Lager</p>
                 <p>Tropical Mango Ale</p>
                 <p>Sundown Dark Lager</p>
