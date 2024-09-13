@@ -54,7 +54,7 @@ function Navbar() {
         </Link>
       </li>
       <li>
-        <Link to="/tap-room" className="hover:text-gray-400">
+        <Link to="/taproom" className="hover:text-gray-400">
           TAP ROOM
         </Link>
       </li>
@@ -147,7 +147,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/tap-room" className="hover:text-gray-400">
+              <Link to="/taproom" className="hover:text-gray-400">
                 TAP ROOM
               </Link>
             </li>
