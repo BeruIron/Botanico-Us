@@ -3,12 +3,10 @@ import Home from './pages/Home/Home';
 import './index.css'
 import Story from './pages/StoryPage/Story';
 
+import BeerFinder from './pages/BeerFinder/BeerFinder';
 import Taproom from './pages/TapRoom/TapRoom';
-import BeerFinder from './pages/BeerFinder/BeerFinder';
 
 
-import BeerFinder from './pages/BeerFinder/BeerFinder';
-import Beerfinder from './Components/BeerFinder';
 
 import Event from './pages/ServicePage/Event';
 import TestingBeer from './pages/ServicePage/Testing';
@@ -28,9 +26,9 @@ const App = () => {
             <Route path="/details/:id" element={<Detail />} />
             <Route path="/beerFinder" element={<BeerFinder/>} />
             <Route path="/story" element={<Story />} />
-            <Route path="/beer-finder" element={<Beerfinder />} />
             <Route path="/event" element={<Event />} />
             <Route path="/testing" element={<TestingBeer />} />
+            
 
 
          </Routes>
