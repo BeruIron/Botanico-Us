@@ -36,13 +36,13 @@ function TestingBeer() {
       </div>
 
 
-      <div className="flex justify-center overflow-hidden ">
-        <div className="h-[70vh] w-full max-w-[1200px] bg-white p-6 max-sm:w-full max-sm:h-[400px] ">
+      <div className="flex justify-center  ">
+        <div className="h-[70vh] w-full max-w-[1200px] bg-white p-6 max-sm:w-full max-sm:h-[550px] ">
           <p className=" mb-4 text-[20px] text-center  max-sm:text-[10px]   ">
             Have you ever asked yourself how beer is actually made? What it
             looks like inside of a brewery?
           </p>
-          <div className="flex justify-between gap-6 mt-[5%] overflow-hidden ">
+          <div className="flex justify-between gap-6 mt-[5%] max-sm:flex-col  ">
             <div>
               <img
                 className="w-[400px] h-[480px] object-cover max-sm:h-[300px] "
@@ -50,7 +50,7 @@ function TestingBeer() {
                 alt=""
               />
             </div>
-            <div className="text-[20px]  font-light space-y-5 overflow-hidden ">
+            <div className="text-[20px]  font-light space-y-5  ">
               <p className="space-y-5 leading-10  max-sm:text-[10px] max-sm:leading-3  flex">
                 It’s a fascinating process based on natural science! Gather your{" "}
                 <br />
@@ -73,7 +73,7 @@ function TestingBeer() {
           </div>
         </div>
       </div>
-      <div className="h-[150px] flex justify-center items-center max-sm:h-[90px]">
+      <div className="h-[100px] flex justify-center items-center max-sm:h-[60px]">
         <Button color="Button-black" name="Contact Us" />
       </div>
       <Footer />
