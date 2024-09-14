@@ -8,7 +8,6 @@ import Footer from "../../Components/Footer";
 
 
 
-
 function Story() {
   return (
     <>
