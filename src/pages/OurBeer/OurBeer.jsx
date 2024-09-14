@@ -5,7 +5,6 @@ import BackgroundSection from "../../Components/Background-img";
 import Footer from "../../Components/Footer";
 import B from "../../image/Botanico_BBox_logo-01.png";
 
-
 function OurBeer() {
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
@@ -47,18 +46,15 @@ function OurBeer() {
           </h1>
         </div>
 
-        <div className="grid grid-cols-2 gap-8  container mx-auto px-4 mt-[-1.8%] max-sm:grid-cols-1">
+        <div className="grid grid-cols-2 gap-8  container mx-auto px-4 mt-[-0.5%] max-sm:grid-cols-1 max-sm:gap-1 max-sm:h-[1800px]">
           {products.map((product) => (
             <div
               key={product.id}
               className="flex justify-center "
               onClick={() => handleCardClick(product.id)}
             >
-              {/* Card container with fixed size */}
-              <div className="p-4 shadow-xl hover:shadow-lg transition w-[500px] h-[600px]  max-sm:h-[90%] mb-[90px]">
-                {/* Image container */}
+              <div className=" shadow-xl hover:shadow-lg transition w-[630px] h-[750px]  max-sm:h-[80%] mb-[90px] max-sm:w-full">
                 <div className="flex justify-between items-center gap-1 h-[70%]">
-                  {/* Image 1 - Left */}
                   <div className="w-full h-full bg-slate-400">
                     <img
                       src={product.image1}
@@ -67,7 +63,6 @@ function OurBeer() {
                     />
                   </div>
 
-                  {/* Image 2 - Right */}
                   <div className="w-full h-full bg-slate-300">
                     <img
                       src={product.image2}
@@ -77,10 +72,14 @@ function OurBeer() {
                   </div>
                 </div>
 
-                {/* Titles */}
-                <div className="p-4 text-center flex justify-center items-center flex-col  h-[190px] max-sm:h-[100px] max-sm:mt-[28px]">
-                  <h2 className="font-bold text-2xl">{product.title1}</h2>
-                  <h2 className=" font-bold text-2xl max-sm:text-[20px]" style={{ color: product.color }}>
+                <div className="p-4 text-center flex justify-center items-center flex-col  h-[225px] max-sm:h-[50px] max-sm:mt-[28px]">
+                  <h2 className="font-bold text-3xl max-sm:text-[20px]">
+                    {product.title1}
+                  </h2>
+                  <h2
+                    className=" font-bold text-3xl max-sm:text-[20px]"
+                    style={{ color: product.color }}
+                  >
                     {product.title2}
                   </h2>
                 </div>
@@ -90,7 +89,7 @@ function OurBeer() {
         </div>
 
         <div>
-          <hr className="w-[759px] h-0.5 mx-auto mt-[10px] border-black border-2 my-1 max-sm:w-[250px]"/>
+          <hr className="w-[759px] h-0.5 mx-auto mt-[10px] border-black border-2 my-1 max-sm:w-[250px]" />
           <div className="text-center">
             <h1 className="text-[#124734] mt-[80px] max-sm:mt-[40px] font-bold font-montserrat text-4xl max-sm:text-[20px] ">
               Other Beers We Brewed
@@ -119,8 +118,7 @@ function OurBeer() {
         </div>
       </div>
 
-        <Footer />
-      
+      <Footer />
     </>
   );
 }
