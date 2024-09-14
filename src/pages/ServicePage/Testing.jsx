@@ -37,7 +37,7 @@ function TestingBeer() {
 
 
       <div className="flex justify-center  ">
-        <div className="h-[70vh] w-full max-w-[1200px] bg-white p-6 max-sm:w-full max-sm:h-[550px] ">
+        <div className="h-[70vh] w-full max-w-[1200px] bg-white p-6 max-sm:w-full max-sm:h-[570px] ">
           <p className=" mb-4 text-[20px] text-center  max-sm:text-[10px]   ">
             Have you ever asked yourself how beer is actually made? What it
             looks like inside of a brewery?
@@ -51,7 +51,7 @@ function TestingBeer() {
               />
             </div>
             <div className="text-[20px]  font-light space-y-5  ">
-              <p className="space-y-5 leading-10  max-sm:text-[10px] max-sm:leading-3  flex">
+              <p className=" leading-[50px]  max-sm:text-[10px] max-sm:leading-4  flex">
                 It’s a fascinating process based on natural science! Gather your{" "}
                 <br />
                 friends or bring your company’s department and book a brewery{" "}
@@ -64,7 +64,7 @@ function TestingBeer() {
                 <br />
                 answer all your questions. For groups of up to 8 people.
               </p>
-              <p className="space-y-5 leading-10 max-sm:text-[10px] max-sm:leading-3 flex">
+              <p className="space-y-5 leading-[50px] max-sm:text-[10px] max-sm:leading-4 flex">
                 Alternatively, you can also book a food and beer pairing at{" "}
                 <br />
                 Botanico Craft Beer Garden for small groups of up to 10 people.

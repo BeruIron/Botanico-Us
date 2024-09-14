@@ -50,7 +50,7 @@ function Event() {
             />
           </div>
           <div className="justify-between flex space-x-10 max-sm:mb-[10%]">
-            <div className="bg-red-600 h-[350px] px-[5px] max-sm:ml-0 max-sm:mt-5 max-sm:h-[200px] max-sm:px-[2px] "></div>
+            <div className="bg-red-600 h-[350px] px-[5px] max-sm:mt-5 max-sm:h-[200px] max-sm:px-[2px] "></div>
 
             <div className="text-gray-700 text-[20px] flex flex-col justify-center items-center space-y-10 max-sm:text-[10px] max-sm:space-y-3  ">
               <p className="leading-10  max-sm:leading-5">
