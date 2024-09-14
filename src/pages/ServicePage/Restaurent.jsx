@@ -37,7 +37,7 @@ function Restaurant() {
 
       <div className="space-y-10 max-sm:w-[80%] justify-center mx-auto">
         <div className=" bg-white flex justify-center space-x-10">
-          <ul className="list-disc pl-5 text-[20px] font-normal leading-[50px] max-sm:text-[10px] max-sm:leading-6 mt-[50px]">
+          <ul className="list-disc pl-5 text-[20px] font-normal leading-[50px] max-sm:text-[10px] max-sm:leading-4 mt-[50px]">
             <h2 className="font-bold"> Draft</h2>
             <li>
               Installation , maintenance and regular cleaning of the draft
@@ -56,7 +56,7 @@ function Restaurant() {
             <img 
               src="https://lh3.googleusercontent.com/pw/AP1GczNU0E-c7VIs7_MhrHBAvC7B_ABXUO7t34ikO-BYVGeAPk2y5LFbFaonicicisY-0lud4zuVq5h18UZpxoIFccUJAG5YpNInAbluZWYBa6wT3Sco_Hcp2chgcFxPSIPg3nkSWnbRxgSxL7wShb0S29ix=w925-h617-s-no?authuser=0"
               alt=""
-              className="w-[600px] max-sm:h-[200px] object-cover"
+              className="w-[600px] max-sm:h-[300px] object-cover"
             />
           </div>
         </div>
@@ -66,12 +66,12 @@ function Restaurant() {
             <img
               src="https://lh3.googleusercontent.com/pw/AP1GczP_n2wnB21cLeySaMFAVnYhfhFqGNUlxhV2wcHvhT2cCxzlLf2K5KD-BF6YTpELITN7HeW40bvvBdv0IWpo0SbX4WkcfBKjY2pebwgv4CF-W-z9virnRfSWMAH1MZ5bgV6PZCb2IXlFFJK4Q4G-s24d=w925-h617-s-no?authuser=0"
               alt=""
-              className="w-[600px] max-sm:h-[200px]  object-cover"
+              className="w-[600px] max-sm:h-[300px]  object-cover"
             />
           </div>
 
-          <ul className="list-disc pl-5 text-[20px] font-normal leading-[50px] max-sm:text-[10px] max-sm:leading-6">
-            <h2 className="text-[20px] font-bold  ">Draft</h2>
+          <ul className="list-disc pl-5 text-[20px] font-normal leading-[50px] max-sm:text-[10px] max-sm:leading-4">
+            <h2 className="text-[20px] font-bold max-sm:text-[10px] ">Bottle</h2>
             <li>
               Better solution for smaller businesses (little space) and/or less <br />
               
