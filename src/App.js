@@ -4,25 +4,36 @@ import './index.css'
 import Story from './pages/StoryPage/Story';
 
 import BeerFinder from './pages/BeerFinder/BeerFinder';
-
-import Beerfinder from './Components/BeerFinder';
-import Servicepage from './pages/ServicePage/Service';
+import Taproom from './pages/TapRoom/TapRoom';
 import Restaurant from './pages/ServicePage/Restaurent';
+import Servicepage from '../src/pages/ServicePage/Service'
 
- 
+
+import Event from './pages/ServicePage/Event';
+import TestingBeer from './pages/ServicePage/Testing';
+
+import OurBeer from './pages/OurBeer/OurBeer';
+import Detail from './pages/OurBeer/Detail';
+
 const App = () => {
    return (
       <>
          <Routes>
             <Route path="/" element={<Home />} />
 
-            <Route path="/Story" element={<Story />} />
-            <Route path="/BeerFinder" element={<BeerFinder/>} />
             <Route path="/story" element={<Story />} />
+            <Route path="/ourBeer" element={<OurBeer />} />
+            <Route path="/details" element={<OurBeer />} />
+            <Route path="/details/:id" element={<Detail />} />
+            <Route path="/beerFinder" element={<BeerFinder/>} />
+            <Route path="/story" element={<Story />} />
+            <Route path="/event" element={<Event />} />
+            <Route path="/testing" element={<TestingBeer />} />
+            <Route path="/taproom" element={<Taproom />} />
+            <Route path="/restaurant" element={<Restaurant />} />
             <Route path="/service" element={<Servicepage />} />
-            <Route path="/beer-finder" element={<Beerfinder />} />
-            <Route path="/restaurent" element={<Restaurant />} />
-            <Route path="/Contact" element={<Restaurant/>} />
+            
+
 
          </Routes>
       </>
