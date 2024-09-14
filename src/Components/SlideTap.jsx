@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-function Sa() {
+function SlideTap() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const slides = [
         {
@@ -38,24 +38,18 @@ function Sa() {
     };
 
     return (
-        <div className="w-screen h-screen m-auto relative">
-            
+        <div className="relative w-full h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[80vh] px-12">
             <div
                 style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-                className="w-full h-full bg-cover bg-center duration-500"
-                ></div>
-                
+                className=" w-full h-full m-auto bg-cover bg-center transition-all duration-500"
+            ></div>
 
             <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
-                <div className="text-center px-4 md:px-8 lg:px-16">
-                    <h1 className="text-white text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">Botanico Brewing Company</h1>
-                    <button className="w-[150px] h-[50px] text-white bg-slate-400 my-1  hover:bg-gray-600">
-                        View Products
-                    </button>
-                </div>
+                {/* { Add any overlay or navigation controls here */} 
             </div>
         </div>
     );
 }
 
-export default Sa;
+export default SlideTap;
+
