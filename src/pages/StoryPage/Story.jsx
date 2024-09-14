@@ -5,6 +5,10 @@ import Button from "../../Components/Button";
 import SmallHeader from "../../Components/SmallHeader";
 import Footer from "../../Components/Footer";
 
+
+
+
+
 function Story() {
   return (
     <>
