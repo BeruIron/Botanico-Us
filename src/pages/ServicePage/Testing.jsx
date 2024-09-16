@@ -35,8 +35,9 @@ function TestingBeer() {
         </div>
       </div>
 
+
       <div className="flex justify-center  ">
-        <div className="h-[90vh] w-full max-w-[1200px] bg-white p-6 max-sm:w-full max-sm:h-[570px] ">
+        <div className="h-[70vh] w-full max-w-[1200px] bg-white p-6 max-sm:w-full max-sm:h-[570px] ">
           <p className=" mb-4 text-[20px] text-center  max-sm:text-[10px]   ">
             Have you ever asked yourself how beer is actually made? What it
             looks like inside of a brewery?
