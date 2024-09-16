@@ -5,7 +5,6 @@ import { FaLanguage } from "react-icons/fa";
 import { RiMenu3Fill, RiArrowDownSFill } from "react-icons/ri";
 
 function Navbar() {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,11 +23,17 @@ function Navbar() {
           STORY
         </Link>
       </li>
+      <li>
+              <Link to="/ourbeer" className="hover:text-gray-400">
+                OUR BEER
+              </Link>
+            </li>
       <li className="relative group">
-        <button className="flex items-center hover:text-gray-400 focus:outline-none">
+        <Link to="service" className="flex items-center hover:text-gray-400 focus:outline-none">
           <span>SERVICE</span>
           <RiArrowDownSFill className="ml-2" />
-        </button>
+        </Link>
+
 
         <ul className="absolute left-0 mt-2 w-48 bg-gray-700 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <li>
@@ -42,8 +47,11 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/service2" className="block px-4 py-2 hover:bg-gray-600">
-              Service 2
+            <Link
+              to="/restaurant"
+              className="block px-4 py-2 hover:bg-gray-500"
+            >
+              Restaurant
             </Link>
           </li>
         </ul>
@@ -109,11 +117,16 @@ function Navbar() {
                 STORY
               </Link>
             </li>
+            <li>
+              <Link to="/ourbeer" className="hover:text-gray-400">
+                OUR BEER
+              </Link>
+            </li>
             <li className="relative">
-              <button className="flex items-center hover:text-gray-400 focus:outline-none">
+              <Link to="service" className="flex items-center hover:text-gray-400 focus:outline-none">
                 <span>SERVICE</span>
                 <RiArrowDownSFill className="ml-2" />
-              </button>
+              </Link>
               <ul className="bg-gray-600 mt-2">
                 <li>
                   <Link
@@ -133,10 +146,10 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="/service2"
+                    to="/restaurant"
                     className="block px-4 py-2 hover:bg-gray-500"
                   >
-                    Service 2
+                    Restaurant
                   </Link>
                 </li>
               </ul>
@@ -166,7 +179,6 @@ function Navbar() {
       )}
     </nav>
   );
-
 }
 
 export default Navbar;

@@ -46,11 +46,11 @@ function Detail() {
     <>
       <BackgroundSection
         backgroundImage="https://lh3.googleusercontent.com/pw/AP1GczObCs2Ocqkf7SGQuEsyjdQXY_Jv2L_WIqt9wEDoIovnwUJnRpn51cwIN_LvNo4NCqEwpT5_47vLfyOHxFmfZqY7m3qQSp94s9zlmMjPTFUdcYDJkctWHceiNOeLpOoYNdRlhElcltm-laJTwzjDQ8Sy=w1449-h966-s-no-gm?authuser=0"
-        className="relative h-screen max-sm:w-[100%]"
+        className="relative h-screen  max-sm:h-[500px]"
       >
         <Navbar />
-        <div className="bg-black bg-opacity-40 p-4 text-center mt-[35%] w-[400px] mx-auto">
-          <h1 className="text-white text-7xl font-dangrek font-bold">
+        <div className="bg-black bg-opacity-40 p-4 text-center mt-[35%] w-[400px] mx-auto max-sm:w-[250px] max-sm:mt-[250px]">
+          <h1 className="text-white text-7xl font-montserrat font-bold max-sm:text-3xl ">
             Our Beers
           </h1>
         </div>
@@ -59,11 +59,11 @@ function Detail() {
       <div className="min-w-full min-h-full">
         <div className="flex justify-center items-center w-full text-center mt-[90px] max-sm:mt-[5%]">
           <img
-            className="w-[4%] absolute mr-7 right-0 mb-[20px]  max-sm:mr-[10px]"
+            className="w-[4%] absolute mr-7 right-0 mb-[20px]  max-sm:mr-[10px] max-sm:mt-[32px]"
             src={B}
             alt="Botanico Logo"
           />
-          <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] max-sm:mb-[15px]">
+          <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] max-sm:mt-[13px]">
             Core Beers
           </h1>
         </div>
@@ -74,7 +74,7 @@ function Detail() {
                 <img
                   src={product.image}
                   alt={product.title1}
-                  className="w-full h-[547px] object-cover bg-slate-200  max-sm:h-[100%] max-sm:w-[90%]"
+                  className="w-full h-[547px] object-cover bg-slate-200  max-sm:h-[100%] max-sm:w-[90%] max-sm:mt-[28px]"
                 />
               </div>
               <div className="flex-1 flex flex-col justify-center ml-[3%] max-sm:mt-[30px]">
@@ -156,7 +156,7 @@ function Detail() {
           </div>
           <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:ml-[15px]">
             <div className=" flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[12px] ">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] ">
                 <p>Cambodian Amber Ale / w palm sugar</p>
                 <p>Reahoo Wheat Beer</p>
                 <p>Princeps Imperial IPA</p>
@@ -165,7 +165,7 @@ function Detail() {
               </div>
             </div>
             <div className="flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[12px] max-sm:mb-[15px]">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] max-sm:mb-[15px]">
                 <p>Bassac Hoppy Lager</p>
                 <p>Tropical Mango Ale</p>
                 <p>Sundown Dark Lager</p>

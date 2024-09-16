@@ -24,11 +24,11 @@ function OurBeer() {
     <>
       <BackgroundSection
         backgroundImage="https://lh3.googleusercontent.com/pw/AP1GczObCs2Ocqkf7SGQuEsyjdQXY_Jv2L_WIqt9wEDoIovnwUJnRpn51cwIN_LvNo4NCqEwpT5_47vLfyOHxFmfZqY7m3qQSp94s9zlmMjPTFUdcYDJkctWHceiNOeLpOoYNdRlhElcltm-laJTwzjDQ8Sy=w1449-h966-s-no-gm?authuser=0"
-        className="relative h-screen max-sm:w-[100%]"
+        className="relative h-screen max-sm:w-full max-sm:h-[500px]"
       >
         <Navbar />
-        <div className="bg-black bg-opacity-40 p-4 text-center mt-[35%] w-[400px] mx-auto ">
-          <h1 className="text-white text-7xl font-dangrek font-bold">
+        <div className="bg-black bg-opacity-40 p-4 text-center mt-[35%] w-[400px] mx-auto max-sm:w-[250px] max-sm:mt-[250px]">
+          <h1 className="text-white text-7xl font-bold  font-montserrat  max-sm:text-3xl">
             Our Beers
           </h1>
         </div>
@@ -37,11 +37,11 @@ function OurBeer() {
       <div className="min-w-full min-h-full">
         <div className="flex justify-center items-center w-full text-center mt-[95px] max-sm:h-[5px]">
           <img
-            className="w-[4%] absolute right-0 mb-[90px] mr-7 max-sm:mb-[200px] max-sm:mt-[29%]"
+            className="w-[100px] max-sm:w-[50px] absolute right-0 mb-[90px] mr-7 "
             src={B}
             alt="Botanico Logo"
           />
-          <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] mb-[95px] max-sm:mt-3">
+          <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] mb-[107px] max-sm:mt-3">
             Core Beers
           </h1>
         </div>
@@ -97,7 +97,7 @@ function OurBeer() {
           </div>
           <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:ml-[15px] max-sm:mt-[30px]">
             <div className=" flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] ">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] max-sm:mb-[36px]">
                 <p>Cambodian Amber Ale / w palm sugar</p>
                 <p>Reahoo Wheat Beer</p>
                 <p>Princeps Imperial IPA</p>
@@ -106,7 +106,7 @@ function OurBeer() {
               </div>
             </div>
             <div className="flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px]">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] max-sm:mb-[53px]">
                 <p>Bassac Hoppy Lager</p>
                 <p>Tropical Mango Ale</p>
                 <p>Sundown Dark Lager</p>
