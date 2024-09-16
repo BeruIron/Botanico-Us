@@ -37,11 +37,11 @@ function OurBeer() {
       <div className="min-w-full min-h-full">
         <div className="flex justify-center items-center w-full text-center mt-[95px] max-sm:h-[5px]">
           <img
-            className="w-[4%] absolute right-0 mb-[90px] mr-7 max-sm:mb-[200px] max-sm:mt-[29%]"
+            className="w-[4%] absolute right-0 mb-[90px] mr-7 max-sm:mb-[200px] max-sm:mt-[30%]"
             src={B}
             alt="Botanico Logo"
           />
-          <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] mb-[95px] max-sm:mt-3">
+          <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] mb-[107px] max-sm:mt-3">
             Core Beers
           </h1>
         </div>

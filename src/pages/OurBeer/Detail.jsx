@@ -59,7 +59,7 @@ function Detail() {
       <div className="min-w-full min-h-full">
         <div className="flex justify-center items-center w-full text-center mt-[90px] max-sm:mt-[5%]">
           <img
-            className="w-[4%] absolute mr-7 right-0 mb-[20px]  max-sm:mr-[10px]"
+            className="w-[4%] absolute mr-7 right-0 mb-[20px]  max-sm:mr-[10px] max-sm:mt-[4px]"
             src={B}
             alt="Botanico Logo"
           />
