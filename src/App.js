@@ -13,6 +13,7 @@ import TestingBeer from './pages/ServicePage/Testing';
 
 import OurBeer from './pages/OurBeer/OurBeer';
 import Detail from './pages/OurBeer/Detail';
+import Contact from './pages/Contact/Contact';
 
 const App = () => {
    return (
@@ -29,6 +30,10 @@ const App = () => {
             <Route path="/event" element={<Event />} />
             <Route path="/testing" element={<TestingBeer />} />
             <Route path="/taproom" element={<Taproom />} />
+            <Route path="/contact" element={<Contact />} />
+           
+            
+
             
 
 

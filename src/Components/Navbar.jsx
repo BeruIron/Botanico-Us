@@ -24,6 +24,11 @@ function Navbar() {
           STORY
         </Link>
       </li>
+      <li>
+        <Link to="/OurBeer" className="hover:text-gray-400">
+          OUR BEER
+        </Link>
+      </li>
       <li className="relative group">
         <button className="flex items-center hover:text-gray-400 focus:outline-none">
           <span>SERVICE</span>
