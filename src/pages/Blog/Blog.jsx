@@ -1,89 +1,100 @@
 
+
 import React from "react";
 import Header from "../../Components/Header";
 import img from "../../image/botanico.jpg";
+import image from "../../image/beer (35).jpg";
+import Footer from "../../Components/Footer";
 
 const BlogPost = ({ image, title, date, description }) => {
   return (
     <div className="bg-white p-5 rounded-lg shadow-md">
-      <img src={image} alt={title} className="w-full h-[300px] object-cover rounded-lg" />
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-[500px] max-sm:h-[300px] object-cover rounded-lg"
+      />
       <div className="mt-4">
         <h2 className="text-xl font-bold">{title}</h2>
-        <p className="mt-2 text-gray-600">
-          <strong>Botanico</strong> {date}
-        </p>
+        <p className="mt-2 text-gray-600">{date}</p>
         <p className="mt-2">{description}</p>
       </div>
     </div>
   );
 };
 
-const SidePost = ({ image, title }) => {
+const SidePost = ({ image, title, date }) => {
   return (
     <div className="bg-white mb-4 p-2.5 rounded-lg shadow-md">
-      <img src={image} alt={title} className="w-full h-[100px] object-cover rounded-md" />
-      <h3 className="mt-2 text-lg font-normal">{title}</h3>
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-[150px] object-cover rounded-md"
+      />
+      <h2 className="mt-2 text-lg font-bold">{title}</h2>
+      <p className="mt-2 text-gray-600 text-[12px]">{date}</p>
     </div>
   );
 };
 
 const Blog = () => {
-  const posts = [
-    {
-      image: "https://i.pinimg.com/736x/a6/94/4e/a6944e49c09650131d2a2037433bad8e.jpg",
-      title: "Botanico Craft Beer Garden",
-    },
-    {
-      image: "https://i.pinimg.com/736x/a6/94/4e/a6944e49c09650131d2a2037433bad8e.jpg",
-      title: "Another Blog Post",
-    },
-    {
-      image: "https://i.pinimg.com/736x/a6/94/4e/a6944e49c09650131d2a2037433bad8e.jpg",
-      title: "Interesting Event Recap",
-    },
-    // Add more posts here...
-  ];
-
   return (
     <div>
       <Header />
       <div>
-        <div className="flex justify-between items-center">
-          <h1 className="ml-[50px] -mb-[10px] text-[30px] font-bold">BLOG</h1>
-          <img className="w-[80px] mr-[50px]" src={img} alt="logo" />
+        <div className="flex justify-between items-center bg-white py-3 px-10">
+          <h1 className="text-[30px] font-bold">BLOG</h1>
+          <img className="w-[80px]" src={img} alt="logo" />
         </div>
       </div>
-      <div className="flex gap-5 p-5 bg-gray-100">
-        {/* Main Post */}
-        <div className="flex-2">
+
+
+      <div className="flex flex-col lg:flex-row gap-6 p-5 lg:p-20 bg-gray-100 w-[90%] lg:w-[80%] mx-auto">
+
+        <div className="w-full lg:w-2/3">
           <BlogPost
-            image="https://i.pinimg.com/736x/a6/94/4e/a6944e49c09650131d2a2037433bad8e.jpg"
+            image={image}
             title="Botanico Craft Beer Garden"
             date="Tue, Aug 27, 2024"
-            description="Our craft beer garden is open every day and provides excellent service. We also offer discounts every Saturday and Sunday."
+            description="Our craft beer garden is open every day with excellent service. We also offer discounts every Saturday and Sunday."
           />
         </div>
 
-        {/* Scrollable Side Section */}
-        <div className="flex-1 bg-gray-100">
-          <h2 className="text-2xl mb-2">ALL POSTS</h2>
-          <div className="max-h-[400px] overflow-y-auto pr-2.5">
-            {posts.map((post, index) => (
-              <SidePost
-                key={index}
-                image={post.image}
-                title={post.title}
-              />
-            ))}
+        <div className="w-full lg:w-1/4">
+          <h2 className="text-2xl mb-4 font-semibold">ALL POSTS</h2>
+          <div className="max-h-[600px] overflow-y-auto space-y-4">
+            <SidePost
+              image={image}
+              title="Testing beer"
+              date="Tue, Aug 27, 2024"
+            />
+            <SidePost
+              image={image}
+              title="Side Post Title 2"
+              date="Tue, Aug 27, 2024"
+            />
+            <SidePost
+              image={image}
+              title="Side Post Title 3"
+              date="Tue, Aug 27, 2024"
+            />
+            <SidePost
+              image={image}
+              title="Side Post Title 4"
+              date="Tue, Aug 27, 2024"
+            />
+            <SidePost
+              image={image}
+              title="Side Post Title 5"
+              date="Tue, Aug 27, 2024"
+            />
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
 
 export default Blog;
 
-
-
-   

@@ -14,6 +14,7 @@ import TestingBeer from './pages/ServicePage/Testing';
 
 import OurBeer from './pages/OurBeer/OurBeer';
 import Detail from './pages/OurBeer/Detail';
+import Blog from './pages/Blog/Blog';
 
 const App = () => {
    return (
@@ -32,6 +33,7 @@ const App = () => {
             <Route path="/taproom" element={<Taproom />} />
             <Route path="/restaurant" element={<Restaurant />} />
             <Route path="/service" element={<Servicepage />} />
+            <Route path="/blog" element={<Blog/>} />
             
 
 
