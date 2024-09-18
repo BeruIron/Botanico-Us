@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title1": "CENTURION",
+    "title2": "AMERICAN PALE ALE",
+    "abv": "5.6%",
+    "ibu": "38",
+    "description": "This beer is all about balance! Moderate alcohol level, moderate bitterness, moderate flavor. Citrus tones will hit the nose, the malty sweetness harmonizes in a lovely way with the bitterness and the body is neither too thick nor too thin. Cheers!",
+    "image1": "/images/logo1.png",
+    "image2": "/images/beer1.png",
+    "color": "#E15050",
+    "image":"/images/Centurion.jpg"
+  },
+  
+    {
+      "id": 2,
+      "title1": "SPLASH",
+      "title2": "JUICY IPA",
+      "abv": "6.4%",
+      "ibu": "22",
+      "description": "A Splash of flavor is what happens when you take a sniff of this brew! Full-bodied, low bitterness and a strong haziness. But what makes the Splash so special is definitely the strong flavor. Pineapple, lychee, guava and mango are predominant. Welcome to Cambodia!",
+      "image1":"/images/logo2.png",
+      "image2":"/images/beer2.png",
+       "color": "#1FABAB",
+       "image":"/images/Splash.jpg"
+    },
+    {
+      "id": 3,
+      "title1": "KHMER HONEY",
+      "title2": "BLONDE ALE",
+      "abv": "4.6%",
+      "ibu": "18",
+      "description": "Real Cambodian honey from the province Kampong Cham is used in the secondary fermentation. The sugars of the honey are fully fermented, what’s left is the flavor. But nothing overpowering. The honey is nicely balanced with the light character of this blonde ale, making it very easy to drink, with a nice little sweetness.",
+      "image1":"/images/logo3.png",
+      "image2":"/images/beer3.png",
+      "color": "#ED9454",
+     "image":"/images/Khmer.jpg"
+      
+      },
+    {
+      "id": 4,
+      "title1": "CHAMTIK",
+      "title2": "HELLES LAGER",
+      "abv": "5.0%",
+      "ibu": "15",
+      "description": "“Chamtik” means something like “Wait a moment”. And that’s exactly what you should be doing, when ordering this beer. Relax and enjoy, don’t let anything stress you! This beer comes with a decent malt character, a touch of sweetness and a super refreshing finish. Made for the Cambodian climate, easy-to-drink with a crisp body!",
+      "image1":"/images/logo4.png",
+      "image2":"/images/beer4.png",
+      "color": "#3B6DC8",
+      "image":"/images/Chamtik.jpg"
+    }
+  ]
+  

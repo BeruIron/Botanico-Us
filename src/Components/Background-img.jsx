@@ -10,6 +10,7 @@ function BackgroundSection({ backgroundImage, children, className }) {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                
+               
             }}
         >
             {children}

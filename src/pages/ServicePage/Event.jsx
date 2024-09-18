@@ -78,7 +78,7 @@ function Event() {
         </div>
       </div>
 
-      <div className="h-[100px] flex justify-center items-center max-sm:h-[70px]">
+      <div className="h-[100px] flex justify-center items-center max-sm:h-[60px]">
         <Button color="Button-black" name="Contact Us" />
       </div>
 

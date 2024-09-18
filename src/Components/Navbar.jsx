@@ -6,7 +6,6 @@ import { FaLanguage } from "react-icons/fa";
 import { RiMenu3Fill, RiArrowDownSFill } from "react-icons/ri";
 
 function Navbar() {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -25,6 +24,11 @@ function Navbar() {
           STORY
         </Link>
       </li>
+      <li>
+              <Link to="/ourbeer" className="hover:text-gray-400">
+                OUR BEER
+              </Link>
+            </li>
       <li className="relative group">
         <Link to="/service" className="flex items-center hover:text-gray-400 focus:outline-none">
           <span>SERVICE</span>
@@ -113,6 +117,11 @@ function Navbar() {
                 STORY
               </Link>
             </li>
+            <li>
+              <Link to="/ourbeer" className="hover:text-gray-400">
+                OUR BEER
+              </Link>
+            </li>
             <li className="relative">
               <Link to="/service" className="flex items-center hover:text-gray-400 focus:outline-none">
                 <span>SERVICE</span>
@@ -170,7 +179,6 @@ function Navbar() {
       )}
     </nav>
   );
-
 }
 
 export default Navbar;

@@ -1,7 +1,7 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import './index.css'
-import Story from './pages/StoryPage/Story';
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import "./index.css";
+import Story from "./pages/StoryPage/Story";
 
 import BeerFinder from './pages/BeerFinder/BeerFinder';
 import Taproom from './pages/TapRoom/TapRoom';
@@ -16,10 +16,10 @@ import OurBeer from './pages/OurBeer/OurBeer';
 import Detail from './pages/OurBeer/Detail';
 
 const App = () => {
-   return (
-      <>
-         <Routes>
-            <Route path="/" element={<Home />} />
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
 
             <Route path="/story" element={<Story />} />
             <Route path="/ourBeer" element={<OurBeer />} />
@@ -39,5 +39,5 @@ const App = () => {
       </>
    );
 };
- 
+
 export default App;
