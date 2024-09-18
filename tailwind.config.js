@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['Montserrat','sans-serif'],
-        dangrek: ['Dangrek','cursive'],
-      },
+        montserrat :["Monterrat " , "sans-serif"]
+      
+      }
     },
   },
   plugins: [],

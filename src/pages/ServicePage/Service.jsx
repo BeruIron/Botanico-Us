@@ -52,6 +52,7 @@ function Servicepage() {
       </div> */}
       {/* <div className="w-[100%] h-[320px] bg-[#D9D9D9]">
       </div> */}
+
       <div className="h-[500px]  bg-slate-100 items-center flex justify-center max-sm:h-[300px]">
         <div className="flex justify-center overflow-hidden  space-x-5 text-center">
           <div className="h-[400px] bg-white max-sm:h-[200px]">
@@ -80,6 +81,7 @@ function Servicepage() {
           </div>
         </div>
       </div>
+
 
       {/* <Footer/> */}
     </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Image from "../image/BotanicoCBG_Logo_wbox-01.png";
+
 import { FaLanguage } from "react-icons/fa";
 import { RiMenu3Fill, RiArrowDownSFill } from "react-icons/ri";
 
@@ -29,7 +30,8 @@ function Navbar() {
               </Link>
             </li>
       <li className="relative group">
-        <Link to="service" className="flex items-center hover:text-gray-400 focus:outline-none">
+
+        <Link to="/service" className="flex items-center hover:text-gray-400 focus:outline-none">
           <span>SERVICE</span>
           <RiArrowDownSFill className="ml-2" />
         </Link>
@@ -47,12 +49,14 @@ function Navbar() {
             </Link>
           </li>
           <li>
+
             <Link
               to="/restaurant"
               className="block px-4 py-2 hover:bg-gray-500"
             >
               Restaurant
             </Link>
+
           </li>
         </ul>
       </li>
@@ -123,7 +127,9 @@ function Navbar() {
               </Link>
             </li>
             <li className="relative">
-              <Link to="service" className="flex items-center hover:text-gray-400 focus:outline-none">
+
+              <Link to="/service" className="flex items-center hover:text-gray-400 focus:outline-none">
+
                 <span>SERVICE</span>
                 <RiArrowDownSFill className="ml-2" />
               </Link>
