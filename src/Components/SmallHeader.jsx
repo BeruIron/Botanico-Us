@@ -1,0 +1,28 @@
+import photo from "../image/Botanico_BBox_logo-01.png";
+
+function SmallHeader({ headerText }) {
+  return (
+    <div className="w-full flex items-center justify-between px-4 md:px-10 lg:px-20 gap-4">
+      {/* Header Text on the left */}
+      <div className="flex flex-col w-full">
+        <h1 className="text-black-800 text-[24px] md:text-[32px] lg:text-[38px] font-bold">
+          {headerText}
+        </h1>
+        <div className="border-t-2 border-black mt-1 w-full"></div>
+      </div>
+
+      <img
+        className="w-[40px] md:w-[60px] lg:w-[80px] xl:w-[100px] h-auto" 
+        src={photo} 
+        alt="logo" 
+      />
+    </div>
+  );
+}
+
+export default SmallHeader;
+
+
+
+  
+  
