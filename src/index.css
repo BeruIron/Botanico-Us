@@ -23,12 +23,3 @@
  
     
   }
-/* Navbar.css */
-nav {
-  position: relative;
-  z-index: 10; /* Ensure Navbar stays above background */
-}
-
-.group .absolute {
-  z-index: 20; /* Ensure dropdown menu is above the background */
-}
