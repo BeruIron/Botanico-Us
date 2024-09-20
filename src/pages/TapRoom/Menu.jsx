@@ -25,7 +25,7 @@ const Menu = () => {
         <Navbar></Navbar>
       </BackgroundSection>
       <div className="border-4 border-gray-100">
-        <div className="flex justify-between items-center bg-white h-[100px] w-[90%] mx-auto">
+        <div className="flex justify-between items-center bg-white h-[100px] w-[90%] max-sm:w-[100%] mx-auto">
           <h1 className="-mb-[10px] text-[30px] font-abc font-extrabold max-sm:text-[20px] max-sm:ml-[30px]">
             BOTANICO MENU{" "}
           </h1>

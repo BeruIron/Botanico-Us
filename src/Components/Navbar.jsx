@@ -87,7 +87,7 @@ function Navbar() {
             <img
               src={Image}
               alt="BOTANICO Logo"
-              className=" h-[100px] w-[180px] max-sm:h-[50px] max-sm:w-[130px] "
+              className=" h-[100px] w-[180px] max-sm:h-[60px] max-sm:w-[130px] "
             />
           </Link>
         </div>
