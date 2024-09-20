@@ -3,24 +3,24 @@ import Navbar from "../../Components/Navbar";
 import { useState, useEffect } from "react";
 import SlideTap from "../../Components/SlideTap";
 import Footer from "../../Components/Footer";
-
+import image from "../../image/beer (52).jpg"
 function Taproom() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const slides = [
         {
-            url: "https://staticg.sportskeeda.com/editor/2022/08/812fc-16598097467269.png",
+            url: "https://trinkreif.de/wp-content/uploads/perfektes-steak-richtig-braten.jpg",
         },
         {
-            url: "https://wallpapercrafter.com/desktop1/567704-anime-cool-back-red-bleach-final-getsuga-widescreen.jpg",
+            url: "https://pro2-bar-s3-cdn-cf1.myportfolio.com/54415d07-2ce9-4b86-9af4-178f849b3c28/90c44997-5b96-423e-ab98-ce644aa36e6e_rw_3840.jpg?h=8b35ff220ce42786125dc49e22286f1f",
         },
         {
-            url: "https://img.goodfon.com/original/1680x1050/2/cd/naruto-akatsuki-konan-payne.jpg",
+            url: "https://pro2-bar-s3-cdn-cf3.myportfolio.com/54415d07-2ce9-4b86-9af4-178f849b3c28/e9b80264-62a7-4004-b424-258cc156c60f_rw_3840.jpg?h=86ba44a4033b99b8046b78491cedc081",
         },
         {
             url: "https://i.pinimg.com/originals/19/2b/dc/192bdc10828a0d90a456d1f562b58950.jpg",
         },
         {
-            url: "https://images4.alphacoders.com/135/1357584.png",
+            url: "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_1726/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/u0eo1qkqlw860f84zfwg/LateAfternoonBeerTourinPhnomPenh.jpg",
         },
         {
             url: "https://staticg.sportskeeda.com/editor/2024/02/e19d7-17067790349227-1920.jpg",
@@ -95,23 +95,23 @@ function Taproom() {
                     <div className="w-full md:w-1/2">
                         <img
                             className="w-full h-[300px] md:h-[600px] object-cover"
-                            src="https://lh3.googleusercontent.com/RUg9YJuY2cPjh5znR5ZLqLJIBrm1CM2JuwCS1XP6g31ZDPa_NR--jR0JAum5qDbl2g5UKgBwM4SHSuyiWqjyd7VhBUI=s1280-w1280-h800"
+                            src="https://lionbreweryco.com/wp-content/uploads/2024/03/Lion-Brewery-taproom-table-outdoor.webp"
                             alt="Taproom"
                         />
                     </div>
                     <div className="w-full md:w-1/2 p-4 md:p-10 pt-10">
                         <div>
                             <h3 className="text-3xl md:text-4xl font-bold mb-4">OPENING HOURS</h3>
-                            <p className="text-lg md:text-xl">Sunday – Wednesday | 11.30am – 12am</p>
-                            <p className="pb-4 text-lg md:text-xl">Thursday – Saturday | 11.30am – 1am</p>
+                            <p className="text-lg md:text-xl">Monday - Thursday: 8:00 AM - 10:00 PM</p>
+                            <p className="pb-4 text-lg md:text-xl">Friday - Sunday: 8:00 AM - 11:00 PM</p>
                             <hr className="border-t-4 border-yellow-600 w-1/4 mb-4" />
-                            <p className="font-bold mb-6">MONDAY - SUNDAY*, UNTIL 7PM</p>
+                            <p className="font-bold mb-6">Moday - Friday: 3:00 PM - 6:00 PM</p>
                         </div>
 
                         <div>
                             <h3 className="text-3xl md:text-4xl font-bold mb-4">HAPPY HOUR</h3>
                             <p className="pb-10 text-lg md:text-xl">
-                                20% off selected Lion Brewery Co pints and selected wines by the glass.
+                                30% discount on all craft beers
                             </p>
                             <p className="text-gray-500 text-sm md:text-base">
                                 *excluding public holidays. <br />
@@ -142,7 +142,7 @@ function Taproom() {
 
                     <div className="lg:w-1/2 p-4">
                         <img
-                            src="https://img.goodfon.com/original/1680x1050/2/cd/naruto-akatsuki-konan-payne.jpg"
+                            src="https://trinkreif.de/wp-content/uploads/perfektes-steak-richtig-braten.jpg"
                             alt="Food image"
                             className="w-full h-auto object-cover"
                         />

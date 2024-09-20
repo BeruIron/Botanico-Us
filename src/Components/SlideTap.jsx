@@ -5,10 +5,10 @@ function SlideTap() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const slides = [
         {
-            url: "https://staticg.sportskeeda.com/editor/2022/08/812fc-16598097467269.png",
+            url: "https://trinkreif.de/wp-content/uploads/perfektes-steak-richtig-braten.jpg",
         },
         {
-            url: "https://wallpapercrafter.com/desktop1/567704-anime-cool-back-red-bleach-final-getsuga-widescreen.jpg",
+            url: "https://lh3.googleusercontent.com/pw/AP1GczMDfT4mWzYgw9s3eMski4HYzipLsz_okHm4z8T3YYXIFedMR8eKRpq_J955OBhb_RsnfjpqjSe0VEm9hUyEPrTCGcYA_IcJMDLYfmXXmsDOhkWaR4IhZIqNVJz7Fw-3qqfCnB8qhsgM66B5K95pmhav=w1449-h967-s-no?authuser=2",
         },
         {
             url: "https://img.goodfon.com/original/1680x1050/2/cd/naruto-akatsuki-konan-payne.jpg",

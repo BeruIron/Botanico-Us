@@ -13,12 +13,6 @@ function Hb() {
           className="w-full h-full object-cover"
         />
       </div>
-
-      <div className="absolute inset-0 flex items-center justify-between pl-96">
-        <button className="bg-black hover:bg-blue-700 text-white font-bold py-5 px-14 rounded-md shadow-lg">
-          Click Me
-        </button>
-      </div>
     </div>
   );
 }
