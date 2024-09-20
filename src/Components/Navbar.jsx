@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   const content = (
-    <ul className="flex gap-6 text-center text-white ml-[100px]">
+    <ul className="flex gap-6 text-center font-abc font-bold text-[15px] text-white ">
       <li>
         <Link to="/" className="hover:text-gray-400">
           HOME
@@ -29,7 +29,7 @@ function Navbar() {
               </Link>
             </li>
       <li className="relative group">
-        <Link to="service" className="flex items-center hover:text-gray-400 focus:outline-none">
+        <Link to="/service" className="flex items-center hover:text-gray-400 focus:outline-none">
           <span>SERVICE</span>
           <RiArrowDownSFill className="ml-2" />
         </Link>
@@ -80,14 +80,14 @@ function Navbar() {
   );
 
   return (
-    <nav className="relative  bg-gray-800">
-      <div className=" flex justify-between items-center px-4 py-4">
+    <nav className="relative font-abc font-bold text-[15px]">
+      <div className=" flex justify-between  w-[90%] mx-auto items-center px-4 py-4">
         <div className="overflow-hidden">
           <Link to="/">
             <img
               src={Image}
               alt="BOTANICO Logo"
-              className="mr-[50px] h-50 w-[180px] max-sm:h-[50px] max-sm:w-[130px]"
+              className=" h-50 w-[180px] max-sm:h-[50px] max-sm:w-[130px]"
             />
           </Link>
         </div>
@@ -123,7 +123,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="relative">
-              <Link to="service" className="flex items-center hover:text-gray-400 focus:outline-none">
+              <Link to="/service" className="flex items-center hover:text-gray-400 focus:outline-none">
                 <span>SERVICE</span>
                 <RiArrowDownSFill className="ml-2" />
               </Link>
