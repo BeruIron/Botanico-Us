@@ -81,13 +81,13 @@ function Navbar() {
 
   return (
     <nav className="relative font-abc font-bold text-[15px]">
-      <div className=" flex justify-between  w-[90%] mx-auto items-center px-4 py-4">
-        <div className="overflow-hidden">
+      <div className=" flex justify-between  w-[95%] mx-auto items-center px-4 py-4">
+        <div className="overflow-hidden ">
           <Link to="/">
             <img
               src={Image}
               alt="BOTANICO Logo"
-              className=" h-[70px] w-[180px] max-sm:h-[50px] max-sm:w-[130px]"
+              className=" h-[100px] w-[180px] max-sm:h-[50px] max-sm:w-[130px] "
             />
           </Link>
         </div>

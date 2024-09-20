@@ -4,7 +4,7 @@ import Image from "../image/Botanico_BBox_logo.png";
 
 function Footer() {
   return (
-    <div className="bg-black h-[400px]   max-sm:h-[200px] ">
+    <div className="bg-black h-[300px]   max-sm:h-[150px] ">
       <div className=" flex  justify-between mx-auto  w-[90%]  max-sm:space-y-4 max-sm:text-[7px]">
         <div className="mt-4">
           <img
@@ -59,11 +59,8 @@ function Footer() {
             <li>Home</li>
             <li>Story</li>
             <li>Our Beer</li>
-            <li>Service</li>
             <li>Beer Finder</li>
-            <li>Tap-Room</li>
             <li>Contact</li>
-            <li>Blog</li>
           </ul>
         </div>
       </div>
