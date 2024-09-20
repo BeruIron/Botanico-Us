@@ -16,11 +16,11 @@ function Home() {
       </div>
       <Title titleText="BOTANICO" />
 
-      <div className=" w-[70%] h-[700px] mx-auto max-sm:h-[350px] max-sm:w-[85%]">
-        <div className="flex justify-center max-sm:mt-7 mt-16 max-sm:space-x-6 space-x-20">
+      <div className=" w-[70%] h-[700px] mx-auto max-sm:h-[350px] max-sm:w-[90%]">
+        <div className="flex justify-center max-sm:mt-7 mt-16 max-sm:space-x-3 space-x-20">
           <div>
             <img
-              className=" w-[600px] h-[500px] object-cover max-sm:h-[300px] max-sm:w-[700px] "
+              className=" w-[600px] h-[500px] object-cover max-sm:h-[300px] max-sm:w-[500px] "
               src="https://lh3.googleusercontent.com/pw/AP1GczMKbawwEISRFEdhIkfqhlIUi_RMZ6h2Ol0ts5K88GhQsyae9JYGafUWOooPOfeVBcjuaXkEwejeiH9h5JWZE2wavZP6vUSE7tO8JTBVEXokJLG__1_zwvxmuQMXBjKvTBLldo4xAFyNTrKuzTUiRpji=w1452-h968-s-no?authuser=0"
               alt="example"
             />
