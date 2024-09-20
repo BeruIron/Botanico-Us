@@ -17,7 +17,6 @@ import Menu11 from "../../image/Menu11.png";
 import Menu12 from "../../image/Menu12.png";
 import Menu13 from "../../image/Menu13.png";
 import Footer from "../../Components/Footer";
-
 const Menu = () => {
   return (
     <>
@@ -27,7 +26,7 @@ const Menu = () => {
       <div className="border-4 border-gray-100">
         <div className="flex justify-between items-center bg-white h-[100px] w-[90%] max-sm:w-[100%] mx-auto">
           <h1 className="-mb-[10px] text-[30px] font-abc font-extrabold max-sm:text-[20px] max-sm:ml-[30px]">
-            BOTANICO MENU{" "}
+            BOTANICO MENU
           </h1>
           <img
             className="w-[80px] mr-[50px] max-sm:w-[50px] max-sm:mr-[30px]"
