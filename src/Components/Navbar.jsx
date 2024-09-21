@@ -26,7 +26,8 @@ function Navbar() {
         </Link>
       </li>
       <li>
-        <Link to="/ourbeer" className="hover:text-gray-400">
+        <Link to="/OurBeer" className="hover:text-gray-400">
+
           OUR BEER
         </Link>
       </li>
