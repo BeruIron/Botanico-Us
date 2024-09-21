@@ -1,7 +1,7 @@
-
 import React from 'react';
+import videos from "../Components/Botanico.mp4"
 
-function BackgroundSection({ backgroundImage, children, className }) {
+function BackgroundSection({  children, className }) {
     return (
         <div
             className={`relative ${className}`}

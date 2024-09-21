@@ -6,6 +6,7 @@ import Button from "../../Components/Button";
 import Title from "../../Components/Tittle";
 import img from "../../image/DSC01542.jpg"
 
+
 function Home() {
   return (
     <div className="relative ">
@@ -33,7 +34,7 @@ function Home() {
               Botanico Brewing Co.
             </h1>
 
-            <p className="text-[20px]  my-8  font-abc max-sm:text-[10px] max-sm:my-0">
+            <p className="text-[20px]  my-8  font-abc max-sm:text-[10px] max-sm:my-0 ">
               In 2013, a few like-minded imbibers from the West joined <br />
               our brew-master in a common goal: to find a craft beer, <br />
               microbrewery, or libation in Phnom Penh that was <br />
