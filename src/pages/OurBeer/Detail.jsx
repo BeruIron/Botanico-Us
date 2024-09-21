@@ -68,9 +68,9 @@ function Detail() {
           </h1>
         </div>
         {product && (
-          <div className="container mx-auto py-20 mt-[0.3%] ">
-            <div className="flex flex-col  lg:flex-row max-sm:mt-[-80px]">
-              <div className="flex-1 max-sm:w-[400px]">
+          <div className="container mx-auto py-20 mt-[0.3%] bg-slate-300">
+            <div className="flex flex-col   max-sm:mt-[-80px]">
+              <div className="flex-1 max-sm:w-full bg-black">
                 <img
                   src={product.image}
                   alt={product.title1}
@@ -148,13 +148,13 @@ function Detail() {
         )}
 
         <div className=" relative bottom-[40px]">
-          <hr className="w-[759px] h-0.5 mx-auto border-2 border-black mt-[10px] my-1 max-sm:w-[250px] border-1" />
+          <hr className="w-[759px] h-0.5 mx-auto border-2 border-black mt-[40px] max-sm:w-[250px] border-1" />
           <div className="text-center">
             <h1 className="text-[#124734] mt-[80px] max-sm:mt-[50px] font-bold font-montserrat text-4xl max-sm:text-[20px]">
               Other Beers We Brewed
             </h1>
           </div>
-          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:ml-[15px]">
+          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:ml-[15px] bg-slate-400 max-sm:w-[400px] max-sm:mt-[35px]">
             <div className=" flex-1 flex justify-center items-center">
               <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] ">
                 <p>Cambodian Amber Ale / w palm sugar</p>
@@ -165,7 +165,7 @@ function Detail() {
               </div>
             </div>
             <div className="flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] max-sm:mb-[15px]">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px]">
                 <p>Bassac Hoppy Lager</p>
                 <p>Tropical Mango Ale</p>
                 <p>Sundown Dark Lager</p>
