@@ -6,6 +6,7 @@ import Button from "../../Components/Button";
 import Title from "../../Components/Tittle";
 import img from "../../image/DSC01542.jpg"
 
+
 function Home() {
   return (
     <div className="relative ">

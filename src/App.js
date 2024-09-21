@@ -3,7 +3,7 @@ import BeerFinder from './pages/BeerFinder/BeerFinder';
 import Taproom from './pages/TapRoom/TapRoom';
 import Event from './pages/ServicePage/Event';
 import TestingBeer from './pages/ServicePage/Testing';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import OurBeer from './pages/OurBeer/OurBeer';
 import Detail from './pages/OurBeer/Detail';
 import Contact from './pages/Contact/Contact';

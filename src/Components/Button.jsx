@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Button({ name, color, onClick,className }) {
+function Button({ name, color, onClick, }) {
   return (
     <button
 
@@ -14,3 +14,4 @@ function Button({ name, color, onClick,className }) {
 }
 
 export default Button;
+
