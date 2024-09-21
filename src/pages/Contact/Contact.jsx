@@ -1,14 +1,8 @@
 import { useState } from "react";
 import Navbar from "../../Components/Navbar";
 import Button from "../../Components/Button";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTiktok,
-  FaTelegramPlane,
-  FaEnvelope,
-  FaPhone,
-} from "react-icons/fa";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Footer from "../../Components/Footer";
 
 const ContactForm = () => {
@@ -45,7 +39,7 @@ const ContactForm = () => {
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Email is invalid.";
     }
-    if (!formData.message) newErrors.message = "Message is required.";
+    // if (!formData.message) newE/???????????????????rrors.message = "Message is required.";
     if (!formData.phone) {
       newErrors.phone = "Phone number is required.";
     } else if (!/^[0-9+]{7,10}$/.test(formData.phone)) {
@@ -72,6 +66,11 @@ const ContactForm = () => {
       });
 
       const data = await response.json();
+      if (formData) {
+        toast.success("You have successfully Send a Message.");
+      } else {
+        toast.error("fail to send message");
+      }
 
       if (data.success) {
         form.reset();
@@ -162,6 +161,9 @@ const ContactForm = () => {
           </div>
           <div className="flex justify-center items-center mt-4 pb-8">
             <Button type="submit" name="Submit" color="Button-black" className="max-sm:w-[25%] max-sm:h-[40px] max-sm:py-2" />
+          </div>
+          <div>
+            <ToastContainer position="top-right" autoClose={5000} />
           </div>
         </form>
         
