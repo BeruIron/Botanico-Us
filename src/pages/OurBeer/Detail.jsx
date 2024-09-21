@@ -144,13 +144,13 @@ function Detail() {
         )}
 
         <div className=" relative bottom-[40px]">
-          <hr className="w-[759px] h-0.5 mx-auto border-2 border-black mt-[10px] my-1 max-sm:w-[250px] border-1" />
+          <hr className="w-[759px] h-0.5 mx-auto border-2 border-black mt-[40px] my-1 max-sm:w-[250px] border-1 max-sm:border max-sm:mt-[10px]" />
           <div className="text-center">
-            <h1 className="text-[#124734] mt-[80px] max-sm:mt-[50px] font-bold font-montserrat text-4xl max-sm:text-[20px]">
+            <h1 className="text-[#124734] mt-[80px] max-sm:mt-[40px] font-bold font-montserrat text-4xl max-sm:text-[20px]">
               Other Beers We Brewed
             </h1>
           </div>
-          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:mt-[40px] max-sm:h-[100px] h-[300px]">
+          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:mt-[45px] max-sm:h-[70px]">
             <div className=" flex-1 flex justify-center items-center max-sm:ml-8">
               <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] ">
                 <p>Cambodian Amber Ale / w palm sugar</p>
