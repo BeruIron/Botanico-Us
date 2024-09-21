@@ -50,6 +50,7 @@ function Service() {
               </p>
             </div>
 
+
             <div className="h-[400px] bg-gray-100 max-sm:h-[250px]">
               <img
                 src={img1}
@@ -77,6 +78,7 @@ function Service() {
       <div className="mt-20">
         <Footer />
       </div>
+
     </div>
   );
 }

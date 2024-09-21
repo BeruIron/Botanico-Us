@@ -1,9 +1,11 @@
+
 import React from "react";
 import Sa from "../../Components/SlideAutomatic";
 import img from "../../image/Botanico_BBox_logo-01.jpg";
 import image from "../../image/beer (35).jpg";
 import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
+
 
 
 const BlogPost = ({ image, title, date, description }) => {
@@ -40,12 +42,14 @@ const SidePost = ({ image, title, date }) => {
 const Blog = () => {
   return (
     <div>
+
      <div className="bg-black">
         <Navbar />
       </div>
 
       <Sa />
     
+
       <div>
         <div className="flex justify-between items-center bg-white py-3 px-10">
           <h1 className="text-[30px] font-bold">BLOG</h1>
@@ -101,4 +105,6 @@ const Blog = () => {
   );
 };
 
+
 export default Blog;
+

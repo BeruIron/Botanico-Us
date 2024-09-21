@@ -31,7 +31,7 @@ function OurBeer() {
       <div className="min-w-full min-h-full">
         <div className="flex justify-center items-center w-full text-center mt-[95px] max-sm:h-[5px]">
           <img
-            className="w-[100px] max-sm:w-[50px] absolute right-0 mb-[90px] mr-7 "
+            className="w-[4%] absolute right-0 mb-[90px] mr-7 max-sm:mb-[200px] max-sm:mt-[30%]"
             src={B}
             alt="Botanico Logo"
           />
@@ -118,3 +118,71 @@ function OurBeer() {
 }
 
 export default OurBeer;
+
+
+
+// const ContactForm = () => {
+//   const [formData, setFormData] = useState({
+//     firstName: "",
+//     lastName: "",
+//     email: "",
+//     phone: "",
+//     message: "",
+//   });
+//   const [errors, setErrors] = useState({});
+
+//   const handleChange = (e) => {
+//     setFormData({
+//       ...formData,
+//       [e.target.name]: e.target.value,
+//     });
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     const validationError = {};
+    
+//     // Form validation
+//     if (!formData.firstName.trim()) {
+//       validationError.firstName = "First name is required";
+//     }
+//     if (!formData.lastName.trim()) {
+//       validationError.lastName = "Last name is required";
+//     }
+//     if (!formData.email.trim()) {
+//       validationError.email = "Email is required";
+//     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+//       validationError.email = "Email is not valid";
+//     }
+
+//     // Set validation errors
+//     setErrors(validationError);
+
+//     // If there are no errors, proceed with form submission
+//     if (Object.keys(validationError).length === 0) {
+//       emailjs
+//         .send(
+//           "service_o02v2nn", // Replace with your actual service ID
+//           "template_bdlk1up", // Replace with your actual template ID
+//           formData, // The data to be sent
+//           "qFiAyRLjUmVLx2ei5" // Replace with your actual public key
+//         )
+//         .then(
+//           (response) => {
+//             console.log("SUCCESS!", response.status, response.text);
+//             // Reset the form after submission
+//             setFormData({
+//               firstName: "",
+//               lastName: "",
+//               email: "",
+//               phone: "",
+//               message: "",
+//             });
+//           },
+//           (error) => {
+//             console.log("FAILED...", error.text);
+//           }
+//         );
+//     }
+//   };
+
