@@ -95,9 +95,9 @@ function OurBeer() {
               Other Beers We Brewed
             </h1>
           </div>
-          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:ml-[15px] max-sm:mt-[30px]">
-            <div className=" flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] max-sm:mb-[36px]">
+          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:mt-[5px] max-sm:h-[150px] h-[300px]">
+            <div className=" flex-1 flex justify-center items-center max-sm:ml-8">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] ">
                 <p>Cambodian Amber Ale / w palm sugar</p>
                 <p>Reahoo Wheat Beer</p>
                 <p>Princeps Imperial IPA</p>
@@ -105,8 +105,8 @@ function OurBeer() {
                 <p>Coffee Milk Stout</p>
               </div>
             </div>
-            <div className="flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] max-sm:mb-[53px]">
+            <div className="flex-1 flex justify-center items-center ">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px]">
                 <p>Bassac Hoppy Lager</p>
                 <p>Tropical Mango Ale</p>
                 <p>Sundown Dark Lager</p>
