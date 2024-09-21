@@ -125,11 +125,13 @@ function Navbar() {
                 STORY
               </Link>
             </li>
+
             <li>
               <Link to="/ourbeer" className="hover:text-gray-400">
                 OUR BEER
               </Link>
             </li>
+
             <li className="relative">
               <Link
                 to="/service"
