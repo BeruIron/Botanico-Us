@@ -35,13 +35,11 @@ function Event() {
           />
         </div>
       </div>
-
       <div className="h-[750px] bg-white max-sm:h-[650px]">
         <div className="flex justify-between h-[650px] items-center w-[80%] mx-auto  max-sm:items-center space-x-5 max-sm:flex-col">
           <div className="flex flex-col items-center max-sm:items-center max-sm:mt-5">
             <img
               className="w-[500px] h-[300px] object-cover max-sm:h-[150px] max-sm:w-[350px]"
-
               src={img}
               alt="Main Beer"
             />
@@ -53,7 +51,6 @@ function Event() {
               alt="Beer Event"
             />
           </div>
-
           <div className="justify-between flex space-x-10 max-sm:mb-[10%]">
             <div className="bg-red-600 h-[350px] px-[5px] max-sm:mt-5 max-sm:h-[200px] max-sm:px-[2px] "></div>
 
@@ -75,7 +72,6 @@ function Event() {
                 our German brew master Marco.
               </p>
             </div>
-
           </div>
         </div>
       </div>

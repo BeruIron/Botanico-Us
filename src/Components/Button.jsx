@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Button({ name, color, onClick, }) {
+
   return (
     <button
 
