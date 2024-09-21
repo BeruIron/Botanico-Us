@@ -43,12 +43,12 @@ function Navbar() {
         <ul className="absolute left-0 mt-2 w-48 bg-gray-700 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <li>
             <Link to="/event" className="block px-4 py-2 hover:bg-gray-600">
-              Event
+              Events
             </Link>
           </li>
           <li>
             <Link to="/testing" className="block px-4 py-2 hover:bg-gray-600">
-              Testing Beer
+            Beer Testing 
             </Link>
           </li>
           <li>
@@ -56,7 +56,7 @@ function Navbar() {
               to="/restaurant"
               className="block px-4 py-2 hover:bg-gray-500"
             >
-              Restaurant
+              Restaurants
             </Link>
           </li>
         </ul>
@@ -144,7 +144,7 @@ function Navbar() {
                     to="/event"
                     className="block px-4 py-2 hover:bg-gray-500"
                   >
-                    Event
+                    Events
                   </Link>
                 </li>
                 <li>
@@ -152,7 +152,7 @@ function Navbar() {
                     to="/testing"
                     className="block px-4 py-2 hover:bg-gray-500"
                   >
-                    Testing Beer
+                    Beer Testing 
                   </Link>
                 </li>
                 <li>
@@ -160,7 +160,7 @@ function Navbar() {
                     to="/restaurant"
                     className="block px-4 py-2 hover:bg-gray-500"
                   >
-                    Restaurant
+                    Restaurants
                   </Link>
                 </li>
               </ul>
@@ -193,3 +193,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

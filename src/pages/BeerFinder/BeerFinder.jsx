@@ -152,7 +152,7 @@ const BeerFinder = () => {
 
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
           <div className="text-center px-4 md:px-8 lg:px-16">
-            <h1 className="text-white text-[20px] md:text-5xl font-abc font-bold mb-4">
+            <h1 className="text-white text-[30px] max-sm:text-[20px] font-abc font-bold mb-4">
               Botanico Brewing Company
             </h1>
           </div>
@@ -161,13 +161,7 @@ const BeerFinder = () => {
 
       <div className="container mx-auto px-4 py-8 pb-16">
         <div className="relative w-full px-4 md:px-10 py-4">
-          <div className="absolute top-0 right-0 mt-2 mr-2">
-            <img
-              className="w-[100px] h-[80px]"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/918px-NASA_logo.svg.pngBotanico_BBox_logo-01.png"
-              alt="logo"
-            />
-          </div>
+         
 
           <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="text-center md:w-2/3 md:text-left">

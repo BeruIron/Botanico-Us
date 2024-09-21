@@ -8,8 +8,9 @@ import OurBeer from './pages/OurBeer/OurBeer';
 import Detail from './pages/OurBeer/Detail';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
-import Restaurant from './pages/ServicePage/Restaurant';
+import Restaurant from './pages/ServicePage/Restaurent'
 import Story from './pages/StoryPage/Story';
+import Service from './pages/ServicePage/Service';
 
 
 
@@ -18,7 +19,7 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/restaurant" element={<Restaurant />} />
+        <Route path="/restaurant" element={<Restaurant   />} />
             <Route path="/story" element={<Story />} />
             <Route path="/ourBeer" element={<OurBeer />} />
             <Route path="/ourBeer/detail" element={<Detail />} />
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/testing" element={<TestingBeer />} />
             <Route path="/taproom" element={<Taproom />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/service" element={<Service />} />
            
             
 
