@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function ProductCard({ title1, title2,image1, image2, titlestyle }) {
+function ProductCard({id, title1, title2,image1, image2, titlestyle, className }) {
     return (
-        <div className="rounded shadow-lg bg-white w-[547px] h-[658px] m-4 max-sm:h-[500px]">
-          
+        
+        <div className={`rounded shadow-lg bg-white w-[547px] h-[658px] m-4 max-sm:h-[500px] ${className}`} id={id}>
+
             <div className="flex gap-1 bg-red-5">
                 
                 <div className="flex-1 bg-red-700 w-full">
@@ -21,6 +23,7 @@ function ProductCard({ title1, title2,image1, image2, titlestyle }) {
                 <div className={titlestyle}>{title2} </div>
             </div>
         </div>
+        
     );
 }
 

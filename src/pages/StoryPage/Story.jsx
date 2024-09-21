@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "../../Components/Navbar";
 import Sa from "../../Components/SlideAutomatic";
@@ -64,7 +65,7 @@ function Story() {
           of drinking to a more sophisticated and responsible way,” says Marco
           Günther, the CEO and brew master of Botanico Brewing Co.
         </p>
-        <h1 className="pt-4 md:pt-6 text-[25px] md:text-2xl lg:text-3xl font-bold">
+        <h1 className="pt-4 md:pt-6 text-[25px] max-sm:text-[20px] md:text-2xl lg:text-3xl font-bold">
           The Real Cambodian Craft Beer
         </h1>
       </div>
@@ -77,8 +78,8 @@ function Story() {
         />
       </div>
 
-      <div className="flex justify-center items-center mt-4 pb-8">
-        <Button name="LearnMore" color="Button-black" />
+      <div className="flex justify-center items-center pb-8">
+      <Button name="LearnMore" color="Button-black" />
       </div>
 
       <Footer />
@@ -87,4 +88,3 @@ function Story() {
 }
 
 export default Story;
-
