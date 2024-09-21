@@ -38,7 +38,7 @@ function Sa() {
     };
 
     return (
-        <div className="w-screen h-screen m-auto relative">
+        <div className="w-screen h-[70vh] m-auto relative">
             
             <div
                 style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
@@ -48,8 +48,8 @@ function Sa() {
 
             <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
                 <div className="text-center px-4 md:px-8 lg:px-16">
-                    <h1 className="text-white text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">Botanico Brewing Company</h1>
-                    <button className="w-[150px] h-[50px] text-white bg-slate-400 my-1  hover:bg-gray-600">
+                    <h1 className="text-white text-[20px] font-abc font-bold md:text-5xl  mb-4">Botanico Brewing Company</h1>
+                    <button className="w-[150px] h-[50px] text-[15px] font-abc font-bold text-white bg-slate-400 my-1  hover:bg-gray-600">
                         View Products
                     </button>
                 </div>
