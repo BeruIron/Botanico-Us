@@ -31,7 +31,9 @@ function OurBeer() {
       <div className="min-w-full min-h-full">
         <div className="flex justify-center items-center w-full text-center mt-[95px] max-sm:h-[5px]">
           <img
+
             className="w-[4%] absolute right-0 mb-[90px] mr-7 max-sm:mb-[100px]"
+
             src={B}
             alt="Botanico Logo"
           />
