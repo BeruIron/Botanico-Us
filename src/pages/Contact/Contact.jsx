@@ -23,10 +23,10 @@ const ContactForm = () => {
       [name]: value,
     }));
 
-    // Clear the error when the user starts typing
+   
     setErrors((prevErrors) => ({
       ...prevErrors,
-      [name]: "", // Clear the specific error
+      [name]: "", 
     }));
   };
 
@@ -39,7 +39,7 @@ const ContactForm = () => {
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Email is invalid.";
     }
-    // if (!formData.message) newE/???????????????????rrors.message = "Message is required.";
+  
     if (!formData.phone) {
       newErrors.phone = "Phone number is required.";
     } else if (!/^[0-9+]{7,10}$/.test(formData.phone)) {
@@ -163,7 +163,7 @@ const ContactForm = () => {
             <Button type="submit" name="Submit" color="Button-black" className="max-sm:w-[25%] max-sm:h-[40px] max-sm:py-2" />
           </div>
           <div>
-            <ToastContainer position="top-right" autoClose={5000} />
+            <ToastContainer position="top-right" autoClose={5000}/>
           </div>
         </form>
         
