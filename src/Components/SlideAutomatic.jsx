@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
-function Sa () {
-    const [currentIndex, setCurrentindex] =
-    useState(0)
+
+function Sa() {
+    const [currentIndex, setCurrentIndex] = useState(0);
     const slides = [
         {
             url: "https://staticg.sportskeeda.com/editor/2022/08/812fc-16598097467269.png",
@@ -27,23 +27,35 @@ function Sa () {
     useEffect(() => {
         const autoplay = setInterval(() => {
             nextSlide();
-
         }, 3000);
-        return () => clearInterval(autoplay)
+        return () => clearInterval(autoplay);
     }, [currentIndex]);
 
-    const preSlide = () => {
-        setCurrentindex((preIndex) => (preIndex === 0 ? slides.length - 1: preIndex - 1))
-    }
     const nextSlide = () => {
-        setCurrentindex((preIndex) => (preIndex === slides.length -1 ? 0: preIndex + 1))
-    }
-    return(
-        <div className="max-w-[1800px] h-[980px] w-full m-auto relative group">
-            <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className="w-full h-full bg-cover duration-500"></div>
+        setCurrentIndex((prevIndex) =>
+            prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+        );
+    };
+
+    return (
+        <div className="w-screen h-[70vh] m-auto relative">
+            
+            <div
+                style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+                className="w-full h-full bg-cover bg-center duration-500"
+                ></div>
+                
+
+            <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
+                <div className="text-center px-4 md:px-8 lg:px-16">
+                    <h1 className="text-white text-[20px] font-abc font-bold md:text-5xl  mb-4">Botanico Brewing Company</h1>
+                    <button className="w-[150px] h-[50px] text-[15px] font-abc font-bold text-white bg-slate-400 my-1  hover:bg-gray-600">
+                        View Products
+                    </button>
+                </div>
+            </div>
         </div>
-
-    )
-
+    );
 }
+
 export default Sa;

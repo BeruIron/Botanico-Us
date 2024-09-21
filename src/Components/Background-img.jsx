@@ -9,6 +9,8 @@ function BackgroundSection({ backgroundImage, children, className }) {
                 backgroundImage: `url(${backgroundImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
+                height:'80vh',
+               
                
             }}
         >
