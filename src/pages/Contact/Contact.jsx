@@ -4,7 +4,6 @@ import Button from "../../Components/Button";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "../../Components/Footer";
-
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -22,56 +21,47 @@ const ContactForm = () => {
       ...prevData,
       [name]: value,
     }));
-
-   
     setErrors((prevErrors) => ({
       ...prevErrors,
       [name]: "", 
     }));
   };
-
   const validateForm = () => {
     const newErrors = {};
     if (!formData.firstName) newErrors.firstName = "First name is required.";
     if (!formData.lastName) newErrors.lastName = "Last name is required.";
+
     if (!formData.email) {
       newErrors.email = "Email is required.";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Email is invalid.";
     }
-  
     if (!formData.phone) {
       newErrors.phone = "Phone number is required.";
     } else if (!/^[0-9+]{7,10}$/.test(formData.phone)) {
       newErrors.phone = "Phone number is invalid. It should be 7 to 10 digits.";
     }
-
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-
   const handleSubmit = async (event) => {
     event.preventDefault();
-
     if (!validateForm()) return;
     setResult("Sending....");
     const form = event.target;
     const formData = new FormData(form);
     formData.append("access_key", "0761e4c9-60ac-4f1e-b89e-e3bdf13f3a31");
-
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData,
       });
-
       const data = await response.json();
       if (formData) {
         toast.success("You have successfully Send a Message.");
       } else {
         toast.error("fail to send message");
       }
-
       if (data.success) {
         form.reset();
         setFormData({
@@ -89,12 +79,9 @@ const ContactForm = () => {
       console.error("Error", error);
     }
   };
-
-
   return (
     <>
       <Navbar />
-
       <div className="w-[50%] mx-auto my-10 p-6 rounded-lg max-sm:w-[90%]">
         <h1 className="text-3xl font-bold text-blue-600 text-center mt-[20px]">CONTACT US</h1>
 
@@ -113,6 +100,7 @@ const ContactForm = () => {
           </div>
           <div>
             <label className="block text-gray-700 font-bold text-[18px] max-sm:text-[15px]">Last name</label>
+
             <input
               type="text"
               name="lastName"
@@ -176,3 +164,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+

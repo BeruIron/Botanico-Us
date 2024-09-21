@@ -13,7 +13,8 @@ function Navbar() {
   };
 
   const content = (
-    <ul className="flex gap-6 text-center text-white ml-[100px]">
+    <ul className="flex gap-6 text-center font-abc font-bold text-[15px] text-white ">
+    
       <li>
         <Link to="/" className="hover:text-gray-400">
           HOME
@@ -25,18 +26,19 @@ function Navbar() {
         </Link>
       </li>
       <li>
-
         <Link to="/OurBeer" className="hover:text-gray-400">
+
           OUR BEER
         </Link>
       </li>
       <li className="relative group">
-
-        <Link to="/service" className="flex items-center hover:text-gray-400 focus:outline-none">
+        <Link
+          to="/service"
+          className="flex items-center hover:text-gray-400 focus:outline-none"
+        >
           <span>SERVICE</span>
           <RiArrowDownSFill className="ml-2" />
         </Link>
-
 
         <ul className="absolute left-0 mt-2 w-48 bg-gray-700 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <li>
@@ -50,14 +52,12 @@ function Navbar() {
             </Link>
           </li>
           <li>
-
             <Link
               to="/restaurant"
               className="block px-4 py-2 hover:bg-gray-500"
             >
               Restaurant
             </Link>
-
           </li>
         </ul>
       </li>
@@ -85,14 +85,14 @@ function Navbar() {
   );
 
   return (
-    <nav className="relative  bg-gray-800">
-      <div className=" flex justify-between items-center px-4 py-4">
+    <nav className="relative font-abc font-bold text-[15px]">
+      <div className=" flex justify-between  w-[90%] mx-auto items-center px-4 py-4">
         <div className="overflow-hidden">
           <Link to="/">
             <img
               src={Image}
               alt="BOTANICO Logo"
-              className="mr-[50px] h-50 w-[180px] max-sm:h-[50px] max-sm:w-[130px]"
+              className=" h-[70px] w-[180px] max-sm:h-[50px] max-sm:w-[130px]"
             />
           </Link>
         </div>
@@ -112,6 +112,9 @@ function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-gray-700 text-white">
           <ul className="flex flex-col items-center gap-6 py-4">
+          <li>
+        <FaLanguage className=" text-white  text-5xl " />
+      </li>
             <li>
               <Link to="/" className="hover:text-gray-400">
                 HOME
@@ -128,9 +131,10 @@ function Navbar() {
               </Link>
             </li>
             <li className="relative">
-
-              <Link to="/service" className="flex items-center hover:text-gray-400 focus:outline-none">
-
+              <Link
+                to="/service"
+                className="flex items-center hover:text-gray-400 focus:outline-none"
+              >
                 <span>SERVICE</span>
                 <RiArrowDownSFill className="ml-2" />
               </Link>

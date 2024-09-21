@@ -4,8 +4,11 @@ import { useState, useEffect } from "react";
 import SlideTap from "../../Components/SlideTap";
 import Footer from "../../Components/Footer";
 import Button from "../../Components/Button";
+import { useNavigate } from 'react-router-dom';
+
 
 function Taproom() {
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
     {
@@ -148,8 +151,13 @@ function Taproom() {
               high-quality and locally sourced ingredients, perfectly combined
               to your plates!
             </p>
+       
 
-            <Button color="Button-black" name="Veiw All Menu" />
+            <Button 
+      onClick={() => navigate('/menu')} 
+      color="Button-black" 
+      name="View All Menu" 
+    />
           </div>
 
           <div className="lg:w-1/2 p-4">

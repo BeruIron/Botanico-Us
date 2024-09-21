@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import BackgroundSection from "../../Components/Background-img";
+import Sa from "../../Components/SlideAutomatic";
 import B from "../../image/Botanico_BBox_logo-01.png";
 
 function Detail() {
@@ -44,17 +44,11 @@ function Detail() {
 
   return (
     <>
-      <BackgroundSection
-        backgroundImage="https://lh3.googleusercontent.com/pw/AP1GczObCs2Ocqkf7SGQuEsyjdQXY_Jv2L_WIqt9wEDoIovnwUJnRpn51cwIN_LvNo4NCqEwpT5_47vLfyOHxFmfZqY7m3qQSp94s9zlmMjPTFUdcYDJkctWHceiNOeLpOoYNdRlhElcltm-laJTwzjDQ8Sy=w1449-h966-s-no-gm?authuser=0"
-        className="relative h-screen  max-sm:h-[500px]"
-      >
+     <div className="bg-black">
         <Navbar />
-        <div className="bg-black bg-opacity-40 p-4 text-center mt-[35%] w-[400px] mx-auto max-sm:w-[250px] max-sm:mt-[250px]">
-          <h1 className="text-white text-7xl font-montserrat font-bold max-sm:text-3xl ">
-            Our Beers
-          </h1>
-        </div>
-      </BackgroundSection>
+      </div>
+
+      <Sa />
 
       <div className="min-w-full min-h-full">
         <div className="flex justify-center items-center w-full text-center mt-[90px] max-sm:mt-[5%]">
