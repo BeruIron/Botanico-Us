@@ -18,6 +18,7 @@ import Menu12 from "../../image/Menu12.png";
 import Menu13 from "../../image/Menu13.png";
 import Footer from "../../Components/Footer";
 
+
 const Menu = () => {
   return (
     <>
@@ -25,9 +26,9 @@ const Menu = () => {
         <Navbar></Navbar>
       </BackgroundSection>
       <div className="border-4 border-gray-100">
-        <div className="flex justify-between items-center bg-white h-[100px] w-[90%] mx-auto ">
-          <h1 className=" -mb-[10px] text-[30px] font-abc font-extrabold max-sm:text-[20px] max-sm:ml-[30px]">
-            BOTANICO MENU{" "}
+        <div className="flex justify-between items-center bg-white h-[100px] w-[90%] max-sm:w-[100%] max-sm:h-[70px] mx-auto">
+          <h1 className=" text-[30px]  font-abc font-extrabold max-sm:text-[15px] max-sm:ml-[30px]">
+            BOTANICO MENU
           </h1>
           <img
             className="w-[80px] mr-[50px] max-sm:w-[50px] max-sm:mr-[30px]"
@@ -37,21 +38,22 @@ const Menu = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center flex-col">
-        <img src={Menu1} alt="" />
-        <img src={Menu2} alt="" />
-        <img src={Menu3} alt="" />
-        <img src={Menu4} alt="" />
-        <img src={Menu5} alt="" />
-        <img src={Menu6} alt="" />
-        <img src={Menu7} alt="" />
-        <img src={Menu8} alt="" />
-        <img src={Menu9} alt="" />
-        <img src={Menu10} alt="" />
-        <img src={Menu11} alt="" />
-        <img src={Menu12} alt="" />
-        <img src={Menu13} alt="" />
+      <div className="overflow-x-scroll h-[100vh] flex flex-col items-center">
+        <img src={Menu1} alt="Menu 1" />
+        <img src={Menu2} alt="Menu 2" />
+        <img src={Menu3} alt="Menu 3" />
+        <img src={Menu4} alt="Menu 4" />
+        <img src={Menu5} alt="Menu 5" />
+        <img src={Menu6} alt="Menu 6" />
+        <img src={Menu7} alt="Menu 7" />
+        <img src={Menu8} alt="Menu 8" />
+        <img src={Menu9} alt="Menu 9" />
+        <img src={Menu10} alt="Menu 10" />
+        <img src={Menu11} alt="Menu 11" />
+        <img src={Menu12} alt="Menu 12" />
+        <img src={Menu13} alt="Menu 13" />
       </div>
+
       <Footer></Footer>
     </>
   );

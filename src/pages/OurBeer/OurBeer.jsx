@@ -31,7 +31,9 @@ function OurBeer() {
       <div className="min-w-full min-h-full">
         <div className="flex justify-center items-center w-full text-center mt-[95px] max-sm:h-[5px]">
           <img
-            className="w-[100px] max-sm:w-[50px] absolute right-0 mb-[90px] mr-7 "
+
+            className="w-[4%] absolute right-0 mb-[90px] mr-7 max-sm:mb-[100px]"
+
             src={B}
             alt="Botanico Logo"
           />
@@ -40,7 +42,7 @@ function OurBeer() {
           </h1>
         </div>
 
-        <div className="grid grid-cols-2 gap-8  container mx-auto px-4 mt-[-0.5%] max-sm:grid-cols-1 max-sm:gap-1 max-sm:h-[1800px]">
+        <div className="grid grid-cols-2 gap-8  container mx-auto px-4 mt-[-0.5%] max-sm:grid-cols-1 max-sm:gap-1 max-sm:h-[2055px]">
           {products.map((product) => (
             <div
               key={product.id}
@@ -67,7 +69,7 @@ function OurBeer() {
                 </div>
 
                 <div className="p-4 text-center flex justify-center items-center flex-col  h-[225px] max-sm:h-[50px] max-sm:mt-[28px]">
-                  <h2 className="font-bold text-3xl max-sm:text-[20px]">
+                  <h2 className="font-bold text-3xl max-sm:text-[20px] max-sm:mt-[20px]  max-sm:h-[25px]">
                     {product.title1}
                   </h2>
                   <h2
@@ -83,15 +85,15 @@ function OurBeer() {
         </div>
 
         <div>
-          <hr className="w-[759px] h-0.5 mx-auto mt-[10px] border-black border-2 my-1 max-sm:w-[250px]" />
+          <hr className="w-[759px] h-0.5 mx-auto mt-[10px] border-black border-2 my-1 max-sm:w-[250px] max-sm:border" />
           <div className="text-center">
             <h1 className="text-[#124734] mt-[80px] max-sm:mt-[40px] font-bold font-montserrat text-4xl max-sm:text-[20px] ">
               Other Beers We Brewed
             </h1>
           </div>
-          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:ml-[15px] max-sm:mt-[30px]">
-            <div className=" flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] max-sm:mb-[36px]">
+          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:mt-[5px] max-sm:h-[150px] h-[300px]">
+            <div className=" flex-1 flex justify-center items-center max-sm:ml-8">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] ">
                 <p>Cambodian Amber Ale / w palm sugar</p>
                 <p>Reahoo Wheat Beer</p>
                 <p>Princeps Imperial IPA</p>
@@ -99,8 +101,8 @@ function OurBeer() {
                 <p>Coffee Milk Stout</p>
               </div>
             </div>
-            <div className="flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] max-sm:mb-[53px]">
+            <div className="flex-1 flex justify-center items-center ">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px]">
                 <p>Bassac Hoppy Lager</p>
                 <p>Tropical Mango Ale</p>
                 <p>Sundown Dark Lager</p>
@@ -118,3 +120,71 @@ function OurBeer() {
 }
 
 export default OurBeer;
+
+
+
+// const ContactForm = () => {
+//   const [formData, setFormData] = useState({
+//     firstName: "",
+//     lastName: "",
+//     email: "",
+//     phone: "",
+//     message: "",
+//   });
+//   const [errors, setErrors] = useState({});
+
+//   const handleChange = (e) => {
+//     setFormData({
+//       ...formData,
+//       [e.target.name]: e.target.value,
+//     });
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     const validationError = {};
+    
+//     // Form validation
+//     if (!formData.firstName.trim()) {
+//       validationError.firstName = "First name is required";
+//     }
+//     if (!formData.lastName.trim()) {
+//       validationError.lastName = "Last name is required";
+//     }
+//     if (!formData.email.trim()) {
+//       validationError.email = "Email is required";
+//     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+//       validationError.email = "Email is not valid";
+//     }
+
+//     // Set validation errors
+//     setErrors(validationError);
+
+//     // If there are no errors, proceed with form submission
+//     if (Object.keys(validationError).length === 0) {
+//       emailjs
+//         .send(
+//           "service_o02v2nn", // Replace with your actual service ID
+//           "template_bdlk1up", // Replace with your actual template ID
+//           formData, // The data to be sent
+//           "qFiAyRLjUmVLx2ei5" // Replace with your actual public key
+//         )
+//         .then(
+//           (response) => {
+//             console.log("SUCCESS!", response.status, response.text);
+//             // Reset the form after submission
+//             setFormData({
+//               firstName: "",
+//               lastName: "",
+//               email: "",
+//               phone: "",
+//               message: "",
+//             });
+//           },
+//           (error) => {
+//             console.log("FAILED...", error.text);
+//           }
+//         );
+//     }
+//   };
+
