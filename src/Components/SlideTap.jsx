@@ -15,7 +15,6 @@ function SlideTap() {
         { url: img4 },
         { url: img5 },
     ];
-
     useEffect(() => {
         const autoplay = setInterval(nextSlide, 3000);
         return () => clearInterval(autoplay);
