@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Image from "../image/BotanicoCBG_Logo_wbox-01.png";
+import i18n from 'i18next';
 
-import { FaLanguage } from "react-icons/fa";
+// import { FaLanguage } from "react-icons/fa";
 import { RiMenu3Fill, RiArrowDownSFill } from "react-icons/ri";
+import { changeLanguage } from "i18next";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -101,7 +103,13 @@ function Navbar() {
           />
         </div>
 
-        <FaLanguage className="hidden md:block text-white text-5xl mr-[50px]" />
+        <div className="flex p-2 bg-slate-300 gap-3">
+        {/* <FaLanguage className="hidden md:block text-white text-5xl mr-[50px]" /> */}
+        <Link  onClick={() => changeLanguage('en')} >ENG</Link>
+        <div> | </div>
+        <Link onClick={() => changeLanguage('kh')} >KH</Link>
+        </div>
+
       </div>
 
       {isMenuOpen && (
