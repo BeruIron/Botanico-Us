@@ -17,14 +17,18 @@ function Story() {
       <Title titleText="WE ARE BOTANICO"></Title>
       <div className=" w-[70%] max-sm:w-[90%] mx-auto">
         <p className="text-[20px]  font-abc leading-10 h-[130px] max-sm:leading-7 items-center max-sm:text-[10px] max-sm:h-[150px] flex">
-          beer and breweries feel inclusive, not intimidating. In a world full
+
+          beer and breweries feel including, not intimidating. In a world full
+
           of craft beer options, we want to bring our Khmer community together
           by fostering genuine connections through our shared passion for
           crafting amazing beers and creating unforgettable experiences.
         </p>
       </div>
 
-      <Title titleText="Our Story"></Title>
+
+      <Title titleText="OUR STORY"></Title>
+
       <div className="w-[70%] max-sm:w-[90%] mx-auto">
         <div className="flex max-sm:flex-col flex-row mt-[50px]  mx-auto max-sm:space-x-0 space-x-10">
           <img
@@ -60,9 +64,11 @@ function Story() {
           of drinking to a more sophisticated and responsible way,” says Marco
           Günther, the CEO and brew master of Botanico Brewing Co.
         </p>
-        <p className="font-abc font-extrabold  text-[30px] max-sm:mt-[50px] max-sm:text-[20px]"> The Real Cambodian Craft Beer</p>
+
+        <p className="font-abc font-bold  text-[30px] max-sm:mt-[50px] max-sm:text-[20px]"> The Real Cambodian Craft Beer</p>
 
         </div>
+
 
 
        
@@ -74,7 +80,8 @@ function Story() {
           />
         </div>
 
-        <div className="flex justify-center items-center h-[150px] max-sm:h-[50px]">
+        <div className="flex justify-center items-center font-abc h-[150px] max-sm:h-[50px]">
+
           <Button name="LearnMore" color="Button-black" />
         </div>
       </div>
@@ -85,4 +92,3 @@ function Story() {
 }
 
 export default Story;
-

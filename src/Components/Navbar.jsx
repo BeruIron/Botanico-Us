@@ -43,12 +43,12 @@ function Navbar() {
         <ul className="absolute left-0 mt-2 w-48 bg-gray-700 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <li>
             <Link to="/event" className="block px-4 py-2 hover:bg-gray-600">
-              Event
+              Events
             </Link>
           </li>
           <li>
             <Link to="/testing" className="block px-4 py-2 hover:bg-gray-600">
-              Testing Beer
+            Beer Testing 
             </Link>
           </li>
           <li>
@@ -56,7 +56,7 @@ function Navbar() {
               to="/restaurant"
               className="block px-4 py-2 hover:bg-gray-500"
             >
-              Restaurant
+              Restaurants
             </Link>
           </li>
         </ul>
@@ -86,13 +86,13 @@ function Navbar() {
 
   return (
     <nav className="relative font-abc font-bold text-[15px]">
-      <div className=" flex justify-between  w-[90%] mx-auto items-center px-4 py-4">
-        <div className="overflow-hidden">
+      <div className=" flex justify-between  w-[95%] mx-auto items-center px-4 py-4">
+        <div className="overflow-hidden ">
           <Link to="/">
             <img
               src={Image}
               alt="BOTANICO Logo"
-              className=" h-[70px] w-[180px] max-sm:h-[50px] max-sm:w-[130px]"
+              className=" h-[100px] w-[180px] max-sm:h-[60px] max-sm:w-[130px] "
             />
           </Link>
         </div>
@@ -146,7 +146,7 @@ function Navbar() {
                     to="/event"
                     className="block px-4 py-2 hover:bg-gray-500"
                   >
-                    Event
+                    Events
                   </Link>
                 </li>
                 <li>
@@ -154,7 +154,7 @@ function Navbar() {
                     to="/testing"
                     className="block px-4 py-2 hover:bg-gray-500"
                   >
-                    Testing Beer
+                    Beer Testing 
                   </Link>
                 </li>
                 <li>
@@ -162,7 +162,7 @@ function Navbar() {
                     to="/restaurant"
                     className="block px-4 py-2 hover:bg-gray-500"
                   >
-                    Restaurant
+                    Restaurants
                   </Link>
                 </li>
               </ul>
@@ -195,3 +195,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

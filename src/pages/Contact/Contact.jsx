@@ -81,7 +81,10 @@ const ContactForm = () => {
   };
   return (
     <>
-      <Navbar />
+     <div className="bg-black text-white">
+        <Navbar />
+      </div>
+     
       <div className="w-[50%] mx-auto my-10 p-6 rounded-lg max-sm:w-[90%]">
         <h1 className="text-3xl font-bold text-blue-600 text-center mt-[20px]">CONTACT US</h1>
 
