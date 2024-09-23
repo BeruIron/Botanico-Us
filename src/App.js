@@ -13,6 +13,7 @@ import Home from './pages/Home/Home';
 import Restaurant from './pages/ServicePage/Restaurent'
 import Story from './pages/StoryPage/Story';
 import Service from './pages/ServicePage/Service';
+import Blog from './pages/Blog/Blog';
 
 
 
@@ -33,6 +34,7 @@ const App = () => {
             <Route path="/taproom" element={<Taproom />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/service" element={<Service />} />
+            <Route path="/blog" element={<Blog/>} />
            
             
 
