@@ -44,11 +44,13 @@ function Detail() {
 
   return (
     <>
-     <div className="bg-black">
+      <div className="bg-black">
         <Navbar />
       </div>
 
       <Sa />
+        
+      
 
       <div className="min-w-full min-h-full">
         <div className="flex justify-center items-center w-full text-center mt-[90px] max-sm:mt-[5%]">
@@ -57,21 +59,21 @@ function Detail() {
             src={B}
             alt="Botanico Logo"
           />
-          <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] max-sm:mt-[13px]">
+          <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] max-sm:mb-[15px]">
             Core Beers
           </h1>
         </div>
         {product && (
           <div className="container mx-auto py-20 mt-[0.3%] ">
             <div className="flex flex-col  lg:flex-row max-sm:mt-[-80px]">
-              <div className="flex-1 max-sm:w-[400px]">
+              <div className="flex-1 max-sm:w-full bg-red-600">
                 <img
                   src={product.image}
                   alt={product.title1}
-                  className="w-full h-[547px] object-cover bg-slate-200  max-sm:h-[100%] max-sm:w-[90%] max-sm:mt-[28px]"
+                  className="w-full h-[547px] object-cover bg-slate-200  max-sm:h-[100%] max-sm:w-[100%]"
                 />
               </div>
-              <div className="flex-1 flex flex-col justify-center ml-[3%] max-sm:mt-[30px]">
+              <div className="flex-1 flex flex-col justify-center  max-sm:mt-[30px]">
                 <div className=" ml-[5%] space-y-5">
                   <div className="text-left font-montserrat space-y-2 max-sm:space-y-0">
                     <h1 className="font-bold text-3xl text-black max-sm:text-[20px]">
@@ -90,7 +92,7 @@ function Detail() {
                     <h5>IBU: {product.ibu}</h5>
                   </div>
 
-                  <div className="text-2xl w-[710px] max-sm:w-[300px]  font-montserrat text-justify max-sm:text-[15px]">
+                  <div className="text-2xl w-[710px] max-sm:w-[94%] font-montserrat text-justify max-sm:text-[15px]">
                     <p className="leading-[1.8]">{product.description}</p>
                   </div>
                 </div>
@@ -142,14 +144,14 @@ function Detail() {
         )}
 
         <div className=" relative bottom-[40px]">
-          <hr className="w-[759px] h-0.5 mx-auto border-2 border-black mt-[10px] my-1 max-sm:w-[250px] border-1" />
+          <hr className="w-[759px] h-0.5 mx-auto border-2 border-black mt-[40px] my-1 max-sm:w-[250px] border-1 max-sm:border max-sm:mt-[10px]" />
           <div className="text-center">
-            <h1 className="text-[#124734] mt-[80px] max-sm:mt-[50px] font-bold font-montserrat text-4xl max-sm:text-[20px]">
+            <h1 className="text-[#124734] mt-[80px] max-sm:mt-[40px] font-bold font-montserrat text-4xl max-sm:text-[20px]">
               Other Beers We Brewed
             </h1>
           </div>
-          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:ml-[15px]">
-            <div className=" flex-1 flex justify-center items-center">
+          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:mt-[45px] max-sm:h-[70px]">
+            <div className=" flex-1 flex justify-center items-center max-sm:ml-8">
               <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] ">
                 <p>Cambodian Amber Ale / w palm sugar</p>
                 <p>Reahoo Wheat Beer</p>
@@ -158,8 +160,8 @@ function Detail() {
                 <p>Coffee Milk Stout</p>
               </div>
             </div>
-            <div className="flex-1 flex justify-center items-center">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] max-sm:mb-[15px]">
+            <div className="flex-1 flex justify-center items-center ">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px]">
                 <p>Bassac Hoppy Lager</p>
                 <p>Tropical Mango Ale</p>
                 <p>Sundown Dark Lager</p>
