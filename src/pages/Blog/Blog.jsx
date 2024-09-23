@@ -3,6 +3,12 @@ import axios from "axios";
 import Sa from "../../Components/SlideAutomatic";
 import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
+import img1 from "../../image/servise.png";
+import img2 from "../../image/beer (53).jpg";
+import img3 from "../../image/beer (37).jpg";
+import img4 from "../../image/beer (47).jpg";
+import img5 from "../../image/restaurant.png";
+import img6 from "../../image/beer (60).jpg";
 
 const BASE_URL = "https://botanico-backend.onrender.com";
 
@@ -134,42 +140,43 @@ const Blog = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6 p-5 lg:p-20 bg-gray-100 w-[90%] lg:w-[80%] mx-auto">
-        <div className="w-full lg:w-2/3 relative">
-          {selectedPost && (
-            <BlogPost
-              image={
-                selectedPost.attributes.Images?.data[selectedImageIndex]?.attributes?.formats?.large?.url || null
-              }
-              title={selectedPost.attributes.title}
-              date={selectedPost.attributes.Date}
-              description={selectedPost.attributes.Description} // Use Description field for rich text
-            />
-          )}
-
-          <button onClick={prevImage} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-100 text-black py-2 px-4 rounded-md">
-            &lt;
-          </button>
-          <button onClick={nextImage} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-100 text-black py-2 px-4 rounded-md">
-            &gt;
-          </button>
+        <div className="w-full lg:w-2/3">
+          <BlogPost
+            image={img1}
+            title="Botanico Craft Beer Garden"
+            date="Tue, Aug 27, 2024"
+            description="Our craft beer garden is open every day with excellent service. We also offer discounts every Saturday and Sunday."
+          />
         </div>
 
         <div className="w-full lg:w-1/4">
           <h2 className="text-2xl mb-4 font-semibold">ALL POSTS</h2>
           <div className="max-h-[600px] overflow-y-auto space-y-4">
-            {posts.map((post, index) => {
-              const image = post.attributes.Images?.data[0]?.attributes?.formats?.small?.url || null;
-
-              return (
-                <SidePost
-                  key={index}
-                  image={image}
-                  title={post.attributes.title}
-                  date={post.attributes.Date}
-                  onClick={() => handlePostClick(post)}
-                />
-              );
-            })}
+            <SidePost
+              image={img2}
+              title="Testing beer"
+              date="Tue, Aug 27, 2024"
+            />
+            <SidePost
+              image={img3}
+              title="Side Post Title 2"
+              date="Tue, Aug 27, 2024"
+            />
+            <SidePost
+              image={img4}
+              title="Side Post Title 3"
+              date="Tue, Aug 27, 2024"
+            />
+            <SidePost
+              image={img5}
+              title="Side Post Title 4"
+              date="Tue, Aug 27, 2024"
+            />
+            <SidePost
+              image={img6}
+              title="Side Post Title 5"
+              date="Tue, Aug 27, 2024"
+            />
           </div>
         </div>
       </div>
