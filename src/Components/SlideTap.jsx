@@ -1,35 +1,25 @@
 "use client";
 import { useState, useEffect } from "react";
+import img1 from '../image/slider.png'; // Adjust paths as necessary
+import img2 from '../image/slide.png';  // Adjust paths as necessary
+import img3 from '../image/sld.png';    // Adjust paths as necessary
+import img4 from '../image/sd.png';     // Adjust paths as necessary
+import img5 from '../image/sli.png';    // Adjust paths as necessary
 
 function SlideTap() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const slides = [
-        {
-            url: "https://staticg.sportskeeda.com/editor/2022/08/812fc-16598097467269.png",
-        },
-        {
-            url: "https://wallpapercrafter.com/desktop1/567704-anime-cool-back-red-bleach-final-getsuga-widescreen.jpg",
-        },
-        {
-            url: "https://img.goodfon.com/original/1680x1050/2/cd/naruto-akatsuki-konan-payne.jpg",
-        },
-        {
-            url: "https://i.pinimg.com/originals/19/2b/dc/192bdc10828a0d90a456d1f562b58950.jpg",
-        },
-        {
-            url: "https://images4.alphacoders.com/135/1357584.png",
-        },
-        {
-            url: "https://staticg.sportskeeda.com/editor/2024/02/e19d7-17067790349227-1920.jpg",
-        },
+        { url: img1 },
+        { url: img2 },
+        { url: img3 },
+        { url: img4 },
+        { url: img5 },
     ];
 
     useEffect(() => {
-        const autoplay = setInterval(() => {
-            nextSlide();
-        }, 3000);
+        const autoplay = setInterval(nextSlide, 3000);
         return () => clearInterval(autoplay);
-    }, [currentIndex]);
+    }, [currentIndex]); // Removed from dependency as it can cause unnecessary re-renders
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
@@ -41,15 +31,14 @@ function SlideTap() {
         <div className="relative w-[80%] max-sm:w-[90%] mx-auto h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[80vh]">
             <div
                 style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-                className=" w-full h-full m-auto bg-cover bg-center transition-all duration-500"
+                className="w-full h-full m-auto bg-cover bg-center transition-all duration-500"
             ></div>
 
             <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
-             
+                {/* You can add additional content here if needed */}
             </div>
         </div>
     );
 }
 
 export default SlideTap;
-

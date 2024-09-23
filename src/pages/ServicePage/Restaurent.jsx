@@ -2,11 +2,11 @@ import React from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import Button from "../../Components/Button";
-import img4 from "../../image/beer (37).jpg";
-import img2 from "../../image/beer (37).jpg";
+import img1 from "../../image/servise.png";
+import img2 from "../../image/beer (53).jpg";
 import img3 from "../../image/beer (37).jpg";
-import imgbody1 from "../../image/beer (35).jpg";
-import imgbody2 from "../../image/beer (43) (1).jpg";
+import imgbody1 from "../../image/res1.png";
+import imgbody2 from "../../image/res2.png";
 import QuestionComponent from "../../Components/Question";
 function Restaurant() {
   return (
@@ -20,17 +20,17 @@ function Restaurant() {
           <div className="flex justify-center overflow-hidden mt-[20px] ">
             <img
               className="w-[250px] h-[330px] object-cover bg-orange-400 max-sm:w-[100px] max-sm:h-[150px] flex"
-              src={img2}
+              src={img1}
               alt="Beer 1"
             />
             <img
               className="w-[250px] h-[330px] object-cover bg-amber-900 mx-[10px] max-sm:w-[100px] max-sm:h-[150px] flex"
-              src={img3}
+              src={img2}
               alt="Beer 2"
             />
             <img
               className="w-[250px] h-[330px] object-cover bg-teal-900 max-sm:w-[100px] max-sm:h-[150px]   flex"
-              src={img4}
+              src={img3}
               alt="Beer 3"
             />
           </div>

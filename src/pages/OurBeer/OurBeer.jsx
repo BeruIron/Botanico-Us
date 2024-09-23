@@ -85,7 +85,7 @@ function OurBeer() {
         </div>
 
         <div>
-          <hr className="w-[759px] h-0.5 mx-auto mt-[10px] border-black border-2 my-1 max-sm:w-[250px] max-sm:border" />
+          <hr className="w-[759px] h-0.5 mx-auto mt-[10px] border-black border-2 my-1 max-sm:w-[250px] max-sm:border "/>
           <div className="text-center">
             <h1 className="text-[#124734] mt-[80px] max-sm:mt-[40px] font-bold font-montserrat text-4xl max-sm:text-[20px] ">
               Other Beers We Brewed

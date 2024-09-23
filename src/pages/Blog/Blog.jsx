@@ -5,6 +5,12 @@ import img from "../../image/Botanico_BBox_logo-01.jpg";
 import image from "../../image/beer (35).jpg";
 import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
+import img1 from "../../image/servise.png";
+import img2 from "../../image/beer (53).jpg";
+import img3 from "../../image/beer (37).jpg";
+import img4 from "../../image/beer (47).jpg";
+import img5 from "../../image/restaurant.png";
+import img6 from "../../image/beer (60).jpg";
 
 
 
@@ -62,7 +68,7 @@ const Blog = () => {
 
         <div className="w-full lg:w-2/3">
           <BlogPost
-            image={image}
+            image={img1}
             title="Botanico Craft Beer Garden"
             date="Tue, Aug 27, 2024"
             description="Our craft beer garden is open every day with excellent service. We also offer discounts every Saturday and Sunday."
@@ -73,27 +79,27 @@ const Blog = () => {
           <h2 className="text-2xl mb-4 font-semibold">ALL POSTS</h2>
           <div className="max-h-[600px] overflow-y-auto space-y-4">
             <SidePost
-              image={image}
+              image={img2}
               title="Testing beer"
               date="Tue, Aug 27, 2024"
             />
             <SidePost
-              image={image}
+              image={img3}
               title="Side Post Title 2"
               date="Tue, Aug 27, 2024"
             />
             <SidePost
-              image={image}
+              image={img4}
               title="Side Post Title 3"
               date="Tue, Aug 27, 2024"
             />
             <SidePost
-              image={image}
+              image={img5}
               title="Side Post Title 4"
               date="Tue, Aug 27, 2024"
             />
             <SidePost
-              image={image}
+              image={img6}
               title="Side Post Title 5"
               date="Tue, Aug 27, 2024"
             />

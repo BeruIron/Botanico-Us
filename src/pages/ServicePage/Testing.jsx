@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../../Components/Navbar";
 import QuestionComponent from "../../Components/Question";
-import img2 from "../../image/beer (31).jpg";
-import img3 from "../../image/beer (35).jpg";
-import img4 from "../../image/beer (34).jpg";
+import img1 from "../../image/servise.png";
+import img2 from "../../image/beer (53).jpg";
+import img3 from "../../image/beer (37).jpg";
 import img from "../../image/beer (40).jpg";
 import Button from "../../Components/Button";
 import Footer from "../../Components/Footer";
@@ -19,17 +19,17 @@ function TestingBeer() {
         <div className="flex justify-center overflow-hidden ">
           <img
             className="w-[250px] h-[330px] object-cover bg-orange-400 max-sm:w-[100px] max-sm:h-[150px] flex"
-            src={img2}
+            src={img1}
             alt="Beer 1"
           />
           <img
             className="w-[250px] h-[330px] object-cover bg-amber-900 mx-[10px] max-sm:w-[100px] max-sm:h-[150px] flex"
-            src={img3}
+            src={img2}
             alt="Beer 2"
           />
           <img
             className="w-[250px] h-[330px] object-cover bg-teal-900 max-sm:w-[100px] max-sm:h-[150px]   flex"
-            src={img4}
+            src={img3}
             alt="Beer 3"
           />
         </div>
@@ -50,8 +50,8 @@ function TestingBeer() {
                 alt=""
               />
             </div>
-            <div className="text-[20px]  space-y-5  ">
-              <p className=" leading-[50px] font-abc  max-sm:text-[10px] max-sm:leading-4  flex">
+            <div className="text-[20px]  space-y-5 ">
+              <p className=" leading-[50px] font-abc  max-sm:text-[10px] max-sm:leading-4  flex ">
                 It’s a fascinating process based on natural science! Gather your
                 <br />
                 friends or bring your company’s department and book a brewery
