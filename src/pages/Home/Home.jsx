@@ -9,7 +9,6 @@ import { useTranslation } from 'react-i18next';
 
 function Home() {
   const { t } = useTranslation();
-  
   return (
     <div className="relative">
       <div className="bg-black text-white">
@@ -21,27 +20,33 @@ function Home() {
 
       <Title titleText="BOTANICO" />
 
-      <div className="w-[70%] h-[700px] mx-auto max-sm:w-[80%]">
-        <div className="flex justify-between mt-16 max-sm:space-x-6">
+      <div className=" w-[70%] h-[700px] mx-auto max-sm:w-[80%]">
+        <div className="flex   mt-16 max-sm:space-x-6 space-x-11">
           <div>
             <img
-              className="w-[700px] h-[500px] object-cover max-sm:h-[350px]"
+              className=" w-[700px] h-[500px] object-cover max-sm:h-[350px] "
               src={img}
               alt="example"
             />
           </div>
 
-          <div className="max-sm:w-[100%]">
-            <h1 className="text-[30px] font-montserrat font-semibold max-sm:text-[15px]">
+          <div >
+            <h1 className="text-[30px]  font-montserrat font-semibold max-sm:text-[15px]">
+             
               Botanico Brewing Co.
             </h1>
 
-            <p className="text-[20px] my-8 font-light max-sm:text-[10px] max-sm:my-2">
-              {t("homeone")}
+            <p className="text-[20px]  my-8 font-light max-sm:text-[10px] max-sm:my-2">
+            {t("p1")} <br />
+            {t("p2")} <br />
+            {t("p3")} <br />
+            {t("p4")} 
+            
+
             </p>
 
-            <p className="text-[20px] font-light max-sm:text-[10px]">
-              {t("hometwo")}
+            <p className="text-[20px]  font-light max-sm:text-[10px]">
+             
             </p>
 
             <div className="flex justify-center mt-[30px]">
@@ -57,3 +62,4 @@ function Home() {
 }
 
 export default Home;
+

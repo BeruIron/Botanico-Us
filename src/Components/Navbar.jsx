@@ -105,7 +105,7 @@ function Navbar() {
 
         <div className="flex p-2 bg-slate-300 gap-3">
         {/* <FaLanguage className="hidden md:block text-white text-5xl mr-[50px]" /> */}
-        <Link  onClick={() => changeLanguage('en')} >ENG</Link>
+        <Link onClick={() => changeLanguage('en')} >ENG</Link>
         <div> | </div>
         <Link onClick={() => changeLanguage('kh')} >KH</Link>
         </div>

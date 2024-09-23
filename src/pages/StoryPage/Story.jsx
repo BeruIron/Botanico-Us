@@ -1,16 +1,13 @@
-
 import React from "react";
 import Navbar from "../../Components/Navbar";
 import Sa from "../../Components/SlideAutomatic";
 import Button from "../../Components/Button";
 import SmallHeader from "../../Components/SmallHeader";
 import Footer from "../../Components/Footer";
-
-
-
-
+// import { useTranslation } from 'react-i18next';
 
 function Story() {
+  // const { t } = useTranslation();
   return (
     <>
       <div className="bg-black">
@@ -20,7 +17,7 @@ function Story() {
       <Sa />
       <SmallHeader headerText="WE ARE BOTANICO" />
       <div>
-        <p className="px-4 md:px-10 lg:px-20 py-5 text-lg md:text-2xl leading-7 font-light">
+        <p className="px-4 md:px-10 lg:px-20 py-5 text-lg md:text-2xl leading-7 font-light ">
           Our Mission is all about breaking down those barriers and making craft
           beer and breweries feel inclusive, not intimidating. In a world full
           of craft beer options, we want to bring our Khmer community together
@@ -79,7 +76,7 @@ function Story() {
       </div>
 
       <div className="flex justify-center items-center pb-8">
-      <Button name="LearnMore" color="Button-black" />
+        <Button name="LearnMore" color="Button-black" />
       </div>
 
       <Footer />
