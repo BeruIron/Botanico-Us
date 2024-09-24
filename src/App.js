@@ -13,8 +13,7 @@ import Story from './pages/StoryPage/Story';
 import Service from './pages/ServicePage/Service';
 import Blog from './pages/Blog/Blog';
 import Menu from './pages/TapRoom/Menu';
-import OurBeer from "./pages/OurBeer/OurBeer";
-import Detail from "./pages/OurBeer/Detail";
+
 import React from "react";
 // import { useTranslation } from "react-i18next";
 

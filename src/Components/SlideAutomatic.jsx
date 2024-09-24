@@ -8,6 +8,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 
 function Sa() {
+    const { t } = useTranslation(); // Get the t function for translations
 
     const [currentIndex, setCurrentIndex] = useState(0);
     
@@ -37,19 +38,18 @@ function Sa() {
                 className="w-full h-full bg-cover bg-center transition duration-500"
             ></div>
 
-
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
-        <div className="text-center px-4 md:px-8 lg:px-16">
-          <h1 className="text-white text-[30px] font-abc font-bold max-sm:text-[20px] mb-4">
-            Botanico Brewing Company
-          </h1>
-          <button className="w-[150px] h-[50px] text-[15px] max-sm:w-[80px] max-sm:h-[35px] max-sm:text-[7px] font-abc font-bold text-white bg-slate-400 my-1 hover:bg-gray-600">
-            {t("viewproduct")} 
-          </button>
+            <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
+                <div className="text-center px-4 md:px-8 lg:px-16">
+                    <h1 className="text-white text-[30px] font-abc font-bold max-sm:text-[20px] mb-4">
+                        Botanico Brewing Company
+                    </h1>
+                    <button className="w-[150px] h-[50px] text-[15px] max-sm:w-[80px] max-sm:h-[35px] max-sm:text-[7px] font-abc font-bold text-white bg-slate-400 my-1 hover:bg-gray-600">
+                        {t("viewproduct")} 
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default Sa;

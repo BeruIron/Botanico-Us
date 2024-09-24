@@ -57,7 +57,7 @@ function Service() {
               />
 
               <p className="mt-9 max-sm:mt-[17px] font-abc font-bold text-[20px] max-sm:text-[15px] text-center">
-                Restaurant/Bar
+              {t("service1")}
 
               </p>
             </div>
@@ -70,7 +70,7 @@ function Service() {
               />
 
               <p className="mt-9 font-abc max-sm:mt-[17px] font-bold text-[20px] max-sm:text-[15px] text-center">
-                Event
+              {t("service2")}
 
               </p>
             </div>
@@ -83,7 +83,7 @@ function Service() {
               />
 
               <p className="mt-9 font-abc max-sm:mt-[17px] font-bold text-[20px] max-sm:text-[15px] text-center">
-                Tours/Tastings
+              {t("service3")}
 
               </p>
             </div>
