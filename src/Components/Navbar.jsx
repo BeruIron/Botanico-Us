@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Image from "../image/BotanicoCBG_Logo_wbox-01.png";
+import Image from "../image/logomain.png";
 
 import { FaLanguage } from "react-icons/fa";
 import { RiMenu3Fill, RiArrowDownSFill } from "react-icons/ri";
@@ -92,7 +92,7 @@ function Navbar() {
             <img
               src={Image}
               alt="BOTANICO Logo"
-              className=" h-[100px] w-[180px] max-sm:h-[60px] max-sm:w-[130px] "
+              className=" h-[80px] w-[180px] max-sm:h-[60px] max-sm:w-[130px] "
             />
           </Link>
         </div>
@@ -108,8 +108,7 @@ function Navbar() {
 
         <FaLanguage className="hidden md:block text-white text-5xl mr-[50px]" />
       </div>
-
-      {isMenuOpen && (
+{isMenuOpen && (
         <div className="md:hidden bg-gray-700 text-white">
           <ul className="flex flex-col items-center gap-6 py-4">
           <li>
@@ -125,13 +124,11 @@ function Navbar() {
                 STORY
               </Link>
             </li>
-
             <li>
               <Link to="/ourbeer" className="hover:text-gray-400">
                 OUR BEER
               </Link>
             </li>
-
             <li className="relative">
               <Link
                 to="/service"
@@ -195,4 +192,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

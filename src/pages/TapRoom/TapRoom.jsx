@@ -4,18 +4,19 @@ import SlideTap from "../../Components/SlideTap";
 import Footer from "../../Components/Footer";
 import Button from "../../Components/Button";
 import { useNavigate } from "react-router-dom";
-import img6 from "../../image/taproom.png"; // Adjust this path if necessary
-import img7 from "../../image/tep2.png";    // Adjust this path if necessary
-import img1 from "../../image/slider.png";   // Adjust this path if necessary
-import img2 from "../../image/slide.png";     // Adjust this path if necessary
-import img3 from "../../image/sld.png";       // Adjust this path if necessary
-import img4 from "../../image/sd.png";        // Adjust this path if necessary
-import img5 from "../../image/sli.png";       // Adjust this path if necessary
+
+// Update these paths to the correct location of your images
+import img1 from '../../image/slider.png'; // Adjust paths as necessary
+import img2 from '../../image/slide.png';  // Adjust paths as necessary
+import img3 from '../../image/sld.png';    // Adjust paths as necessary
+import img4 from '../../image/sd.png';     // Adjust paths as necessary
+import img5 from '../../image/sli.png';   
+import img6 from '../../image/taproom.png';
+import img7 from '../../image/tep2.png';
 
 function Taproom() {
   const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
-   
   const slides = [
     { url: img1 },
     { url: img2 },
@@ -24,16 +25,18 @@ function Taproom() {
     { url: img5 },
   ];
 
+  useEffect(() => {
+    const autoplay = setInterval(() => {
+      nextSlide();
+    }, 3000);
+    return () => clearInterval(autoplay);
+  }, [currentIndex]);
+
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === slides.length - 1 ? 0 : prevIndex + 1
     );
   };
-
-  useEffect(() => {
-    const autoplay = setInterval(nextSlide, 3000);
-    return () => clearInterval(autoplay);
-  }, []);
 
   return (
     <>
@@ -114,7 +117,7 @@ function Taproom() {
       </div>
 
       <div className="flex flex-row w-[80%] max-sm:flex-col max-sm:w-[90%] mx-auto space-x-10 max-sm:space-x-0">
-        <div className="space-y-5 font-abc w-[100%]">
+        <div className="space-y-5 font-abc w-full">
           <h2 className="text-[30px] max-sm:text-[20px] font-extrabold">
             Near & Dear and Far & Wide
           </h2>
@@ -137,7 +140,7 @@ function Taproom() {
           />
         </div>
 
-        <div className="w-full">
+        <div className="w-full max-sm:mt-[20px]">
           <img
             src={img7}
             alt="Food image"
@@ -146,14 +149,14 @@ function Taproom() {
         </div>
       </div>
 
-      <div className="justify-center flex h-[150px] items-center">
+      <div className="mx-auto max-sm:w-[80%] flex h-[150px] max-sm:h-[80px] items-center">
         <p className="text-center font-abc text-[20px] max-sm:text-[10px]">
           If you wish to make a reservation, or want to hold an event at
-          Botanico, please click here to contact us.
+          Botanico, please click <span className="text-red-600">here </span>to contact us.
         </p>
       </div>
 
-      <div className="justify-center flex h-[100px]">
+      <div className="justify-center flex h-[100px] max-sm:h-[50px]">
         <button className="w-[120px] h-[40px] text-white bg-black my-1 hover:bg-gray-600 max-sm:w-[60px] max-sm:h-[20px] max-sm:text-[7px]">
           Contact Us
         </button>
