@@ -6,12 +6,12 @@ import Button from "../../Components/Button";
 import { useNavigate } from "react-router-dom";
 
 // Update these paths to the correct location of your images
-import img1 from '../../image/slider.png'; // Adjust paths as necessary
-import img2 from '../../image/slide.png';  // Adjust paths as necessary
-import img3 from '../../image/sld.png';    // Adjust paths as necessary
-import img4 from '../../image/sd.png';     // Adjust paths as necessary
+import img1 from '../../image/Botanico5.jpg'; // Adjust paths as necessary
+import img2 from '../../image/Botanico4.jpg';  // Adjust paths as necessary
+import img3 from '../../image/Botanico7.jpg';    // Adjust paths as necessary
+import img4 from '../../image/Botanico8.jpg';     // Adjust paths as necessary
 import img5 from '../../image/sli.png';   
-import img6 from '../../image/taproom.png';
+import img6 from '../../image/Steak_for_taproom.jpg';
 import img7 from '../../image/tep2.png';
 
 function Taproom() {
@@ -52,7 +52,7 @@ function Taproom() {
 
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
           <div className="text-center px-4 md:px-8 lg:px-16">
-            <h1 className="text-white text-[30px] max-sm:text-[20px] font-abc font-bold mb-4">
+            <h1 className="text-white text-[60px] max-sm:text-[20px] font-abc font-bold mb-4">
               Botanico Brewing Company
             </h1>
           </div>
@@ -80,33 +80,32 @@ function Taproom() {
         <div className="flex flex-col w-full h-[600px] md:flex-row max-sm:space-x-2 space-x-10 justify-center max-w-[1700px] border-dashed border-2 border-black">
           <div className="w-full">
             <img
-              className="w-full h-[300px] md:h-[600px] object-cover"
-              src={img6}
+              className="w-full h-[300px] md:h-[596px] object-cover"
+              src={img7}
               alt="Taproom"
             />
           </div>
           
-          <div className="space-y-6 max-sm:space-y-2 w-full">
+          <div className="space-y-6 max-sm:space-y-2 w-full pt-10">
             <h3 className="text-[30px] md:text-3xl max-sm:text-[20px] font-bold">
               OPENING HOURS
             </h3>
             <p className="text-[20px] max-sm:text-[10px]">
-              Sunday – Wednesday | 11.30am – 12am
+            Monday - Thursday: 8:00 AM - 10:00 PM
             </p>
             <p className="text-[20px] max-sm:text-[10px]">
-              Thursday – Saturday | 11.30am – 1am
+            Friday - Sunday: 8:00 AM - 11:00 PM
             </p>
             <hr className="border-t-4 max-sm:border-t-2 border-yellow-600 w-1/4" />
             <p className="text-[25px] max-sm:text-[20px] font-bold">
-              MONDAY - SUNDAY*, UNTIL 7PM
+            Moday - Friday: 3:00 PM - 6:00 PM
             </p>
 
             <h3 className="text-[30px] max-sm:text-[20px] font-bold">
               HAPPY HOUR
             </h3>
             <p className="text-[20px] max-sm:text-[10px]">
-              20% off selected Lion Brewery Co pints and selected wines by the
-              glass.
+            30% discount on all craft beers
             </p>
             <p className="text-gray-500 text-[20px] max-sm:text-[10px]">
               *excluding public holidays. <br />
@@ -142,14 +141,14 @@ function Taproom() {
 
         <div className="w-full max-sm:mt-[20px]">
           <img
-            src={img7}
+            src={img6}
             alt="Food image"
             className="w-full h-[300px] md:h-[600px] object-cover"
           />
         </div>
       </div>
 
-      <div className="mx-auto max-sm:w-[80%] flex h-[150px] max-sm:h-[80px] items-center">
+      <div className="mx-auto max-sm:w-[80%] flex h-[150px] max-sm:h-[80px] items-center justify-center">
         <p className="text-center font-abc text-[20px] max-sm:text-[10px]">
           If you wish to make a reservation, or want to hold an event at
           Botanico, please click <span className="text-red-600">here </span>to contact us.

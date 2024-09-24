@@ -1,9 +1,9 @@
 "use client";
-import img1 from '../image/slider.png'; // Adjust paths as necessary
-import img2 from '../image/slide.png'; // Renamed to avoid spaces
-import img3 from '../image/sld.png'; // Renamed to avoid spaces
-import img4 from '../image/sd.png';
-import img5 from '../image/sli.png'; // Renamed to avoid spaces
+import img1 from '../image/Botanico4.jpg'; // Adjust paths as necessary
+import img2 from '../image/Botanico5.jpg'; // Renamed to avoid spaces
+import img3 from '../image/Botanico7.jpg'; // Renamed to avoid spaces
+import img4 from '../image/Botanico8.jpg';
+import img5 from '../image/Botanico9.jpg'; // Renamed to avoid spaces
 import { useState, useEffect, useCallback } from "react";
 
 function Sa() {
@@ -37,12 +37,10 @@ function Sa() {
 
             <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
                 <div className="text-center px-4 md:px-8 lg:px-16">
-                    <h1 className="text-white text-[30px] font-abc font-bold max-sm:text-[20px] mb-4">
+                    <h1 className="text-white text-[60px] font-abc font-bold max-sm:text-[20px] mb-4">
                         Botanico Brewing Company
                     </h1>
-                    <button className="w-[150px] h-[50px] text-[15px] max-sm:w-[80px] max-sm:h-[35px] max-sm:text-[7px] font-abc font-bold text-white bg-slate-400 my-1 hover:bg-gray-600">
-                        View Products
-                    </button>
+                    
                 </div>
             </div>
         </div>
