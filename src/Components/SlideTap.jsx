@@ -5,10 +5,10 @@ function SlideTap() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const slides = [
         {
-            url: "https://staticg.sportskeeda.com/editor/2022/08/812fc-16598097467269.png",
+            url: "https://trinkreif.de/wp-content/uploads/perfektes-steak-richtig-braten.jpg",
         },
         {
-            url: "https://wallpapercrafter.com/desktop1/567704-anime-cool-back-red-bleach-final-getsuga-widescreen.jpg",
+            url: "https://lh3.googleusercontent.com/pw/AP1GczMDfT4mWzYgw9s3eMski4HYzipLsz_okHm4z8T3YYXIFedMR8eKRpq_J955OBhb_RsnfjpqjSe0VEm9hUyEPrTCGcYA_IcJMDLYfmXXmsDOhkWaR4IhZIqNVJz7Fw-3qqfCnB8qhsgM66B5K95pmhav=w1449-h967-s-no?authuser=2",
         },
         {
             url: "https://img.goodfon.com/original/1680x1050/2/cd/naruto-akatsuki-konan-payne.jpg",
@@ -38,14 +38,14 @@ function SlideTap() {
     };
 
     return (
-        <div className="relative w-full h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[80vh] px-12">
+        <div className="relative w-[80%] max-sm:w-[90%] mx-auto h-[50vh] md:h-[60vh] lg:h-[75vh] xl:h-[80vh]">
             <div
                 style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
                 className=" w-full h-full m-auto bg-cover bg-center transition-all duration-500"
             ></div>
 
             <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
-                {/* { Add any overlay or navigation controls here */} 
+             
             </div>
         </div>
     );

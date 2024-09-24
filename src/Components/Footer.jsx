@@ -1,30 +1,58 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaMapMarkerAlt,
+  FaTiktok,
+  FaEnvelope,
+} from "react-icons/fa";
+import { MdPhone } from "react-icons/md";
 import Image from "../image/Botanico_BBox_logo.png";
 
 function Footer() {
   return (
-
-    <div className="bg-black h-[300px]  it text-white max-sm:h-[170px] ">
-      <div className=" flex  justify-between  w-[95%]  max-sm:space-y-4 max-sm:text-[7px]">
-    
-        <div className="flex items-center mb-4 max-sm:justify-center">
-
+    <div className="bg-black h-[350px] max-sm:h-[160px]">
+      <div className="flex justify-between mx-auto w-[90%] max-sm:space-y-4 max-sm:text-[7px]">
+        <div className="mt-2">
           <img
-            className="w-[160px] h-[160px] max-sm:w-[70px] max-sm:h-[70px]"
+            className="w-[180px] h-[180px] max-sm:w-[70px] max-sm:h-[70px]"
             src={Image}
             alt="logo"
           />
         </div>
-        <div className="flex mt-7 flex-col space-y-7 text-gray-200  max-sm:space-y-2 ">
+        <div className="flex mt-7 flex-col space-y-7 font-abc font-bold text-gray-200 max-sm:space-y-2">
+          <a
+            href="mailto:chanleakhena.soy@institute.pse.ngo"
+            className="flex items-center gap-2"
+          >
+            <FaEnvelope className="text-[30px] max-sm:text-[10px]" color="#1877F2" />
+            <h5>Email</h5>
+          </a>
+
+          <a href="tel:+88570513499" className="flex items-center gap-2">
+            <MdPhone className="text-[30px] max-sm:text-[10px]" color="#1877F2" />
+            <h5>+885 70513499</h5>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@yourTiktokUsername"
+            className="flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTiktok className="text-[30px] max-sm:text-[10px]" color="#1877F2" />
+            <h5>TikTok</h5>
+          </a>
+        </div>
+        <div className="flex mt-7 flex-col space-y-7 font-abc font-bold text-gray-200 max-sm:space-y-2">
           <a
             href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            <FaFacebook size={20} color="#1877F2" />
-            <h5>Join to Facebook page</h5>
+            <FaFacebook className="text-[30px] max-sm:text-[10px]" color="#1877F2" />
+            <h5>Join Our Facebook</h5>
           </a>
           <a
             href="https://www.instagram.com"
@@ -32,8 +60,8 @@ function Footer() {
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            <FaInstagram size={20} color="#E4405F" />
-            <h5>Join to Instagram page</h5>
+            <FaInstagram className="text-[30px] max-sm:text-[10px]" color="#E4405F" />
+            <h5>Join Our Instagram</h5>
           </a>
           <a
             href="https://www.google.com/maps"
@@ -41,35 +69,24 @@ function Footer() {
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            <FaMapMarkerAlt size={20} color="#FF0000" />
-            <h5>Location Botanico Copany</h5>
+            <FaMapMarkerAlt className="text-[30px] max-sm:text-[10px]" color="#FF0000" />
+            <h5>Our Location</h5>
           </a>
         </div>
-        <div className="flex mt-7  space-x-[400px] max-sm:flex-row relative  ">
-          <div className="flex flex-col space-y-2  ">
-            <h5 className="font-semibold">PRODUCT</h5>
-            <ul className="space-y-2">
-              <li>Splash</li>
-              <li>Blonde Ale</li>
-              <li>Helles Lager</li>
-              <li>Centurion</li>
-            </ul>
-          </div>
-          </div>
+        <div className="flex flex-col space-y-2 text-white mt-7">
+          <h5 className="font-semibold">PRODUCT</h5>
+          <ul className="space-y-2 font-abc font-bold">
+            <li>Splash</li>
+            <li>Blonde Ale</li>
+            <li>Helles Lager</li>
+            <li>Centurion</li>
+          </ul>
+        </div>
+      
 
-          <div className="flex mt-7 flex-col space-y-2 ml-[50px] " >
-            <h5 className="font-semibold">MENU</h5>
-            <ul className="space-y-2">
-              <li>Home</li>
-              <li>Story</li>
-              <li>Beer</li>
-              <li>Beer Finder</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-       
+        
       </div>
-      <p className="text-gray-200 text-center mt-3 max-sm:text-[7px]">
+      <p className="text-gray-200 font-abc text-center max-sm:text-[7px] mt-[50px] max-sm:mt-2">
         #9B St. 29 (Near St. 294) Tonle Bassac Chamkarmon Phnom Penh
       </p>
     </div>

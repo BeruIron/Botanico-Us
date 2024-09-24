@@ -38,7 +38,7 @@ function TestingBeer() {
 
       <div className="flex justify-center  ">
         <div className="h-[70vh] w-full max-w-[1200px] bg-white p-6 max-sm:w-full max-sm:h-[570px] ">
-          <p className=" mb-4 text-[20px] text-center  max-sm:text-[10px]   ">
+          <p className=" mb-4 font-abc text-[20px] text-center  max-sm:text-[10px]   ">
             Have you ever asked yourself how beer is actually made? What it
             looks like inside of a brewery?
           </p>
@@ -50,22 +50,22 @@ function TestingBeer() {
                 alt=""
               />
             </div>
-            <div className="text-[20px]  font-light space-y-5  ">
-              <p className=" leading-[50px]  max-sm:text-[10px] max-sm:leading-4  flex">
-                It’s a fascinating process based on natural science! Gather your{" "}
+            <div className="text-[20px]  space-y-5  ">
+              <p className=" leading-[50px] font-abc  max-sm:text-[10px] max-sm:leading-4  flex">
+                It’s a fascinating process based on natural science! Gather your
                 <br />
-                friends or bring your company’s department and book a brewery{" "}
+                friends or bring your company’s department and book a brewery
                 <br />
-                tour with tasting at Botanico Brewing Company. Our experienced,{" "}
+                tour with tasting at Botanico Brewing Company. Our experienced,
                 <br />
-                certified German brewmaster Marco will show you the place where{" "}
+                certified German brewmaster Marco will show you the place where
                 <br />
-                the magic happens and explain it to you. He will be able to{" "}
+                the magic happens and explain it to you. He will be able to
                 <br />
                 answer all your questions. For groups of up to 8 people.
               </p>
               <p className="space-y-5 leading-[50px] max-sm:text-[10px] max-sm:leading-4 flex">
-                Alternatively, you can also book a food and beer pairing at{" "}
+                Alternatively, you can also book a food and beer pairing at
                 <br />
                 Botanico Craft Beer Garden for small groups of up to 10 people.
               </p>

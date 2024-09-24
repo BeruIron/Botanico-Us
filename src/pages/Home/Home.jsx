@@ -17,14 +17,14 @@ function Home() {
       <div className="relative">
         <Bg />
       </div>
+      <Title 
+       titleText="BOTANICO" />
 
-      <Title titleText="BOTANICO" />
-
-      <div className=" w-[70%] h-[700px] mx-auto max-sm:w-[80%]">
-        <div className="flex   mt-16 max-sm:space-x-6 space-x-11">
+      <div className=" w-[70%] h-[700px] mx-auto max-sm:h-[350px] max-sm:w-[90%]">
+        <div className="flex justify-center max-sm:mt-7 mt-16 max-sm:space-x-3 space-x-20">
           <div>
             <img
-              className=" w-[700px] h-[500px] object-cover max-sm:h-[350px] "
+              className=" w-[600px] h-[500px] object-cover max-sm:h-[300px] max-sm:w-[500px] "
               src={img}
               alt="example"
             />
@@ -46,6 +46,10 @@ function Home() {
             </p>
 
             <p className="text-[20px]  font-light max-sm:text-[10px]">
+            {t("h1")} <br />
+            {t("h2")} <br />
+            {t("h3")} <br />
+            {t("h4")} 
              
             </p>
 
@@ -62,4 +66,3 @@ function Home() {
 }
 
 export default Home;
-
