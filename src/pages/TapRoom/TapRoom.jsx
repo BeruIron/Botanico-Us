@@ -4,17 +4,19 @@ import SlideTap from "../../Components/SlideTap";
 import Footer from "../../Components/Footer";
 import Button from "../../Components/Button";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-// Update these paths to the correct location of your images
-import img1 from '../../image/slider.png'; // Adjust paths as necessary
-import img2 from '../../image/slide.png';  // Adjust paths as necessary
-import img3 from '../../image/sld.png';    // Adjust paths as necessary
-import img4 from '../../image/sd.png';     // Adjust paths as necessary
+
+import img1 from '../../image/slider.png'; 
+import img2 from '../../image/slide.png';  
+import img3 from '../../image/sld.png';    
+import img4 from '../../image/sd.png';     
 import img5 from '../../image/sli.png';   
 import img6 from '../../image/taproom.png';
 import img7 from '../../image/tep2.png';
 
 function Taproom() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
@@ -62,14 +64,12 @@ function Taproom() {
       <div className="w-[80%] max-sm:w-[90%] mx-auto py-20 max-sm:py-10">
         <div className="flex flex-col justify-between items-center">
           <h1 className="text-center max-sm:w-[300px] text-[30px] max-sm:text-[20px] font-abc font-bold">
-            BOTANICO CRAFT BEER GARDEN & RESTAURANT
+           {t("taproom-t")}
           </h1>
           <p className="text-center text-[20px] max-sm:text-[10px] font-abc leading-8 max-sm:leading-4 pt-5">
-            Botanico Craft Beer Garden & Restaurant is our home! It is located
-            right next to our brewery, on the same property. The garden is a
-            beautiful, hidden gem with lots of plants and tranquility. It is the
-            perfect getaway from the hustle & bustle of the city! We always have
-            between 6 and 10 beers on tap that we brewed ourselves.
+            {t("taproom-p1")} <br />
+            {t("taproom-p2")} <br />
+            {t("taproom-p3")}
           </p>
         </div>
       </div>

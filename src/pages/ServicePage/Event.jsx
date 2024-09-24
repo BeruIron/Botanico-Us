@@ -9,15 +9,17 @@ import img3 from "../../image/beer (37).jpg";
 import Button from "../../Components/Button";
 import Footer from "../../Components/Footer";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Event() {
+  const { t } = useTranslation();
   return (
     <div className="bg-slate-100">
       <div className="bg-black text-white ">
         <Navbar />
       </div>
       <div className="h-[550px] max-sm:h-[300px]">
-        <QuestionComponent textquestion=" Do you want to have Botanico beer at your event?" />
+        <QuestionComponent textquestion={t("event-t")} />
         <div className="flex justify-center overflow-hidden ">
           <img
             className="w-[250px] h-[330px] object-cover bg-orange-400 max-sm:w-[100px] max-sm:h-[150px] flex"
@@ -57,37 +59,31 @@ function Event() {
 
             <div className="text-gray-700 text-[20px] flex flex-col justify-center font-abc items-center space-y-10 max-sm:text-[10px] max-sm:space-y-3  ">
               <p className="leading-10  max-sm:leading-5">
-                We have different mobile draft units that we regularly use to
-                <br />
-                cater private, as well as company events. You can rent our
-                system with or <br />
-                without a bartender and we take care of the installation
-                andremoval <br />
-                as well as the delivery of the beer.
+               {t("event-p1")} <br />
+               {t("event-p2")} <br />
+               {t("event-p3")} <br />
+               {t("event-p4")}
               </p>
               <p className="leading-10 max-sm:leading-5">
-                We also offer more unique, custom-made event add-ons, such as
-                <br />
-                craft beer tastings and food and beer pairings at your venue,
-                moderated by <br />
-                our German brew master Marco.
+              {t("event-p5")} <br />
+              {t("event-p6")} <br />
+              {t("event-p7")}
               </p>
             </div>
           </div>
         </div>
       </div>
       <p className="text-[20px] max-sm:w-[80%]  w-[40%] font-abc text-center mx-auto max-sm:text-[10px] mt-[30px]">
-        Are you interested in selling real Cambodian craft beer at your F&B
-        business? 
-        We provide draft beer as well as bottles. Contact us
+       {t("event-footer1")}
+       {t("event-footer2")}
         <Link className="text-red-600" to="/story">
-          here
+         {t("event-here")}
         </Link>
         .
       </p>
 
       <div className="h-[100px] flex justify-center items-center max-sm:h-[60px]">
-        <Button color="Button-black" name="Contact Us" />
+        <Button color="Button-black" name={t("event-contact")} />
       </div>
 
       <Footer />
