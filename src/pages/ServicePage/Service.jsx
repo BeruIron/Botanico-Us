@@ -3,6 +3,9 @@ import Navbar from "../../Components/Navbar";
 import Sa from "../../Components/SlideAutomatic";
 
 import Footer from "../../Components/Footer";
+
+import { useTranslation } from 'react-i18next';
+
 import img1 from "../../image/servise.png";
 import img2 from "../../image/beer (53).jpg";
 import img3 from "../../image/beer (37).jpg";
@@ -13,7 +16,9 @@ import { Link } from 'react-router-dom';
 
 
 
+
 function Service() {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="bg-black">
@@ -43,9 +48,10 @@ function Service() {
 
         <div className="text-center mt-[40px]">
           <h2 className="text-[30px] font-abc font-bold max-sm:text-[20px]">
-            BOTANICO SERVICES
+            {t("service")}
           </h2>
           <div className="flex justify-center flex-wrap gap-10 mt-[40px] max-sm:gap-5">
+
           <div className="h-[400px] bg-gray-100 max-sm:h-[250px]">
   <Link to="/restaurant" className="flex flex-col items-center h-full">
     <img
@@ -85,13 +91,13 @@ function Service() {
     </p>
   </Link>
 </div>
+
           </div>
         </div>
       </div>
       <div className="mt-20">
         <Footer />
       </div>
-
     </div>
   );
 }

@@ -4,8 +4,10 @@ import Navbar from "../../Components/Navbar";
 import Sa from "../../Components/SlideAutomatic";
 import Footer from "../../Components/Footer";
 import B from "../../image/Botanico_BBox_logo-01.png";
+import { useTranslation } from 'react-i18next';
 
 function OurBeer() {
+  const { t } = useTranslation();
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
 
@@ -38,7 +40,7 @@ function OurBeer() {
             alt="Botanico Logo"
           />
           <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] mb-[107px] max-sm:mt-3">
-            Core Beers
+            {t("corebeer")}
           </h1>
         </div>
 
@@ -88,26 +90,27 @@ function OurBeer() {
           <hr className="w-[759px] h-0.5 mx-auto mt-[10px] border-black border-2 my-1 max-sm:w-[250px] max-sm:border "/>
           <div className="text-center">
             <h1 className="text-[#124734] mt-[80px] max-sm:mt-[40px] font-bold font-montserrat text-4xl max-sm:text-[20px] ">
-              Other Beers We Brewed
+            {t("otherbeer")}
             </h1>
           </div>
           <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:mt-[5px] max-sm:h-[150px] h-[300px]">
             <div className=" flex-1 flex justify-center items-center max-sm:ml-8">
               <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] ">
-                <p>Cambodian Amber Ale / w palm sugar</p>
-                <p>Reahoo Wheat Beer</p>
-                <p>Princeps Imperial IPA</p>
-                <p>French Kiss Biere de Garde</p>
-                <p>Coffee Milk Stout</p>
+              {t("ourbeer1")} <br />
+              {t("ourbeer2")} <br />
+              {t("ourbeer3")} <br />
+              {t("ourbeer4")} <br />
+              {t("ourbeer5")} 
+
               </div>
             </div>
             <div className="flex-1 flex justify-center items-center ">
               <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px]">
-                <p>Bassac Hoppy Lager</p>
-                <p>Tropical Mango Ale</p>
-                <p>Sundown Dark Lager</p>
-                <p>Dark Star Porter</p>
-                <p>Jasmine Gold Blonde Ale</p>
+              {t("ourbeer6")} <br />
+              {t("ourbeer7")} <br />
+              {t("ourbeer8")} <br />
+              {t("ourbeer9")} <br />
+              {t("ourbeer10")} 
               </div>
             </div>
           </div>

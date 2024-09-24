@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
+import i18n from 'i18next';
+
 import Image from "../image/logomain.png";
 
-import { FaLanguage } from "react-icons/fa";
+
+// import { FaLanguage } from "react-icons/fa";
 import { RiMenu3Fill, RiArrowDownSFill } from "react-icons/ri";
+import { changeLanguage } from "i18next";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,8 +18,7 @@ function Navbar() {
   };
 
   const content = (
-    <ul className="flex gap-6 text-center font-abc font-bold text-[15px] text-white ">
-    
+    <ul className="flex gap-6 text-center text-white ml-[100px]">
       <li>
         <Link to="/" className="hover:text-gray-400">
           HOME
@@ -26,16 +30,12 @@ function Navbar() {
         </Link>
       </li>
       <li>
-        <Link to="/OurBeer" className="hover:text-gray-400">
-
-          OUR BEER
-        </Link>
-      </li>
+              <Link to="/ourbeer" className="hover:text-gray-400">
+                OUR BEER
+              </Link>
+            </li>
       <li className="relative group">
-        <Link
-          to="/service"
-          className="flex items-center hover:text-gray-400 focus:outline-none"
-        >
+        <Link to="/service" className="flex items-center hover:text-gray-400 focus:outline-none">
           <span>SERVICE</span>
           <RiArrowDownSFill className="ml-2" />
         </Link>
@@ -43,21 +43,23 @@ function Navbar() {
         <ul className="absolute left-0 mt-2 w-48 bg-gray-700 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <li>
             <Link to="/event" className="block px-4 py-2 hover:bg-gray-600">
-              Events
+              Event
             </Link>
           </li>
           <li>
+
             <Link to="/tasting" className="block px-4 py-2 hover:bg-gray-600">
             Beer Testing 
+
             </Link>
           </li>
           <li>
-            <Link
-              to="/restaurant"
-              className="block px-4 py-2 hover:bg-gray-500"
-            >
-              Restaurants
-            </Link>
+          <Link
+                    to="/restaurant"
+                    className="block px-4 py-2 hover:bg-gray-500"
+                  >
+                    Restaurant
+                  </Link>
           </li>
         </ul>
       </li>
@@ -85,13 +87,14 @@ function Navbar() {
   );
 
   return (
-    <nav className="relative font-abc font-bold text-[15px]">
-      <div className=" flex justify-between  w-[95%] mx-auto items-center px-4 py-4">
-        <div className="overflow-hidden ">
+    <nav className="relative  bg-gray-800">
+      <div className=" flex justify-between items-center px-4 py-4">
+        <div className="overflow-hidden">
           <Link to="/">
             <img
               src={Image}
               alt="BOTANICO Logo"
+
               className=" h-[80px] w-[180px] max-sm:h-[60px] max-sm:w-[130px] "
             />
           </Link>
@@ -106,14 +109,17 @@ function Navbar() {
           />
         </div>
 
-        <FaLanguage className="hidden md:block text-white text-5xl mr-[50px]" />
+        <div className="flex p-2 bg-slate-300 gap-3">
+        {/* <FaLanguage className="hidden md:block text-white text-5xl mr-[50px]" /> */}
+        <Link onClick={() => changeLanguage('en')} >ENG</Link>
+        <div> | </div>
+        <Link onClick={() => changeLanguage('kh')} >KH</Link>
+        </div>
+
       </div>
 {isMenuOpen && (
         <div className="md:hidden bg-gray-700 text-white">
           <ul className="flex flex-col items-center gap-6 py-4">
-          <li>
-        <FaLanguage className=" text-white  text-5xl " />
-      </li>
             <li>
               <Link to="/" className="hover:text-gray-400">
                 HOME
@@ -130,10 +136,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="relative">
-              <Link
-                to="/service"
-                className="flex items-center hover:text-gray-400 focus:outline-none"
-              >
+              <Link to="/service" className="flex items-center hover:text-gray-400 focus:outline-none">
                 <span>SERVICE</span>
                 <RiArrowDownSFill className="ml-2" />
               </Link>
@@ -143,7 +146,7 @@ function Navbar() {
                     to="/event"
                     className="block px-4 py-2 hover:bg-gray-500"
                   >
-                    Events
+                    Event
                   </Link>
                 </li>
                 <li>
@@ -151,7 +154,7 @@ function Navbar() {
                     to="/tasting"
                     className="block px-4 py-2 hover:bg-gray-500"
                   >
-                    Beer Testing 
+                    Testing Beer
                   </Link>
                 </li>
                 <li>
@@ -159,7 +162,7 @@ function Navbar() {
                     to="/restaurant"
                     className="block px-4 py-2 hover:bg-gray-500"
                   >
-                    Restaurants
+                    Restaurant
                   </Link>
                 </li>
               </ul>
@@ -191,4 +194,6 @@ function Navbar() {
   );
 }
 
+
 export default Navbar;
+

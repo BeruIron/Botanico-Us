@@ -8,13 +8,16 @@ import img3 from "../../image/beer (37).jpg";
 import imgbody1 from "../../image/beer (35).jpg";
 import imgbody2 from "../../image/beer (43) (1).jpg";
 import QuestionComponent from "../../Components/Question";
+
 import { Link } from 'react-router-dom';
+
 function Restaurant() {
   return (
     <div>
       <div className="bg-black text-white ">
         <Navbar />
       </div>
+    
       <div className="bg-gray-100 h-[550px] max-sm:h-[300px]">
         <div className="h-[550px] max-sm:h-[300px]">
           <QuestionComponent textquestion="Do you want to sell our beer?" />
