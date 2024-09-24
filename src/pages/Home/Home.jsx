@@ -1,14 +1,20 @@
 import React from "react";
-import Navbar from "../../Components/Navbar";
+import Navbar  from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import Bg from "../../Components/Bg";
 import Button from "../../Components/Button";
 import Title from "../../Components/Tittle";
+
+import { useTranslation } from 'react-i18next';
+
 import img from "../../image/DSC01542.jpg"
+import { Link } from 'react-router-dom';
+
 
 function Home() {
+  const { t } = useTranslation();
   return (
-    <div className="relative ">
+    <div className="relative">
       <div className="bg-black text-white">
         <Navbar />
       </div>
@@ -28,28 +34,33 @@ function Home() {
             />
           </div>
 
-          <div className="max-sm:w-[150%]">
-            <h1 className="text-[30px] font-abc font-bold max-sm:text-[15px]">
+          <div >
+            <h1 className="text-[30px]  font-montserrat font-semibold max-sm:text-[15px]">
+             
               Botanico Brewing Co.
             </h1>
 
-            <p className="text-[20px]  my-8  font-abc max-sm:text-[10px] max-sm:my-0 ">
-              In 2013, a few like-minded imbibers from the West joined <br />
-              our brew-master in a common goal: to find a craft beer, <br />
-              microbrewery, or libation in Phnom Penh that was <br />
-              reminiscent of home.
+
+            <p className="text-[20px]  my-8 font-light max-sm:text-[12px] max-sm:my-2">
+            {t("p1")} <br />
+            {t("p2")} <br />
+            {t("p3")} <br />
+            {t("p4")} 
+            
+
             </p>
 
-            <p className="text-[20px]  font-abc max-sm:text-[10px]">
-              You, too, may have experienced a similar day with limited <br />
-              results. It was because of this that we took matters into our{" "}
-              <br />
-              own hands and began crafting full-bodied beers with <br />
-              iconic aromatics and a pleasing finish.
+            <p className="text-[20px]  font-light max-sm:text-[12px]">
+            {t("h1")} <br />
+            {t("h2")} <br />
+            {t("h3")} <br />
+            {t("h4")} 
+             
             </p>
 
-            <div className="flex justify-center mt-[30px] max-sm:mt-2">
-              <Button name="Learn More" color="Button-black" />
+            <div className="flex justify-center mt-[30px]">
+              <Button name={t("learnMore")} color="Button-black" />
+
             </div>
           </div>
         </div>

@@ -80,15 +80,18 @@ function Event() {
         Are you interested in selling real Cambodian craft beer at your F&B
         business? 
         We provide draft beer as well as bottles. Contact us
-        <Link className="text-red-600" to="/story">
+        <Link className="text-red-600" to="/contact">
           here
         </Link>
         .
       </p>
 
       <div className="h-[100px] flex justify-center items-center max-sm:h-[60px]">
+      <Link to="/contact">
         <Button color="Button-black" name="Contact Us" />
-      </div>
+      </Link>
+    </div>
+
 
       <Footer />
     </div>
