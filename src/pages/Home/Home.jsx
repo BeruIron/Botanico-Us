@@ -5,6 +5,7 @@ import Bg from "../../Components/Bg";
 import Button from "../../Components/Button";
 import Title from "../../Components/Tittle";
 import img from "../../image/DSC01542.jpg"
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -33,14 +34,14 @@ function Home() {
               Botanico Brewing Co.
             </h1>
 
-            <p className="text-[20px]  my-8  font-abc max-sm:text-[10px] max-sm:my-0 ">
+            <p className="text-[20px]  my-8  font-abc max-sm:text-[12px] max-sm:my-0 ">
               In 2013, a few like-minded imbibers from the West joined <br />
               our brew-master in a common goal: to find a craft beer, <br />
               microbrewery, or libation in Phnom Penh that was <br />
               reminiscent of home.
             </p>
 
-            <p className="text-[20px]  font-abc max-sm:text-[10px]">
+            <p className="text-[20px]  font-abc max-sm:text-[12px]">
               You, too, may have experienced a similar day with limited <br />
               results. It was because of this that we took matters into our{" "}
               <br />
@@ -49,7 +50,9 @@ function Home() {
             </p>
 
             <div className="flex justify-center mt-[30px] max-sm:mt-2">
+            <Link to="/story">
               <Button name="Learn More" color="Button-black" />
+              </Link>
             </div>
           </div>
         </div>

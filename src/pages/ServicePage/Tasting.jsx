@@ -7,8 +7,9 @@ import img3 from "../../image/beer (37).jpg";
 import img from "../../image/beer (40).jpg";
 import Button from "../../Components/Button";
 import Footer from "../../Components/Footer";
+import { Link } from 'react-router-dom';
 
-function TestingBeer() {
+function TastingBeer() {
   return (
     <div className="bg-slate-100 overflow-hidden">
       <div className="bg-black text-white ">
@@ -37,8 +38,8 @@ function TestingBeer() {
 
 
       <div className="flex justify-center  ">
-        <div className="h-[70vh] w-full max-w-[1200px] bg-white p-6 max-sm:w-full max-sm:h-[570px] ">
-          <p className=" mb-4 font-abc text-[20px] text-center  max-sm:text-[10px]   ">
+        <div className="h-[70vh] w-full max-w-[1200px] bg-white p-6 max-sm:w-full max-sm:h-[650px] ">
+          <p className=" mb-4 font-abc text-[20px] text-center  max-sm:text-[12px]   ">
             Have you ever asked yourself how beer is actually made? What it
             looks like inside of a brewery?
           </p>
@@ -51,7 +52,7 @@ function TestingBeer() {
               />
             </div>
             <div className="text-[20px]  space-y-5 ">
-              <p className=" leading-[50px] font-abc  max-sm:text-[10px] max-sm:leading-4  flex ">
+              <p className=" leading-[50px] font-abc  max-sm:text-[12px] max-sm:leading-4  flex ">
                 It’s a fascinating process based on natural science! Gather your
                 <br />
                 friends or bring your company’s department and book a brewery
@@ -64,7 +65,7 @@ function TestingBeer() {
                 <br />
                 answer all your questions. For groups of up to 8 people.
               </p>
-              <p className="space-y-5 leading-[50px] max-sm:text-[10px] max-sm:leading-4 flex">
+              <p className="space-y-5 leading-[50px] font-abc max-sm:text-[12px] max-sm:leading-4 flex">
                 Alternatively, you can also book a food and beer pairing at
                 <br />
                 Botanico Craft Beer Garden for small groups of up to 10 people.
@@ -74,11 +75,13 @@ function TestingBeer() {
         </div>
       </div>
       <div className="h-[100px] flex justify-center items-center max-sm:h-[60px]">
+      <Link to="/contact">
         <Button color="Button-black" name="Contact Us" />
-      </div>
+      </Link>
+    </div>
       <Footer />
     </div>
   );
 }
 
-export default TestingBeer;
+export default TastingBeer;

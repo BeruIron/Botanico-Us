@@ -8,6 +8,7 @@ import img3 from "../../image/beer (37).jpg";
 import imgbody1 from "../../image/beer (35).jpg";
 import imgbody2 from "../../image/beer (43) (1).jpg";
 import QuestionComponent from "../../Components/Question";
+import { Link } from 'react-router-dom';
 function Restaurant() {
   return (
     <div>
@@ -39,7 +40,7 @@ function Restaurant() {
 
       <div className="space-y-10 max-sm:w-[80%] max-sm:flex-col justify-center mx-auto">
         <div className=" bg-white flex justify-center max-sm:flex-col space-x-10 max-sm:space-x-0">
-          <ul className="list-disc pl-5 text-[20px] font-abc leading-[50px] max-sm:flex-col max-sm:text-[10px] max-sm:leading-6 mt-[50px]">
+          <ul className="list-disc pl-5 text-[20px] font-abc leading-[50px] max-sm:flex-col max-sm:text-[12px] max-sm:leading-6 mt-[50px]">
             <h2 className="font-bold font-abc"> Draft</h2>
             <li>
               Installation , maintenance and regular cleaning of the draft
@@ -72,10 +73,9 @@ function Restaurant() {
             />
           </div>
 
-          <ul className="list-disc pl-5 text-[20px] max-sm:flex-col font-abc leading-[50px] max-sm:text-[10px] max-sm:leading-6">
-            <h2 className="text-[20px] max-sm:text-[10px] font-bold font-abc  ">
-              Draft
-            </h2>
+          <ul className="list-disc pl-5 text-[20px] max-sm:flex-col font-abc leading-[50px] max-sm:text-[12px] max-sm:leading-6">
+            <h2 className="text-[20px] max-sm:text-[12px] font-bold font-abc  ">
+            Bottle            </h2>
             <li>
               Better solution for smaller businesses (little space) and/or less
               <br />
@@ -94,17 +94,20 @@ function Restaurant() {
       </div>
       
       <div className="w-[50%] max-sm:w-[80%] mx-auto flex h-[200px] max-sm:h-[80px] items-center">
-      <p className="text-[20px] font-abc text-center max-sm:text-[10px]">
+      <p className="text-[20px] font-abc text-center max-sm:text-[12px]">
         {" "}
         Are you interested in selling real Cambodian craft beer at your F&B
         business? We provide draft beer as well as bottles. Contact us{" "}
-        <span className="text-red-600">here.</span>
+        <Link className="text-red-600" to="/contact">
+          here
+        </Link>
       </p>
       </div>
-      
-      <div className="bg-gray-100  flex items-center justify-center h-[100px] ">
+      <div className="bg-gray-100 flex items-center justify-center h-[100px]">
+      <Link to="/contact">
         <Button name="Contact Us" color="Button-black" />
-      </div>
+      </Link>
+    </div>
 
       <Footer />
     </div>
