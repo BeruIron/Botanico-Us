@@ -4,11 +4,16 @@ import Sa from "../../Components/SlideAutomatic";
 import Button from "../../Components/Button";
 import Footer from "../../Components/Footer";
 import Title from "../../Components/Tittle";
+
+import { useTranslation } from 'react-i18next';
+
 import image from '../../image/story1.png'
 import image1 from '../../image/story.png'
 
 
+
 function Story() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="bg-black">
@@ -17,21 +22,15 @@ function Story() {
 
       <Sa />
 
-      <Title titleText="WE ARE BOTANICO"></Title>
+      <Title titleText={t("wearebotanico")}></Title>
       <div className=" w-[70%] max-sm:w-[90%] mx-auto">
         <p className="text-[20px]  font-abc leading-10 h-[130px] max-sm:leading-7 items-center max-sm:text-[10px] max-sm:h-[150px] flex">
-
-          beer and breweries feel including, not intimidating. In a world full
-
-          of craft beer options, we want to bring our Khmer community together
-          by fostering genuine connections through our shared passion for
-          crafting amazing beers and creating unforgettable experiences.
+          {t("wearebotanico-p1")} 
+          {t("wearebotanico-p2")} 
+          {t("wearebotanico-p3")} 
         </p>
       </div>
-
-
-      <Title titleText="OUR STORY"></Title>
-
+      <Title titleText={t("ourstory")}></Title>
       <div className="w-[70%] max-sm:w-[90%] mx-auto">
         <div className="flex max-sm:flex-col flex-row mt-[50px]  mx-auto max-sm:space-x-0 space-x-10">
           <img
@@ -39,33 +38,33 @@ function Story() {
             alt="Brewery"
             className="w-[500px] h-[400px] object-cover"
           />
-
           <div>
-            <p className="text-[20px]  font-abc leading-10 h-[200px] max-sm:leading-7 max-sm:text-[10px] max-sm:h-[170px] flex">
-              In 2013, a few like-minded people from the West joined our brew
-              master in a common goal: to find craft beer in Phnom Penh that was
-              reminiscent of home. You, too, may have experienced a similar day
-              with limited results. It was because of this that we took matters
-              into our own hands and began crafting full-bodied beers with
-              iconic aromatics and a pleasing finish.
+
+            <p className="text-[20px] font-abc leading-10 h-[170px] max-sm:leading-7 max-sm:text-[10px] max-sm:h-[170px] flex">
+             {t("ourstory-p")}
+             {t("ourstory-p1")}
+             {t("ourstory-p2")}
+             {t("ourstory-p3")}
+             {t("ourstory-p4")}
+             {t("ourstory-p5")}
+
             </p>
-            <p className="text-[20px] font-abc leading-10 max-sm:leading-7 max-sm:h-[150px] max-sm:text-[10px] h-[100px]">
-              Fast forward more than 10 years, and the craft brewery is well
-              established beyond the borders of Phnom Penh. Botanico Brewing
-              Company (formerly known as Cerevisia Craft Brewery) has given
-              craft beer a Cambodian identity.
+            <p className="text-[20px]  font-abc leading-10 max-sm:leading-7 max-sm:h-[150px] max-sm:text-[10px] h-[100px]">
+            {t("ourstory-h")}
+            {t("ourstory-h1")}
+            {t("ourstory-h2")}
+            {t("ourstory-h3")}
             </p>
           </div>
         </div>
         <div>
            <p className="text-[20px] leading-10 max-sm:leading-7 font-abc max-sm:text-[10px] items-center flex h-[200px]">
-          We are on a mission to share our passion and knowledge with the
-          community, using locally grown ingredients as much as possible and
-          giving a platform to young creatives. Botanico Brewing Co. stands for
-          Quality, Consistency, Inclusiveness, and Innovation. “We want to turn
-          the Cambodian beer market upside down and change the people’s behavior
-          of drinking to a more sophisticated and responsible way,” says Marco
-          Günther, the CEO and brew master of Botanico Brewing Co.
+           {t("ourstory-a")}
+             {t("ourstory-a1")}
+             {t("ourstory-a2")}
+             {t("ourstory-a3")}
+             {t("ourstory-a4")}
+             {t("ourstory-a5")}
         </p>
 
         <p className="font-abc font-bold  text-[30px] max-sm:mt-[50px] max-sm:text-[20px]"> The Real Cambodian Craft Beer</p>
@@ -84,8 +83,7 @@ function Story() {
         </div>
 
         <div className="flex justify-center items-center font-abc h-[150px] max-sm:h-[50px]">
-
-          <Button name="LearnMore" color="Button-black" />
+        <Button name={t("ourstory-butt")} className="Button-black" />
         </div>
       </div>
 
