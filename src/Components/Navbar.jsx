@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Image from "../image/logo.png";
+import Image from "../image/logomain.png";
 
 import { FaLanguage } from "react-icons/fa";
 import { RiMenu3Fill, RiArrowDownSFill } from "react-icons/ri";
@@ -13,7 +13,7 @@ function Navbar() {
   };
 
   const content = (
-    <ul className="flex gap-6 text-center font-abc font-bold text-[20px] text-white ">
+    <ul className="flex gap-6 text-center font-abc font-bold text-[15px] text-white ">
     
       <li>
         <Link to="/" className="hover:text-gray-400">
@@ -92,7 +92,7 @@ function Navbar() {
             <img
               src={Image}
               alt="BOTANICO Logo"
-              className=" h-[200px] w-[180px] max-sm:h-[60px] max-sm:w-[130px] "
+              className=" h-[80px] w-[180px] max-sm:h-[60px] max-sm:w-[130px] "
             />
           </Link>
         </div>

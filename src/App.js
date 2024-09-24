@@ -13,6 +13,7 @@ import Service from './pages/ServicePage/Service';
 import Blog from './pages/Blog/Blog';
 import Menu from './pages/TapRoom/Menu';
 
+
 const App = () => {
   return (
     <>
@@ -34,6 +35,7 @@ const App = () => {
       </Routes>
     </>
   );
+
 };
 
 export default App;
