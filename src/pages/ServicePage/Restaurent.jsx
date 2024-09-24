@@ -39,9 +39,9 @@ function Restaurant() {
         </div>
       </div>
 
-      <div className="space-y-10 max-sm:w-[80%] justify-center mx-auto">
-        <div className=" bg-white flex justify-center space-x-10">
-          <ul className="list-disc pl-5 text-[20px] font-abc leading-[50px] max-sm:text-[10px] max-sm:leading-6 mt-[50px]">
+      <div className="space-y-10 max-sm:w-[80%] max-sm:flex-col justify-center mx-auto">
+        <div className=" bg-white flex justify-center max-sm:flex-col space-x-10 max-sm:space-x-0">
+          <ul className="list-disc pl-5 text-[20px] font-abc leading-[50px] max-sm:flex-col max-sm:text-[10px] max-sm:leading-6 mt-[50px]">
             <h2 className="font-bold font-abc"> Draft</h2>
             <li>
               Installation , maintenance and regular cleaning of the draft
@@ -65,7 +65,7 @@ function Restaurant() {
           </div>
         </div>
 
-        <div className=" bg-white flex justify-center space-x-10">
+        <div className=" bg-white flex max-sm:flex-col  max-sm:space-x-0 justify-center space-x-10">
           <div>
             <img
               src={imgbody2}
@@ -74,8 +74,10 @@ function Restaurant() {
             />
           </div>
 
-          <ul className="list-disc pl-5 text-[20px] font-abc leading-[50px] max-sm:text-[10px] max-sm:leading-6">
-            <h2 className="text-[20px] font-bold font-abc  ">Draft</h2>
+          <ul className="list-disc pl-5 text-[20px] max-sm:flex-col font-abc leading-[50px] max-sm:text-[10px] max-sm:leading-6">
+            <h2 className="text-[20px] max-sm:text-[10px] font-bold font-abc  ">
+              Draft
+            </h2>
             <li>
               Better solution for smaller businesses (little space) and/or less
               <br />
@@ -92,7 +94,17 @@ function Restaurant() {
           </ul>
         </div>
       </div>
-      <div className="bg-gray-100 mt-10 flex items-center justify-center h-[100px] ">
+      
+      <div className="w-[50%] max-sm:w-[80%] mx-auto flex h-[200px] max-sm:h-[80px] items-center">
+      <p className="text-[20px] font-abc text-center max-sm:text-[10px]">
+        {" "}
+        Are you interested in selling real Cambodian craft beer at your F&B
+        business? We provide draft beer as well as bottles. Contact us{" "}
+        <span className="text-red-600">here.</span>
+      </p>
+      </div>
+      
+      <div className="bg-gray-100  flex items-center justify-center h-[100px] ">
         <Button name="Contact Us" color="Button-black" />
       </div>
 
@@ -101,3 +113,4 @@ function Restaurant() {
   );
 }
 export default Restaurant;
+

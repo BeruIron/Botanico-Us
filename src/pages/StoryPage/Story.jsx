@@ -4,7 +4,12 @@ import Sa from "../../Components/SlideAutomatic";
 import Button from "../../Components/Button";
 import Footer from "../../Components/Footer";
 import Title from "../../Components/Tittle";
+
 import { useTranslation } from 'react-i18next';
+
+import image from '../../image/story1.png'
+import image1 from '../../image/story.png'
+
 
 
 function Story() {
@@ -29,11 +34,12 @@ function Story() {
       <div className="w-[70%] max-sm:w-[90%] mx-auto">
         <div className="flex max-sm:flex-col flex-row mt-[50px]  mx-auto max-sm:space-x-0 space-x-10">
           <img
-            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9fe6e40d-eed9-4621-8dd9-341ebdb9e66a/de8xn0z-c6f24994-712d-4295-bf6e-0f49afe31f7f.png/v1/fill/w_1280,h_1353,q_80,strp/bleach_aduniis_x_jiraiya_art_by_jiraiyaart_de8xn0z-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM1MyIsInBhdGgiOiJcL2ZcLzlmZTZlNDBkLWVlZDktNDYyMS04ZGQ5LTM0MWViZGI5ZTY2YVwvZGU4eG4wei1jNmYyNDk5NC03MTJkLTQyOTUtYmY2ZS0wZjQ5YWZlMzFmN2YucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Q47e6254V6SFFC4eZdz0qrrZjhf91o6O822fJRz2MM8"
+            src={image}
             alt="Brewery"
             className="w-[500px] h-[400px] object-cover"
           />
           <div>
+
             <p className="text-[20px] font-abc leading-10 h-[170px] max-sm:leading-7 max-sm:text-[10px] max-sm:h-[170px] flex">
              {t("ourstory-p")}
              {t("ourstory-p1")}
@@ -41,6 +47,7 @@ function Story() {
              {t("ourstory-p3")}
              {t("ourstory-p4")}
              {t("ourstory-p5")}
+
             </p>
             <p className="text-[20px]  font-abc leading-10 max-sm:leading-7 max-sm:h-[150px] max-sm:text-[10px] h-[100px]">
             {t("ourstory-h")}
@@ -69,7 +76,7 @@ function Story() {
        
         <div className=" mt-[50px] ">
           <img
-            src="https://www.si.com/.image/t_share/MTk0OTgwOTMzNzgxMTY5ODkw/usatsi_19691020.jpg"
+            src={image1}
             alt="Brewery"
             className=" w-full h-[700px] max-sm:h-[400px] object-cover"
           />

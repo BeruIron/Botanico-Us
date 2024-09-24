@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "../../Components/Navbar";
 import QuestionComponent from "../../Components/Question";
-import img from "../../image/beer (51).jpg";
-import img1 from "../../image/beer (43).jpg";
-import img2 from "../../image/beer (31).jpg";
-import img3 from "../../image/beer (35).jpg";
-import img4 from "../../image/beer (34).jpg";
+import img0 from "../../image/beer (51).jpg";
+import img4 from "../../image/beer (22).png"
+import img1 from "../../image/servise.png";
+import img2 from "../../image/beer (53).jpg";
+import img3 from "../../image/beer (37).jpg";
 import Button from "../../Components/Button";
 import Footer from "../../Components/Footer";
 import { Link } from "react-router-dom";
@@ -21,17 +21,17 @@ function Event() {
         <div className="flex justify-center overflow-hidden ">
           <img
             className="w-[250px] h-[330px] object-cover bg-orange-400 max-sm:w-[100px] max-sm:h-[150px] flex"
-            src={img2}
+            src={img1}
             alt="Beer 1"
           />
           <img
             className="w-[250px] h-[330px] object-cover bg-amber-900 mx-[10px] max-sm:w-[100px] max-sm:h-[150px] flex"
-            src={img3}
+            src={img2}
             alt="Beer 2"
           />
           <img
             className="w-[250px] h-[330px] object-cover bg-teal-900 max-sm:w-[100px] max-sm:h-[150px]   flex"
-            src={img4}
+            src={img3}
             alt="Beer 3"
           />
         </div>
@@ -41,14 +41,14 @@ function Event() {
           <div className="flex flex-col items-center max-sm:items-center max-sm:mt-5">
             <img
               className="w-[500px] h-[300px] object-cover max-sm:h-[150px] max-sm:w-[350px]"
-              src={img}
+              src={img0}
               alt="Main Beer"
             />
             <img
 
               className="h-[300px] object-cover ml-[50%] -mt-[10%] w-[500px] max-sm:h-[150px] max-sm:w-[350px] max-sm:ml-0 max-sm:mt-5"
 
-              src={img1}
+              src={img4}
               alt="Beer Event"
             />
           </div>

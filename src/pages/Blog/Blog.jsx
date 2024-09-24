@@ -3,10 +3,43 @@ import axios from "axios";
 import Sa from "../../Components/SlideAutomatic";
 import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
-
+import Image from '../../image/Botanico_BBox_logo-01.png';
 const BASE_URL = "https://botanico-backend.onrender.com";
 
-const BlogPost = ({ image, title, date, text }) => {
+
+
+const renderRichText = (content) => {
+  if (!content) {
+    return null; 
+  }
+
+  return content.map((block, index) => {
+    switch (block.type) {
+      case "heading":
+        const HeadingTag = `h${block.level}`; 
+        return (
+          <HeadingTag key={index} className="mt-4 font-bold text-xl">
+            {block.children.map((child, idx) => (
+              <span key={idx}>{child.text}</span>
+            ))}
+          </HeadingTag>
+        );
+      case "paragraph":
+        return (
+          <p key={index} className="mt-2 text-gray-600">
+            {block.children.map((child, idx) => (
+              <span key={idx}>{child.text}</span>
+            ))}
+          </p>
+        );
+      // Add more cases for other block types if needed
+      default:
+        return null;
+    }
+  });
+};
+
+const BlogPost = ({ image, title, date, description }) => {
   return (
     <div className="bg-white p-5 rounded-lg shadow-md">
       {image && (
@@ -19,7 +52,10 @@ const BlogPost = ({ image, title, date, text }) => {
       <div className="mt-4">
         <h2 className="text-xl font-bold">{title}</h2>
         <p className="mt-2 text-gray-600">{date}</p>
-        <p className="mt-2">{text}</p>
+        {/* Render rich text description dynamically */}
+        <div className="mt-2 rich-text-content">
+          {renderRichText(description)}
+        </div>
       </div>
     </div>
   );
@@ -47,14 +83,14 @@ const SidePost = ({ image, title, date, onClick }) => {
 const Blog = () => {
   const [posts, setPosts] = useState([]);
   const [selectedPost, setSelectedPost] = useState(null);
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0); 
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(`${BASE_URL}/api/blog?populate=*`);
         setPosts(response.data.data);
-        setSelectedPost(response.data.data[0]); 
+        setSelectedPost(response.data.data[0]);
       } catch (error) {
         console.error("Error fetching blog data:", error);
       }
@@ -65,7 +101,7 @@ const Blog = () => {
 
   const handlePostClick = (post) => {
     setSelectedPost(post);
-    setSelectedImageIndex(0); 
+    setSelectedImageIndex(0);
   };
 
   const nextImage = () => {
@@ -90,12 +126,13 @@ const Blog = () => {
 
       <Sa />
 
-      <div className="flex justify-between items-center bg-white py-8 px-40">
-        <h1 className="text-[48px] font-extrabold tracking-wider">BLOG</h1>
-        <div>
-          <img src="/path-to-your-logo.png" alt="Logo" className="w-[50px] h-auto" />
+      <div>
+            <div className='flex justify-between items-center h-[150px] max-sm:h-[100px] w-[90%] mx-auto'>
+                <h1 className=' text-[30px] font-abc font-extrabold max-sm:text-[20px]'>Blog</h1>
+                <img className='w-[80px] max-sm:w-[50px]' src={Image} alt="logo" />
+            </div>
+           
         </div>
-      </div>
 
       <div className="flex flex-col lg:flex-row gap-6 p-5 lg:p-20 bg-gray-100 w-[90%] lg:w-[80%] mx-auto">
         <div className="w-full lg:w-2/3 relative">
@@ -106,15 +143,15 @@ const Blog = () => {
               }
               title={selectedPost.attributes.title}
               date={selectedPost.attributes.Date}
-              text={selectedPost.attributes.text}
+              description={selectedPost.attributes.Description} // Use Description field for rich text
             />
           )}
-          
-          <button onClick={prevImage} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-100  text-black py-2 px-4 rounded-md">
+
+          <button onClick={prevImage} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-100 text-black py-2 px-4 rounded-md">
             &lt;
           </button>
           <button onClick={nextImage} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-100 text-black py-2 px-4 rounded-md">
-            &gt; 
+            &gt;
           </button>
         </div>
 
@@ -130,7 +167,7 @@ const Blog = () => {
                   image={image}
                   title={post.attributes.title}
                   date={post.attributes.Date}
-                  onClick={() => handlePostClick(post)} 
+                  onClick={() => handlePostClick(post)}
                 />
               );
             })}
@@ -143,5 +180,4 @@ const Blog = () => {
 };
 
 export default Blog;
-
 

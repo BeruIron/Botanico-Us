@@ -1,130 +1,52 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../Components/Navbar";
-import SmallHeader from "../../Components/SmallHeader";
 import Footer from "../../Components/Footer";
+import img1 from "../../image/slider.png"; // Adjust this path if necessary
+import img2 from "../../image/slide.png";   // Adjust this path if necessary
+import img3 from "../../image/sld.png";     // Adjust this path if necessary
+import img4 from "../../image/sd.png";      // Adjust this path if necessary
+import img5 from "../../image/sli.png";     // Adjust this path if necessary
 
 const BeerFinder = () => {
   const [location, setLocation] = useState("Botanico, Cambodia");
-  const [locationName, setLocationName] = useState(
-    "Botanico Craft Beer Garden"
-  );
+  const [locationName, setLocationName] = useState("Botanico Craft Beer Garden");
 
   const locations = [
-    {
-      name: "Botanico Craft Beer Garden",
-      place: "Botanico, Cambodia",
-    },
-    {
-      name: "Craft",
-      place: "Craft Phnom Penh, Cambodia",
-    },
-    {
-      name: "AeroCoffebar",
-      place: "AeroCoffebar Phnom Penh, Cambodia",
-    },
-    {
-      name: "Farm to Table",
-      place: "Farm to Table Phnom Penh, Cambodia",
-    },
-    {
-      name: "Hyatt Regency",
-      place: "Hyatt Regency Phnom Penh, Cambodia",
-    },
-    {
-      name: "Sofitel",
-      place: "Sofitel Phnom Penh, Cambodia",
-    },
-    {
-      name: "Tribe Hotel",
-      place: "Tribe Hotel Phnom Penh, Cambodia",
-    },
-    {
-      name: "Le Manolis",
-      place: "Le Manolis Phnom Penh, Cambodia",
-    },
-    {
-      name: "Luxcity Hotel",
-      place: "Luxcity Hotel Phnom Penh, Cambodia",
-    },
-    {
-      name: "PPYC",
-      place: "PPYC Phnom Penh, Cambodia",
-    },
-    {
-      name: "Captain's Sport Bar",
-      place: "Captain's Sport Bar Phnom Penh, Cambodia",
-    },
-    {
-      name: "Metro Rahu",
-      place: "Metro Rahu Phnom Penh, Cambodia",
-    },
-    {
-      name: "Metro Azura",
-      place: "Metro Azura Phnom Penh, Cambodia",
-    },
-    {
-      name: "23 Bistro Kampot",
-      place: "23 Bistro kampot, Cambodia",
-    },
-    {
-      name: "The Fringe Battambong",
-      place: "The Fringe Battambong, Cambodia",
-    },
-    {
-      name: "The Box Office",
-      place: "The Box Office Phnom Penh, Cambodia",
-    },
-    {
-      name: "Embargo Phnom Penh",
-      place: "Embargo Phnom Penh, Cambodia",
-    },
-    {
-      name: "Embargo Siem Reap",
-      place: "Embargo Siem Reap, Cambodia",
-    },
-    {
-      name: "Paparazzi",
-      place: "Paparazzi Phnom Penh, Cambodia",
-    },
-    {
-      name: "Toss it!",
-      place: "Toss it! Phnom Penh, Cambodia",
-    },
-    {
-      name: "LB Taphouse BKK1",
-      place: "LB Taphouse BKK1 Phnom Penh, Cambodia",
-    },
-    {
-      name: "Malevich",
-      place: "Malevich Phnom Penh, Cambodia",
-    },
+    { name: "Botanico Craft Beer Garden", place: "Botanico, Cambodia" },
+    { name: "Craft", place: "Craft Phnom Penh, Cambodia" },
+    { name: "AeroCoffebar", place: "AeroCoffebar Phnom Penh, Cambodia" },
+    { name: "Farm to Table", place: "Farm to Table Phnom Penh, Cambodia" },
+    { name: "Hyatt Regency", place: "Hyatt Regency Phnom Penh, Cambodia" },
+    { name: "Sofitel", place: "Sofitel Phnom Penh, Cambodia" },
+    { name: "Tribe Hotel", place: "Tribe Hotel Phnom Penh, Cambodia" },
+    { name: "Le Manolis", place: "Le Manolis Phnom Penh, Cambodia" },
+    { name: "Luxcity Hotel", place: "Luxcity Hotel Phnom Penh, Cambodia" },
+    { name: "PPYC", place: "PPYC Phnom Penh, Cambodia" },
+    { name: "Captain's Sport Bar", place: "Captain's Sport Bar Phnom Penh, Cambodia" },
+    { name: "Metro Rahu", place: "Metro Rahu Phnom Penh, Cambodia" },
+    { name: "Metro Azura", place: "Metro Azura Phnom Penh, Cambodia" },
+    { name: "23 Bistro Kampot", place: "23 Bistro Kampot, Cambodia" },
+    { name: "The Fringe Battambong", place: "The Fringe Battambong, Cambodia" },
+    { name: "The Box Office", place: "The Box Office Phnom Penh, Cambodia" },
+    { name: "Embargo Phnom Penh", place: "Embargo Phnom Penh, Cambodia" },
+    { name: "Embargo Siem Reap", place: "Embargo Siem Reap, Cambodia" },
+    { name: "Paparazzi", place: "Paparazzi Phnom Penh, Cambodia" },
+    { name: "Toss it!", place: "Toss it! Phnom Penh, Cambodia" },
+    { name: "LB Taphouse BKK1", place: "LB Taphouse BKK1 Phnom Penh, Cambodia" },
+    { name: "Malevich", place: "Malevich Phnom Penh, Cambodia" },
   ];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
-    {
-      url: "https://staticg.sportskeeda.com/editor/2022/08/812fc-16598097467269.png",
-    },
-    {
-      url: "https://wallpapercrafter.com/desktop1/567704-anime-cool-back-red-bleach-final-getsuga-widescreen.jpg",
-    },
-    {
-      url: "https://img.goodfon.com/original/1680x1050/2/cd/naruto-akatsuki-konan-payne.jpg",
-    },
-    {
-      url: "https://i.pinimg.com/originals/19/2b/dc/192bdc10828a0d90a456d1f562b58950.jpg",
-    },
-    {
-      url: "https://images4.alphacoders.com/135/1357584.png",
-    },
-    {
-      url: "https://staticg.sportskeeda.com/editor/2024/02/e19d7-17067790349227-1920.jpg",
-    },
+    { url: img1 },
+    { url: img2 },
+    { url: img3 },
+    { url: img4 },
+    { url: img5 },
   ];
 
   useEffect(() => {
-    const autoplay = setInterval(() => {
-      nextSlide();
-    }, 3000);
+    const autoplay = setInterval(nextSlide, 3000);
     return () => clearInterval(autoplay);
   }, [currentIndex]);
 
@@ -142,8 +64,9 @@ const BeerFinder = () => {
   return (
     <>
       <div className="bg-black">
-        <Navbar></Navbar>
+        <Navbar />
       </div>
+
       <div className="relative w-full h-[600px] md:h-[800px] lg:h-[900px] xl:h-[1000px]">
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
@@ -161,8 +84,6 @@ const BeerFinder = () => {
 
       <div className="container mx-auto px-4 py-8 pb-16">
         <div className="relative w-full px-4 md:px-10 py-4">
-         
-
           <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="text-center md:w-2/3 md:text-left">
               <h1 className="text-center md:text-[30px] font-abc font-bold">
@@ -181,7 +102,7 @@ const BeerFinder = () => {
                     {loc.name}
                   </span>
                   <button
-                    className="text-blue-600 font-abc  hover:underline"
+                    className="text-blue-600 font-abc hover:underline"
                     onClick={() => handleLocationChange(loc)}
                   >
                     Direct to Map
@@ -206,10 +127,7 @@ const BeerFinder = () => {
               <button
                 className="bg-blue-500 hover:bg-blue-700 text-white text-[20px] font-bold py-2 px-4 rounded"
                 onClick={() => {
-                  window.open(
-                    `https://maps.google.com/maps?q=${location}`,
-                    "_blank"
-                  );
+                  window.open(`https://maps.google.com/maps?q=${location}`, "_blank");
                 }}
               >
                 Direct to {locationName} on Map
@@ -218,7 +136,7 @@ const BeerFinder = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };
