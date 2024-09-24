@@ -8,6 +8,7 @@ import Title from "../../Components/Tittle";
 import { useTranslation } from 'react-i18next';
 
 import img from "../../image/DSC01542.jpg"
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -39,7 +40,8 @@ function Home() {
               Botanico Brewing Co.
             </h1>
 
-            <p className="text-[20px]  my-8 font-light max-sm:text-[10px] max-sm:my-2">
+
+            <p className="text-[20px]  my-8 font-light max-sm:text-[12px] max-sm:my-2">
             {t("p1")} <br />
             {t("p2")} <br />
             {t("p3")} <br />
@@ -48,7 +50,7 @@ function Home() {
 
             </p>
 
-            <p className="text-[20px]  font-light max-sm:text-[10px]">
+            <p className="text-[20px]  font-light max-sm:text-[12px]">
             {t("h1")} <br />
             {t("h2")} <br />
             {t("h3")} <br />
@@ -58,6 +60,7 @@ function Home() {
 
             <div className="flex justify-center mt-[30px]">
               <Button name={t("learnMore")} color="Button-black" />
+
             </div>
           </div>
         </div>

@@ -47,8 +47,10 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/testing" className="block px-4 py-2 hover:bg-gray-600">
-              Testing Beer
+
+            <Link to="/tasting" className="block px-4 py-2 hover:bg-gray-600">
+            Beer Testing 
+
             </Link>
           </li>
           <li>
@@ -149,7 +151,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="/testing"
+                    to="/tasting"
                     className="block px-4 py-2 hover:bg-gray-500"
                   >
                     Testing Beer
