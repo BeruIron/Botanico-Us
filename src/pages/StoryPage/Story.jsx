@@ -5,11 +5,15 @@ import Button from "../../Components/Button";
 import Footer from "../../Components/Footer";
 import Title from "../../Components/Tittle";
 
+import image from '../../image/Botanico10.jpg'
+import image1 from '../../image/DSC01542.jpg'
+
+
 import { useTranslation } from 'react-i18next';
 
-import image from '../../image/story1.png'
-import image1 from '../../image/story.png'
+
 import { Link } from 'react-router-dom';
+
 
 
 
@@ -37,7 +41,7 @@ function Story() {
       <div className="w-[70%] max-sm:w-[90%] mx-auto">
         <div className="flex max-sm:flex-col flex-row mt-[50px]  mx-auto max-sm:space-x-0 space-x-10">
           <img
-            src={image}
+            src={image1}
             alt="Brewery"
             className="w-[500px] h-[400px] object-cover"
           />
@@ -83,7 +87,7 @@ function Story() {
        
         <div className=" mt-[50px] ">
           <img
-            src={image1}
+            src={image}
             alt="Brewery"
             className=" w-full h-[700px] max-sm:h-[400px] object-cover"
           />

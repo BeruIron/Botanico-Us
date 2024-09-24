@@ -1,14 +1,17 @@
 "use client";
-import img1 from "../image/slider.png"; // Adjust paths as necessary
-import img2 from "../image/slide.png"; // Renamed to avoid spaces
-import img3 from "../image/sld.png"; // Renamed to avoid spaces
-import img4 from "../image/sd.png";
-import img5 from "../image/sli.png"; // Renamed to avoid spaces
+
+import img1 from '../image/Botanico4.jpg'; // Adjust paths as necessary
+import img2 from '../image/Botanico5.jpg'; // Renamed to avoid spaces
+import img3 from '../image/Botanico7.jpg'; // Renamed to avoid spaces
+import img4 from '../image/Botanico8.jpg';
+import img5 from '../image/Botanico9.jpg'; // Renamed to avoid spaces
+
 import { useState, useEffect, useCallback } from "react";
 
 import { Link } from "react-router-dom";
 
 function Sa() {
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
 
@@ -23,6 +26,7 @@ function Sa() {
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+
     );
   }, [slides.length]);
 
