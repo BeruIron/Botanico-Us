@@ -193,13 +193,12 @@ import { Link } from 'react-router-dom';
 
 import { useTranslation } from "react-i18next";
 
-
-import img1 from '../../image/slider.png'; 
-import img2 from '../../image/slide.png';  
-import img3 from '../../image/sld.png';    
-import img4 from '../../image/sd.png';     
+import img1 from '../../image/Botanico5.jpg';
+import img2 from '../../image/Botanico4.jpg'; 
+import img3 from '../../image/Botanico7.jpg';    
+import img4 from '../../image/Botanico8.jpg'; 
 import img5 from '../../image/sli.png';   
-import img6 from '../../image/taproom.png';
+import img6 from '../../image/Steak_for_taproom.jpg';
 import img7 from '../../image/tep2.png';
 
 function Taproom() {
@@ -240,7 +239,7 @@ function Taproom() {
 
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
           <div className="text-center px-4 md:px-8 lg:px-16">
-            <h1 className="text-white text-[30px] max-sm:text-[20px] font-abc font-bold mb-4">
+            <h1 className="text-white text-[50px] max-sm:text-[20px] font-abc font-bold mb-4">
               Botanico Brewing Company
             </h1>
           </div>
@@ -267,12 +266,12 @@ function Taproom() {
           <div className="w-full">
             <img
               className="w-full h-[300px] md:h-[600px] object-cover"
-              src={img6}
+              src={img7}
               alt="Taproom"
             />
           </div>
           
-          <div className="space-y-6 max-sm:space-y-2 w-full">
+          <div className="space-y-6 max-sm:space-y-2 w-full pt-6">
             <h3 className="text-[30px] md:text-3xl max-sm:text-[20px] font-bold">
              {t("taproom-time1")}
             </h3>
@@ -326,7 +325,7 @@ function Taproom() {
 
         <div className="w-full max-sm:mt-[20px]">
           <img
-            src={img7}
+            src={img6}
             alt="Food image"
             className="w-full h-[300px] md:h-[600px] object-cover"
           />

@@ -40,11 +40,14 @@ function Story() {
       <Title titleText={t("ourstory")}></Title>
       <div className="w-[70%] max-sm:w-[90%] mx-auto">
         <div className="flex max-sm:flex-col flex-row mt-[50px]  mx-auto max-sm:space-x-0 space-x-10">
+         
           <img
             src={image1}
             alt="Brewery"
             className="w-[500px] h-[400px] object-cover"
           />
+
+          
           <div>
 
 
