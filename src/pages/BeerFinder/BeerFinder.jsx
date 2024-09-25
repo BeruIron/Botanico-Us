@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import { Link } from "react-router-dom";
 import img1 from "../../image/Botanico4.jpg"; // Adjust this path if necessary
 import img2 from "../../image/Botanico5.jpg";   // Adjust this path if necessary
 import img3 from "../../image/Botanico7.jpg";     // Adjust this path if necessary
@@ -78,6 +79,12 @@ const BeerFinder = () => {
             <h1 className="text-white text-[50px] max-sm:text-[20px] font-abc font-bold mb-4">
               Botanico Brewing Company
             </h1>
+            <Link to="/ourBeer">
+            <button className="w-[150px] h-[50px] text-[15px] max-sm:w-[80px] max-sm:h-[35px] max-sm:text-[7px] font-abc font-bold text-white bg-slate-400 my-1 hover:bg-gray-600">
+                {("View Products")} 
+            </button>
+            </Link>
+            
           </div>
         </div>
       </div>

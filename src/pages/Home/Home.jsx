@@ -6,7 +6,7 @@ import Button from "../../Components/Button";
 import Title from "../../Components/Tittle";
 import { useTranslation } from 'react-i18next';
 import img from "../../image/DSC01542.jpg"
-
+import { Link } from "react-router-dom";
 
 function Home() {
   const { t } = useTranslation();
@@ -54,9 +54,10 @@ function Home() {
              
             </p>
 
-            <div className="flex justify-center mt-[30px]">
+            <Link to="/story"><div className="flex justify-center mt-[30px]">
               <Button name={t("learnMore")} color="Button-black" />
             </div>
+            </Link>
           </div>
         </div>
       </div>
