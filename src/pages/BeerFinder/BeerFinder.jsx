@@ -75,7 +75,7 @@ const BeerFinder = () => {
 
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
           <div className="text-center px-4 md:px-8 lg:px-16">
-            <h1 className="text-white text-[60px] max-sm:text-[20px] font-abc font-bold mb-4">
+            <h1 className="text-white text-[50px] max-sm:text-[20px] font-abc font-bold mb-4">
               Botanico Brewing Company
             </h1>
           </div>

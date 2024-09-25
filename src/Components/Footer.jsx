@@ -90,9 +90,9 @@ function Footer() {
             <h5>Our Location</h5>
           </Link>
         </div>
-        <div className="flex flex-col space-y-2 text-white mt-7">
-          <h5 className="font-semibold">PRODUCT</h5>
-          <ul className="space-y-2 font-abc font-bold">
+        <div className="flex flex-col space-y-4 text-white mt-7">
+          <h5 className="font-semibold text-[25px]">PRODUCT</h5>
+          <ul className="space-y-2 font-bold">
             <li>Splash</li>
             <li>Blonde Ale</li>
             <li>Helles Lager</li>
