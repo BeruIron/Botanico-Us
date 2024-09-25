@@ -88,30 +88,28 @@ function Taproom() {
           
           <div className="space-y-6 max-sm:space-y-2 w-full">
             <h3 className="text-[30px] md:text-3xl max-sm:text-[20px] font-bold">
-              OPENING HOURS
+             {t("taproom-time1")}
             </h3>
             <p className="text-[20px] max-sm:text-[10px]">
-              Sunday – Wednesday | 11.30am – 12am
+            {t("taproom-time2")}
             </p>
             <p className="text-[20px] max-sm:text-[10px]">
-              Thursday – Saturday | 11.30am – 1am
+              {t("taproom-time3")}
             </p>
             <hr className="border-t-4 max-sm:border-t-2 border-yellow-600 w-1/4" />
             <p className="text-[25px] max-sm:text-[20px] font-bold">
-              MONDAY - SUNDAY*, UNTIL 7PM
+            {t("taproom-time4")}
             </p>
 
             <h3 className="text-[30px] max-sm:text-[20px] font-bold">
-              HAPPY HOUR
+            {t("taproom-time5")}
             </h3>
             <p className="text-[20px] max-sm:text-[10px]">
-              20% off selected Lion Brewery Co pints and selected wines by the
-              glass.
+            {t("taproom-time6")}
             </p>
             <p className="text-gray-500 text-[20px] max-sm:text-[10px]">
-              *excluding public holidays. <br />
-              Offer may not be used in conjunction with any other promotions.
-            </p>
+            {t("taproom-time7")} <br />
+            {t("taproom-time8")} </p>
           </div>
         </div>
       </div>
@@ -119,24 +117,23 @@ function Taproom() {
       <div className="flex flex-row w-[80%] max-sm:flex-col max-sm:w-[90%] mx-auto space-x-10 max-sm:space-x-0">
         <div className="space-y-5 font-abc w-full">
           <h2 className="text-[30px] max-sm:text-[20px] font-extrabold">
-            Near & Dear and Far & Wide
+          {t("taproom-time9")}
           </h2>
           <h3 className="text-[20px] md:text-2xl font-bold max-sm:text-[10px]">
-            Global Fusion: Khmer Flavors Meet International Dishes in Garden
-            Atmosphere
+          {t("taproom-time10")} <br />
+          {t("taproom-time11")}
           </h3>
           <p className="text-[20px] max-sm:text-[10px] leading-10 max-sm:leading-4">
-            The food is a mix of Khmer and international dishes, created by
-            our executive Chef, Rith. He is a Khmer-German who learned to
-            become a master chef in Germany and is now focusing on bringing
-            high-quality and locally sourced ingredients, perfectly combined
-            to your plates!
+          {t("taproom-time12")} <br />
+          {t("taproom-time13")} <br />
+          {t("taproom-time14")} <br />
+          {t("taproom-time15")} <br />
           </p>
 
           <Button
             onClick={() => navigate("/menu")}
             color="Button-black"
-            name="Menu"
+            name={t("taproom-time16")}
           />
         </div>
 
@@ -151,14 +148,13 @@ function Taproom() {
 
       <div className="mx-auto max-sm:w-[80%] flex h-[150px] max-sm:h-[80px] items-center">
         <p className="text-center font-abc text-[20px] max-sm:text-[10px]">
-          If you wish to make a reservation, or want to hold an event at
-          Botanico, please click <span className="text-red-600">here </span>to contact us.
+        {t("taproom-time17")}  <span className="text-red-600">{t("taproom-time18")}</span>{t("taproom-time19")}
         </p>
       </div>
 
       <div className="justify-center flex h-[100px] max-sm:h-[50px]">
         <button className="w-[120px] h-[40px] text-white bg-black my-1 hover:bg-gray-600 max-sm:w-[60px] max-sm:h-[20px] max-sm:text-[7px]">
-          Contact Us
+        {t("taproom-time20")}
         </button>
       </div>
     

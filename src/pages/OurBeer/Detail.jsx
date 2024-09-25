@@ -4,8 +4,10 @@ import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import Sa from "../../Components/SlideAutomatic";
 import B from "../../image/Botanico_BBox_logo-01.png";
+import { useTranslation } from "react-i18next";
 
 function Detail() {
+  const { t } = useTranslation();
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [products, setProducts] = useState([]);
@@ -60,7 +62,7 @@ function Detail() {
             alt="Botanico Logo"
           />
           <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] max-sm:mb-[15px]">
-            Core Beers
+           {t("detail-t")}
           </h1>
         </div>
         {product && (
@@ -88,12 +90,12 @@ function Detail() {
                   </div>
 
                   <div className="text-2xl max-sm:text-[15px]">
-                    <h5>ABV: {product.abv}</h5>
-                    <h5>IBU: {product.ibu}</h5>
+                    <h5></h5>
+                    <h5></h5>
                   </div>
 
                   <div className="text-2xl w-[710px] max-sm:w-[94%] font-montserrat text-justify max-sm:text-[15px]">
-                    <p className="leading-[1.8]">{product.description}</p>
+                    <p className="leading-[1.8]"></p>
                   </div>
                 </div>
               </div>
