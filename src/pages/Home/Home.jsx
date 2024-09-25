@@ -4,9 +4,7 @@ import Footer from "../../Components/Footer";
 import Bg from "../../Components/Bg";
 import Button from "../../Components/Button";
 import Title from "../../Components/Tittle";
-
 import { useTranslation } from 'react-i18next';
-
 import img from "../../image/DSC01542.jpg"
 
 

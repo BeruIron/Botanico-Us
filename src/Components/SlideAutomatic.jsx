@@ -8,7 +8,7 @@ import img5 from '../image/Botanico9.jpg'; // Renamed to avoid spaces
 
 import { useState, useEffect, useCallback } from "react";
 
-import { Link } from "react-router-dom";
+
 
 function Sa() {
 

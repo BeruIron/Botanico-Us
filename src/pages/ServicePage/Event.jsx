@@ -1,3 +1,105 @@
+// import React from "react";
+// import Navbar from "../../Components/Navbar";
+// import QuestionComponent from "../../Components/Question";
+// import img0 from "../../image/beer (51).jpg";
+// import img4 from "../../image/beer (22).png"
+// import img1 from "../../image/servise.png";
+// import img2 from "../../image/beer (53).jpg";
+// import img3 from "../../image/beer (37).jpg";
+// import Button from "../../Components/Button";
+// import Footer from "../../Components/Footer";
+// import { Link } from "react-router-dom";
+
+// function Event() {
+//   return (
+//     <div className="bg-slate-100">
+//       <div className="bg-black text-white ">
+//         <Navbar />
+//       </div>
+//       <div className="h-[550px] max-sm:h-[300px]">
+//         <QuestionComponent textquestion=" Do you want to have Botanico beer at your event?" />
+//         <div className="flex justify-center overflow-hidden ">
+//           <img
+//             className="w-[250px] h-[330px] object-cover bg-orange-400 max-sm:w-[100px] max-sm:h-[150px] flex"
+//             src={img1}
+//             alt="Beer 1"
+//           />
+//           <img
+//             className="w-[250px] h-[330px] object-cover bg-amber-900 mx-[10px] max-sm:w-[100px] max-sm:h-[150px] flex"
+//             src={img2}
+//             alt="Beer 2"
+//           />
+//           <img
+//             className="w-[250px] h-[330px] object-cover bg-teal-900 max-sm:w-[100px] max-sm:h-[150px]   flex"
+//             src={img3}
+//             alt="Beer 3"
+//           />
+//         </div>
+//       </div>
+//       <div className="h-[750px] bg-white max-sm:h-[650px]">
+//         <div className="flex justify-between h-[650px] items-center w-[80%] mx-auto  max-sm:items-center space-x-5 max-sm:flex-col">
+//           <div className="flex flex-col items-center max-sm:items-center max-sm:mt-5">
+//             <img
+//               className="w-[500px] h-[300px] object-cover max-sm:h-[150px] max-sm:w-[350px]"
+//               src={img0}
+//               alt="Main Beer"
+//             />
+//             <img
+
+//               className="h-[300px] object-cover ml-[50%] -mt-[10%] w-[500px] max-sm:h-[150px] max-sm:w-[350px] max-sm:ml-0 max-sm:mt-5"
+
+//               src={img4}
+//               alt="Beer Event"
+//             />
+//           </div>
+//           <div className="justify-between flex space-x-10 max-sm:mb-[10%]">
+//             <div className="bg-red-600 h-[350px] px-[5px] max-sm:mt-5 max-sm:h-[200px] max-sm:px-[2px] "></div>
+
+//             <div className="text-gray-700 text-[20px] flex flex-col justify-center font-abc items-center space-y-10 max-sm:text-[10px] max-sm:space-y-3  ">
+//               <p className="leading-10  max-sm:leading-5">
+//                 We have different mobile draft units that we regularly use to
+//                 <br />
+//                 cater private, as well as company events. You can rent our
+//                 system with or <br />
+//                 without a bartender and we take care of the installation
+//                 andremoval <br />
+//                 as well as the delivery of the beer.
+//               </p>
+//               <p className="leading-10 max-sm:leading-5">
+//                 We also offer more unique, custom-made event add-ons, such as
+//                 <br />
+//                 craft beer tastings and food and beer pairings at your venue,
+//                 moderated by <br />
+//                 our German brew master Marco.
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       <p className="text-[20px] max-sm:w-[80%]  w-[40%] font-abc text-center mx-auto max-sm:text-[10px] mt-[30px]">
+//         Are you interested in selling real Cambodian craft beer at your F&B
+//         business? 
+//         We provide draft beer as well as bottles. Contact us
+//         <Link className="text-red-600" to="/contact">
+//           here
+//         </Link>
+//         .
+//       </p>
+
+//       <div className="h-[100px] flex justify-center items-center max-sm:h-[60px]">
+//       <Link to="/contact">
+//         <Button color="Button-black" name="Contact Us" />
+//       </Link>
+//     </div>
+
+
+//       <Footer />
+//     </div>
+//   );
+// }
+
+// export default Event;
+
 import React from "react";
 import Navbar from "../../Components/Navbar";
 import QuestionComponent from "../../Components/Question";
@@ -9,15 +111,17 @@ import img3 from "../../image/beer (37).jpg";
 import Button from "../../Components/Button";
 import Footer from "../../Components/Footer";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Event() {
+  const { t } = useTranslation();
   return (
     <div className="bg-slate-100">
       <div className="bg-black text-white ">
         <Navbar />
       </div>
       <div className="h-[550px] max-sm:h-[300px]">
-        <QuestionComponent textquestion=" Do you want to have Botanico beer at your event?" />
+        <QuestionComponent textquestion={t("event-t")} />
         <div className="flex justify-center overflow-hidden ">
           <img
             className="w-[250px] h-[330px] object-cover bg-orange-400 max-sm:w-[100px] max-sm:h-[150px] flex"
@@ -57,41 +161,32 @@ function Event() {
 
             <div className="text-gray-700 text-[20px] flex flex-col justify-center font-abc items-center space-y-10 max-sm:text-[10px] max-sm:space-y-3  ">
               <p className="leading-10  max-sm:leading-5">
-                We have different mobile draft units that we regularly use to
-                <br />
-                cater private, as well as company events. You can rent our
-                system with or <br />
-                without a bartender and we take care of the installation
-                andremoval <br />
-                as well as the delivery of the beer.
+               {t("event-p1")} <br />
+               {t("event-p2")} <br />
+               {t("event-p3")} <br />
+               {t("event-p4")}
               </p>
               <p className="leading-10 max-sm:leading-5">
-                We also offer more unique, custom-made event add-ons, such as
-                <br />
-                craft beer tastings and food and beer pairings at your venue,
-                moderated by <br />
-                our German brew master Marco.
+              {t("event-p5")} <br />
+              {t("event-p6")} <br />
+              {t("event-p7")}
               </p>
             </div>
           </div>
         </div>
       </div>
       <p className="text-[20px] max-sm:w-[80%]  w-[40%] font-abc text-center mx-auto max-sm:text-[10px] mt-[30px]">
-        Are you interested in selling real Cambodian craft beer at your F&B
-        business? 
-        We provide draft beer as well as bottles. Contact us
-        <Link className="text-red-600" to="/contact">
-          here
+       {t("event-footer1")}
+       {t("event-footer2")}
+        <Link className="text-red-600" to="/story">
+         {t("event-here")}
         </Link>
         .
       </p>
 
       <div className="h-[100px] flex justify-center items-center max-sm:h-[60px]">
-      <Link to="/contact">
-        <Button color="Button-black" name="Contact Us" />
-      </Link>
-    </div>
-
+        <Button color="Button-black" name={t("event-contact")} />
+      </div>
 
       <Footer />
     </div>

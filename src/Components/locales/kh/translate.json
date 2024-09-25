@@ -1,61 +1,174 @@
+
 {
-  "p1": "នៅឆ្នាំ 2013 អ្នកចូលចិត្តផឹកប៉ុន្មានរូបពីភាគខាងលិចបានចូលរួម",
-  "p2": "ជាមួយអ្នកកាយស្រាបៀររបស់យើងក្នុងគោលដៅរួមមួយ គឺការស្វែងរក",
-  "p3": "ស្រាបៀរដ៏កម្រឬភេសជ្ជៈនៅភ្នំពេញដែលមានលក្ខណៈ",
-  "p4": "ធ្វើឱ្យគេចង់រំលឹកដល់ទីកន្លែងដែលពួកគេរស់នៅ។",
+  "Navnar1":"ទំព័រដើម",
+  "Navnar2":"អំពី",
+  "Navnar3":"ស្រាបៀរ",
+  "Navnar4":"សេវាកម្ម",
+  
+  "Navnar5":"កម្មវិធី",
+  "Navnar6":"ការសាកល្បងស្រាបៀរ",
+  "Navnar7":"ភោជនីយដ្ឋាន",
+  
+  "Navnar8":"ទីតាំងស្វែងរកបៀរ",
+  "Navnar9":"បន្ទប់បៀរ",
+  "Navnar10":"ទំនាក់ទំនង",
+  "Navnar11":"ប្លុក",
+  
 
-  "h1": "អ្នកក៏ប្រហែលជាបានជួបប្រទះថ្ងៃស្រដៀងគ្នានេះជាមួយនឹងលទ្ធផល",
-  "h2": "ដូចគ្នា។ វាជាហេតុផលដែលយើងយកបញ្ហានេះមកដាក់ក្នុងចិត្ត",
-  "h3": "ហើយចាប់ផ្ដើមផលិតស្រាបៀរជាមួយ",
-  "h4": "គ្រឿងក្រអូបដែលទាក់ទាញ និងជាទីពេញចិត្ត។",
-
-  "learnMore": "ស្វែងយល់បន្ថែម",
-  "viewproduct": "មើលផលិតផល",
-  "wearebotanico": "យើងគឺ BOTANICO",
-
-  "wearebotanico-p1": "បេសកកម្មរបស់យើងគឺទាំងអស់អំពីការបំបែករបាំងទាំងនោះ ហើយធ្វើឱ្យស្រាបៀរ និងរោងចក្រផលិតស្រាបៀរមានអារម្មណ៍រួមបញ្ចូល ដោយមិនបំភិតបំភ័យ។ នៅក្នុងពិភពមួយដែលពោរពេញដោយជម្រើស",
-  "wearebotanico-p2": "នៃស្រាបៀរសិប្បកម្ម យើងចង់នាំសហគមន៍ខ្មែររបស់យើងរួមគ្នាដោយជំរុញទំនាក់ទំនងពិតប្រាកដតាមរយៈចំណង់ចំណូលចិត្តរួមគ្នារបស់យើងក្នុងការផលិតស្រាបៀរដ៏អស្ចារ្យ និងបង្កើតបទពិសោធន៍",
-  "wearebotanico-p3": "ដែលមិនអាចបំភ្លេចបាន។",
-
-  "ourstory": "អំពីពួកយើង",
-
-  "ourstory-p": "នៅឆ្នាំ 2013 មានមនុស្សពីភាគខាងលិចប៉ុន្មានរូបដែលមានគំនិតស្រដៀងគ្នា បានចូលរួមជាមួយអ្នកកាយស្រាបៀរ",
-  "ourstory-p1": "របស់យើង ដើម្បីស្វែងរកស្រាបៀរ នៅភ្នំពេញ ដែលធ្វើឱ្យគេចង់រំលឹកដល់ទីកន្លែងដែលពួកគេស្រលាញ់។",
-  "ourstory-p2": "អ្នកក៏អាចបានជួបប្រទះនឹងថ្ងៃស្រដៀងគ្នា ដែលស្វែងរកជំរើសមានកម្រិតចំងាយនេះផងដែរ។",
-  "ourstory-p3": "ដោយសារតែហេតុនេះហើយ យើងបានសម្រេចចិត្តយកបញ្ហានេះក្នុងដៃ",
-  "ourstory-p4": "ហើយចាប់ផ្តើមផលិតស្រាបៀរដែលពេញខ្លួនជាមួយនឹងក្លិនក្រអូបពិសេស",
-  "ourstory-p5": "និងសរសៃបញ្ចប់ដែលធ្វើឱ្យមានអារម្មណ៍ពេញចិត្ត។",
-
-  "ourstory-h": "លឿនទៅមុខជាង 10 ឆ្នាំ ហើយរោងចក្រផលិតស្រាបៀត្រូវបានបង្កើតឡើងយ៉ាងល្អ",
-  "ourstory-h1": "ហួសព្រំដែននៃ រាជធានីភ្នំពេញ។ ក្រុមហ៊ុន Botanico Brewing ",
-  "ourstory-h2": "(ពីមុនត្រូវបានគេស្គាល់ថា Cerevisia Craft Brewery)បានផ្តល់",
-  "ourstory-h3": "ស្រាបៀរសិប្បកម្មជាអត្តសញ្ញាណកម្ពុជា។",
-
-
-  "ourstory-a": "យើងកំពុងមានបេសកកម្មដើម្បីចែករំលែកចំណង់ចំណូលចិត្ត និងចំណេះដឹងរបស់យើងជាមួយ",
-  "ourstory-a1": "សហគមន៍ ដោយប្រើប្រាស់គ្រឿងផ្សំដែលផ្លូវការបណ្ដើរ និងគ្រឿងផ្សំក្នុងប្រទេស",
-  "ourstory-a2": "គុណភាព, ស្ថិរភាព, ការរួមបញ្ចូល និងនូវភាពច្នៃប្រឌិត។ “យើងចង់បង្ហាញមុខម៉ាកស្រាបៀរកម្ពុជា",
-  "ourstory-a3": "ទៅក្នុងការវិលក្បាល និងបំលែងអាកប្បកិច្ចនៃការផឹករបស់មនុស្ស",
-  "ourstory-a4": "ឱ្យមានភាពខ្ពស់ និងមានទំនាក់ទំនងដែលមានការទទួលខុសត្រូវ,” អ្នកនិយាយ Marco",
-  "ourstory-a5": "Günther, ប្រធានអង្គការនិងអ្នកបង្ហូរក្នុង Botanico Brewing Co.",
-  "ourstory-butt":"ស្វែងយល់បន្ថែម",
-
-"corebeer":"ស្រាបៀរចំបង",
-"otherbeer":"ស្រាបៀរផ្សេងទៀតដែលយើងបានផលិត",
-"ourbeer1": "Cambodian Amber Alew ស្ករត្នោត",
-"ourbeer2": "ស្រាបៀរស្រូវសាលី Reahoo",
-"ourbeer3": "ប្រាំងសេប អ៊ីមផេរៀល IPA",
-"ourbeer4": "ថើបបារាំង Biere de Garde",
-"ourbeer5": "ស្កាហ្វេទឹកដោះគោ",
-"ourbeer6": "ស្រាបៀរ បាសាក ហប៊ីឡាកឺ",
-"ourbeer7": "ស្រាបៀរ ផ្លែស្វាយត្រជាក់",
-"ourbeer8": "ស្រាបៀរ សាន់ដោន ឡាកឺខ្មៅ",
-"ourbeer9": "ស្រាបៀរ ដាកស្តា ផតឌ័រ",
-"ourbeer10": "ស្រាបៀរ អ័រៀនស្វាយមាស ឡុងអែល",
-
-"service": "សេវាកម្ម BOTANICO",
-"service1": "ភោជនីយដ្ឋាន/បារ",
-"service2": "កម្មវិធី",
-"service3": "ដំណើរកម្សាន្ត/សាកល្បងស្រា"
-
-}
+  "p1":"In 2013, a few like-minded imbibers from the West joined ",
+  "p2":"our brew-master in a common goal: to find a craft beer, ",
+  "p3":" microbrewery, or libation in Phnom Penh that was ",
+  "p4":"reminiscent of home.",
+  
+  "h1":"You, too, may have experienced a  similar day with limited",
+  "h2":"results. It  was because of this that we took matters into our ",
+  "h3":"own hands and began crafting full-bodied beers with ",
+  "h4":" iconic aromatics and a pleasing finish....",
+  
+  "learnMore":"LearnMore",
+  "viewproduct":"View Products",
+  "wearebotanico":"WE ARE BOTANICO ",
+  
+  "wearebotanico-p1":"beer and breweries feel including, not intimidating. In a world full of craft beer options, we want to bring our Khmer community",
+  "wearebotanico-p2":"together by fostering genuine connections through our shared passion for crafting amazing beers and creating unforgettable",
+  "wearebotanico-p3":"experiences.",
+  
+  "ourstory":"OUR STORY",
+  "ourstory-p":" In 2013, a few like-minded people from the West joined our brew",
+  "ourstory-p1":" master in a common goal: to find craft beer in Phnom Penh that was",
+  "ourstory-p2":" reminiscent of home. You, too, may have experienced a similar day",
+  "ourstory-p3":" with limited results. It was because of this that we took matters",
+  "ourstory-p4":" into our own hands and began crafting full-bodied beers with",
+  "ourstory-p5":" iconic aromatics and a pleasing finish.",
+  
+  "ourstory-h":" Fast forward more than 10 years, and the craft brewery is well",
+  "ourstory-h1":" established beyond the borders of Phnom Penh. Botanico Brewing",
+  "ourstory-h2":" Company (formerly known as Cerevisia Craft Brewery) has given",
+  "ourstory-h3":" craft beer a Cambodian identity.",
+  
+  "ourstory-a":" We are on a mission to share our passion and knowledge with the",
+  "ourstory-a1":"community, using locally grown ingredients as much as possible and",
+  "ourstory-a2":"Quality, Consistency, Inclusiveness, and Innovation. “We want to turn",
+  "ourstory-a3":"the Cambodian beer market upside down and change the people’s behavior",
+  "ourstory-a4":"of drinking to a more sophisticated and responsible way,” says Marco",
+  "ourstory-a5":"Günther, the CEO and brew master of Botanico Brewing Co.",
+  "ourstory-t":"The Real Cambodian craft Beer",
+  "ourstory-butt":"LearnMore",
+  
+  "corebeer":"Core Beers",
+  "otherbeer":"Other Beers We Brewed",
+  "ourbeer1": "Cambodian Amber Ale with Palm Sugar",
+  "ourbeer2": "Reahoo Wheat Beer",
+  "ourbeer3": "Princeps Imperial IPA",
+  "ourbeer4": "French Kiss Bière de Garde",
+  "ourbeer5": "Coffee Milk Stout",
+  "ourbeer6": "Bassac Hoppy Lager",
+  "ourbeer7": "Tropical Mango Ale",
+  "ourbeer8": "Sundown Dark Lager",
+  "ourbeer9": "Dark Star Porter",
+  "ourbeer10": "Jasmine Gold Blonde Ale",
+  
+  "service":"BOTANICO SERVICES",
+  "service1":"RESTAURANT/BAR",
+  "service2":"EVENT",
+  "service3":"TOURS/TASTINGS",
+  
+  "event-t":"Do you want to have Botanico beer at your event?",
+  "event-p1":"We have different mobile draft units that we regularly use to",
+  "event-p2":"cater private, as well as company events. You can rent our system with or",
+  "event-p3":"without a bartender and we take care of the installation andremoval",
+  "event-p4":"as well as the delivery of the beer.",
+  "event-p5":"We also offer more unique, custom-made event add-ons, such as",
+  "event-p6":"craft beer tastings and food and beer pairings at your venue, moderated by",
+  "event-p7":"our German brew master Marco.",
+  "event-footer1":"Are you interested in selling real Cambodian craft beer at your F&B ",
+  "event-footer2":"business? We provide draft beer as well as bottles. Contact us",
+  "event-here":"here",
+  "event-contact":"Contact Us",
+  
+  "tastbeer-t":"Brewery tours/ tastings at Botanico",
+  "tastbeer-p":"Have you ever asked yourself how beer is actually made? What it looks like inside of a brewery?",
+  "tastbeer-p1":"It’s a fascinating process based on natural science! Gather your",
+  "tastbeer-p2":"friends or bring your company’s department and book a brewery",
+  "tastbeer-p3":"tour with tasting at Botanico Brewing Company. Our experienced,",
+  "tastbeer-p4":"certified German brewmaster Marco will show you the place where",
+  "tastbeer-p5":"the magic happens and explain it to you. He will be able to",
+  "tastbeer-p6":"answer all your questions. For groups of up to 8 people.",
+  "tastbeer-p7":"Alternatively, you can also book a food and beer pairing at",
+  "tastbeer-p8":"Botanico Craft Beer Garden for small groups of up to 10 people.",
+  
+  "restaurant-t":"Do you want to sell our beer?",
+  "restaurant-p":"Draft",
+  "restaurant-p1":"Installation , maintenance and regular cleaning of the draft machine",
+  "restaurant-p2":"Free delivery of kegs",
+  "restaurant-p3":"Provision of glassware and coasters",
+  "restaurant-p4":"On-sight training for bar personal and service staff on how to use",
+  "restaurant-p5":"the system and about the product itself",
+  
+  "restaurant-p6":"Bottle",
+  "restaurant-p7":"Free delivery",
+  "restaurant-p8":"Provision of glassware and coasters",
+  "restaurant-p9":"Lower MOQ (1 box – 24 bottles; mixed cases possible)",
+  "restaurant-p10":"Better solution for smaller businesses (little space) and/or less",
+  "restaurant-p11":"expected consumption",
+  "restaurant-p12":"On-site training for bar personnel and service staff on how to use",
+  "restaurant-p13":"the system and about the product itself",
+  "restaurant-p14":"Are you interested in selling real Cambodian craft beer at your F&B business?",
+  "restaurant-p15":"We provide draft beer as well as bottles.",
+  "restaurant-p16":" here",
+  "restaurant-p17":"Contact Us",
+   
+  "taproom-t":"BOTANICO CRAFT BEER GARDEN & RESTAURANT",
+  "taproom-p1":"Botanico Craft Beer Garden & Restaurant is our home! It is located right next to our brewery, on the same property. The garden is a beautiful,",
+  "taproom-p2":"hidden gem with lots of plants and tranquility. It is the perfect getaway from the hustle & bustle of the city! We always have between 6 and 10",
+  "taproom-p3":"beers on tap that we brewed ourselves.",
+  "taproom-time1":"OPENING HOURS",
+  "taproom-time2":"Sunday – Wednesday | 11.30am – 12am",
+  "taproom-time3":"Thursday – Saturday | 11.30am – 1am",
+  "taproom-time4":"MONDAY - SUNDAY*, UNTIL 7PM",
+  "taproom-time5":"HAPPY HOUR",
+  "taproom-time6":"20% off selected Lion Brewery Co pints and selected wines by the glass.",
+  "taproom-time7":"*excluding public holidays.",
+  "taproom-time8":"Offer may not be used in conjunction with any other promotions.",
+  "taproom-time9":"Near & Dear and Far & Wide",
+  "taproom-time10":"Global Fusion: Khmer Flavors Meet International Dishes",
+  "taproom-time11":"in Garden Atmosphere",
+  "taproom-time12":"The food is a mix of Khmer and international dishes, created by our",
+  "taproom-time13":"executive Chef, Rith. He is a Khmer-German who learned to become a",
+  "taproom-time14":"master chef in Germany and is now focusing on bringing high-quality",
+  "taproom-time15":"and locally sourced ingredients, perfectly combined to your plates!Menu",
+  "taproom-time16":"Menu",
+  "taproom-time17":"If you wish to make a reservation, or want to hold an event at Botanico, please click here to contact us.",
+  "taproom-time18":"here",
+  "taproom-time19":"to contact us.",
+  "taproom-time20":"Contact Us.",
+  
+  "detail-t":"Core Beers",
+  
+  "contact":"Contact Us",
+  "contact1":"First name",
+  "contact2":"Enter your first name",
+  "contact3":"Last name",
+  "contact4":"Enter your last name",
+  "contact5":"Email",
+  "contact6":"Enter your email",
+  "contact7":"Phone number",
+  "contact8":"Enter your phone number",
+  "contact9":"Message",
+  "contact10":"Type your message here.....",
+  "contact11":"Submit"
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }

@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { MdPhone } from "react-icons/md";
 import Image from "../image/Botanico_BBox_logo.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -79,8 +79,10 @@ function Footer() {
             />
             <h5>Join Our Instagram</h5>
           </a>
-          <Link
-            to="/beerFinder" // Adjust the path as necessary
+          <a
+            href="https://maps.app.goo.gl/2JjevYQ5ZhdJtAy16"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
             <FaMapMarkerAlt
@@ -88,7 +90,7 @@ function Footer() {
               color="#FF0000"
             />
             <h5>Our Location</h5>
-          </Link>
+          </a>
         </div>
         <div className="flex flex-col space-y-4 text-white mt-7">
           <h5 className="font-semibold text-[25px]">PRODUCT</h5>
