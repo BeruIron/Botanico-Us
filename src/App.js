@@ -13,19 +13,14 @@ import Story from './pages/StoryPage/Story';
 import Service from './pages/ServicePage/Service';
 import Blog from './pages/Blog/Blog';
 import Menu from './pages/TapRoom/Menu';
-
-
 import React from "react";
-// import { useTranslation } from "react-i18next";
 
 const App = () => {
  
   return (
-
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-
         <Route path="/story" element={<Story />} />
         <Route path="/ourBeer" element={<OurBeer />} />
         <Route path="/ourBeer/detail" element={<Detail />} />
@@ -43,6 +38,5 @@ const App = () => {
       </Routes>
     </>
   );
-
 };
 export default App;
