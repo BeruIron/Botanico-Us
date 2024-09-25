@@ -59,7 +59,10 @@ function Home() {
             </p>
 
             <div className="flex justify-center mt-[30px]">
-              <Button name={t("learnMore")} color="Button-black" />
+            <Link to="/story">
+               <Button name="Learn More" color="Button-black" />
+            </Link>
+
 
             </div>
           </div>

@@ -52,7 +52,7 @@ function Taproom() {
 
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
           <div className="text-center px-4 md:px-8 lg:px-16">
-            <h1 className="text-white text-[60px] max-sm:text-[20px] font-abc font-bold mb-4">
+            <h1 className="text-white text-[50px] max-sm:text-[20px] font-abc font-bold mb-4">
               Botanico Brewing Company
             </h1>
             <Link to="/ourBeer">
@@ -141,11 +141,13 @@ function Taproom() {
             to your plates!
           </p>
 
+
+          <Link to="/menu">
           <Button
             onClick={() => navigate("/menu")}
             color="Button-black"
             name="Menu"
-          />
+          /></Link>
         </div>
 
         <div className="w-full max-sm:mt-[20px]">
@@ -158,7 +160,7 @@ function Taproom() {
       </div>
 
 
-      <div className="mx-auto max-sm:w-[80%] flex h-[150px] max-sm:h-[80px] items-center">
+      <div className="mx-auto max-sm:w-[80%] flex h-[150px] max-sm:h-[80px] justify-center items-center">
         <p className="text-center font-abc text-[20px] max-sm:text-[12px]">
 
           If you wish to make a reservation, or want to hold an event at
