@@ -204,7 +204,6 @@ import img7 from '../../image/tep2.png';
 
 function Taproom() {
   const { t } = useTranslation();
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
     { url: img1 },
@@ -334,13 +333,13 @@ function Taproom() {
         </div>
       </div>
 
-      <div className="mx-auto max-sm:w-[80%] flex h-[150px] max-sm:h-[80px] items-center">
+      <div className="justify-center max-sm: mx-auto max-sm:w-[80%] flex h-[150px] max-sm:h-[80px] items-center">
         <p className="text-center font-abc text-[20px] max-sm:text-[10px]">
         {t("taproom-time17")}  <span className="text-red-600">{t("taproom-time18")}</span>{t("taproom-time19")}
         </p>
       </div>
 
-      <div className="justify-center flex h-[100px] max-sm:h-[50px]">
+      <div className="justify-center  flex h-[100px] max-sm:h-[50px]">
         <button className="w-[120px] h-[40px] text-white bg-black my-1 hover:bg-gray-600 max-sm:w-[60px] max-sm:h-[20px] max-sm:text-[7px]">
         {t("taproom-time20")}
         </button>

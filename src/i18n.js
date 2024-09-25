@@ -1,4 +1,4 @@
-// 
+
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import en from './Components/locales/en/translate.json';
@@ -14,13 +14,13 @@ const resources = {
 };
 
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next) 
   .init({
     resources,
-    lng: 'en', // default language
-    fallbackLng: 'en', // fallback language
+    lng: 'en', 
+    fallbackLng: 'en', 
     interpolation: {
-      escapeValue: false // React already escapes values to prevent XSS
+      escapeValue: false 
     }
   });
 

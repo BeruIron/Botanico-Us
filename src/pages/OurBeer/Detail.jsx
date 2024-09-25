@@ -4,8 +4,10 @@ import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import Sa from "../../Components/SlideAutomatic";
 import B from "../../image/Botanico_BBox_logo-01.png";
+import { useTranslation } from 'react-i18next';
 
 function Detail() {
+    const { t } = useTranslation();
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [products, setProducts] = useState([]);
@@ -13,7 +15,7 @@ function Detail() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/data.json")
+    fetch("/data_en.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -60,7 +62,7 @@ function Detail() {
             alt="Botanico Logo"
           />
           <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] max-sm:mb-[15px]">
-            Core Beers
+            {t("detail-t")}
           </h1>
         </div>
         {product && (
