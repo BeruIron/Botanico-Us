@@ -5,11 +5,15 @@ import Button from "../../Components/Button";
 import Footer from "../../Components/Footer";
 import Title from "../../Components/Tittle";
 
+import image from '../../image/Botanico10.jpg'
+import image1 from '../../image/DSC01542.jpg'
+
+
 import { useTranslation } from 'react-i18next';
 
-import image from '../../image/story1.png'
-import image1 from '../../image/story.png'
+
 import { Link } from 'react-router-dom';
+
 
 
 
@@ -26,7 +30,7 @@ function Story() {
       <Title titleText={t("wearebotanico")}></Title>
       <div className=" w-[70%] max-sm:w-[90%] mx-auto">
 
-        <p className="text-[20px]  font-abc leading-10 h-[130px] max-sm:leading-7 items-center max-sm:text-[12px] max-sm:h-[150px] flex">
+        <p className="text-[20px]  font-light leading-10 h-[130px] max-sm:leading-7 items-center max-sm:text-[12px] max-sm:h-[150px] flex">
           {t("wearebotanico-p1")} 
           {t("wearebotanico-p2")} 
           {t("wearebotanico-p3")} 
@@ -37,14 +41,14 @@ function Story() {
       <div className="w-[70%] max-sm:w-[90%] mx-auto">
         <div className="flex max-sm:flex-col flex-row mt-[50px]  mx-auto max-sm:space-x-0 space-x-10">
           <img
-            src={image}
+            src={image1}
             alt="Brewery"
             className="w-[500px] h-[400px] object-cover"
           />
           <div>
 
 
-            <p className="text-[20px] font-abc leading-10 h-[170px] max-sm:leading-7 max-sm:text-[12px] max-sm:h-[170px] flex">
+            <p className="text-[20px] font-light leading-10 h-[170px] max-sm:leading-7 max-sm:text-[12px] max-sm:h-[170px] flex">
              {t("ourstory-p")}
              {t("ourstory-p1")}
              {t("ourstory-p2")}
@@ -53,7 +57,7 @@ function Story() {
              {t("ourstory-p5")}
 
             </p>
-            <p className="text-[20px]  font-abc leading-10 max-sm:leading-7 max-sm:h-[150px] max-sm:text-[12px] h-[100px]">
+            <p className="text-[20px] pt-16 font-light leading-10 max-sm:leading-7 max-sm:h-[150px] max-sm:text-[12px] h-[100px]">
             {t("ourstory-h")}
             {t("ourstory-h1")}
             {t("ourstory-h2")}
@@ -64,7 +68,7 @@ function Story() {
         </div>
         <div>
 
-           <p className="text-[20px] leading-10 max-sm:leading-7 font-abc max-sm:text-[12px] items-center flex h-[200px]">
+           <p className="text-[20px] leading-10 max-sm:leading-7 font-light max-sm:text-[12px] items-center flex h-[200px]">
            {t("ourstory-a")}
              {t("ourstory-a1")}
              {t("ourstory-a2")}
@@ -74,7 +78,7 @@ function Story() {
 
         </p>
 
-        <p className="font-abc font-bold  text-[30px] max-sm:mt-[50px] max-sm:text-[20px]"> The Real Cambodian Craft Beer</p>
+        <p className="font-abc font-bold  text-[30px] max-sm:mt-[50px] max-sm:text-[20px]"> Real Cambodian Craft Beer</p>
 
         </div>
 
@@ -83,7 +87,7 @@ function Story() {
        
         <div className=" mt-[50px] ">
           <img
-            src={image1}
+            src={image}
             alt="Brewery"
             className=" w-full h-[700px] max-sm:h-[400px] object-cover"
           />
@@ -93,7 +97,7 @@ function Story() {
 
         <Link to="/ourBeer">
 
-          <Button name="OURBEER" color="Button-black" />
+          <Button name="View Products" color="Button-black" />
           </Link>
 
         </div>

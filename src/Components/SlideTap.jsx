@@ -1,10 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
-import img1 from '../image/slider.png'; // Adjust paths as necessary
-import img2 from '../image/slide.png';  // Adjust paths as necessary
-import img3 from '../image/sld.png';    // Adjust paths as necessary
-import img4 from '../image/sd.png';     // Adjust paths as necessary
-import img5 from '../image/sli.png';    // Adjust paths as necessary
+import img1 from '../image/Botanico4.jpg'; // Adjust paths as necessary
+import img2 from '../image/Botanico5.jpg';  // Adjust paths as necessary
+import img3 from '../image/Botanico7.jpg';    // Adjust paths as necessary
+import img4 from '../image/Botanico8.jpg';     // Adjust paths as necessary
+import img5 from '../image/Botanico9.jpg';    // Adjust paths as necessary
 
 function SlideTap() {
     const [currentIndex, setCurrentIndex] = useState(0);
