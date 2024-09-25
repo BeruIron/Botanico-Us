@@ -39,7 +39,7 @@ function OurBeer() {
             src={B}
             alt="Botanico Logo"
           />
-          <h1 className="text-[#124734] font-bold font-montserrat text-4xl max-sm:text-[20px] mb-[107px] max-sm:mt-3">
+          <h1 className="text-[#000000] font-bold font-montserrat text-5xl max-sm:text-[20px] mb-[107px] max-sm:mt-3">
             {t("corebeer")}
           </h1>
         </div>
@@ -95,7 +95,7 @@ function OurBeer() {
           </div>
           <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:mt-[5px] max-sm:h-[150px] h-[300px]">
             <div className=" flex-1 flex justify-center items-center max-sm:ml-8">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] ">
+              <div className=" font-light text-left leading-10 text-[24px]  max-sm:text-[10px] ">
               {t("ourbeer1")} <br />
               {t("ourbeer2")} <br />
               {t("ourbeer3")} <br />
@@ -105,7 +105,7 @@ function OurBeer() {
               </div>
             </div>
             <div className="flex-1 flex justify-center items-center ">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px]">
+              <div className="text-left leading-10 font-light text-[24px]  max-sm:text-[10px]">
               {t("ourbeer6")} <br />
               {t("ourbeer7")} <br />
               {t("ourbeer8")} <br />

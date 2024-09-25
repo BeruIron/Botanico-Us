@@ -5,7 +5,7 @@ import Button from "../../Components/Button";
 import Footer from "../../Components/Footer";
 import Title from "../../Components/Tittle";
 
-import image from '../../image/story.png'
+import image from '../../image/Botanico10.jpg'
 import image1 from '../../image/DSC01542.jpg'
 
 

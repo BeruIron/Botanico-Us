@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { MdPhone } from "react-icons/md";
 import Image from "../image/Botanico_BBox_logo.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -22,25 +23,34 @@ function Footer() {
         </div>
         <div className="flex mt-7 flex-col space-y-7 font-abc font-bold text-gray-200 max-sm:space-y-2">
           <a
-            href="mailto:chanleakhena.soy@institute.pse.ngo"
+            href="mailto:info@botanicobrewing.com"
             className="flex items-center gap-2"
           >
-            <FaEnvelope className="text-[30px] max-sm:text-[10px]" color="#1877F2" />
+            <FaEnvelope
+              className="text-[30px] max-sm:text-[10px]"
+              color="#1877F2"
+            />
             <h5>Email</h5>
           </a>
 
           <a href="tel:+88570513499" className="flex items-center gap-2">
-            <MdPhone className="text-[30px] max-sm:text-[10px]" color="#1877F2" />
-            <h5>+885 70513499</h5>
+            <MdPhone
+              className="text-[30px] max-sm:text-[10px]"
+              color="#1877F2"
+            />
+            <h5>+885 05 661 866</h5>
           </a>
 
           <a
-            href="https://www.tiktok.com/@yourTiktokUsername"
+            href="https://www.tiktok.com/@botanico.garden.brewery?_t=8pBhduEtZo1&_r=1"
             className="flex items-center gap-2"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTiktok className="text-[30px] max-sm:text-[10px]" color="#1877F2" />
+            <FaTiktok
+              className="text-[30px] max-sm:text-[10px]"
+              color="#1877F2"
+            />
             <h5>TikTok</h5>
           </a>
         </div>
@@ -51,40 +61,46 @@ function Footer() {
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            <FaFacebook className="text-[30px] max-sm:text-[10px]" color="#1877F2" />
+            <FaFacebook
+              className="text-[30px] max-sm:text-[10px]"
+              color="#1877F2"
+            />
             <h5>Join Our Facebook</h5>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/botanicobrewing?igsh=MXBpOGtzZjYwZ3dwNA%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            <FaInstagram className="text-[30px] max-sm:text-[10px]" color="#E4405F" />
+            <FaInstagram
+              className="text-[30px] max-sm:text-[10px]"
+              color="#E4405F"
+            />
             <h5>Join Our Instagram</h5>
           </a>
           <a
-            href="https://www.google.com/maps"
+            href="https://maps.app.goo.gl/2JjevYQ5ZhdJtAy16"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            <FaMapMarkerAlt className="text-[30px] max-sm:text-[10px]" color="#FF0000" />
+            <FaMapMarkerAlt
+              className="text-[30px] max-sm:text-[10px]"
+              color="#FF0000"
+            />
             <h5>Our Location</h5>
           </a>
         </div>
-        <div className="flex flex-col space-y-2 text-white mt-7">
-          <h5 className="font-semibold">PRODUCT</h5>
-          <ul className="space-y-2 font-abc font-bold">
+        <div className="flex flex-col space-y-4 max-sm:space-y-2 text-white mt-7">
+          <h5 className="font-semibold text-[20px] max-sm:text-[7px] ">PRODUCT</h5>
+          <ul className="space-y-2 font-bold">
             <li>Splash</li>
             <li>Blonde Ale</li>
             <li>Helles Lager</li>
             <li>Centurion</li>
           </ul>
         </div>
-      
-
-        
       </div>
       <p className="text-gray-200 font-abc text-center max-sm:text-[7px] mt-[50px] max-sm:mt-2">
         #9B St. 29 (Near St. 294) Tonle Bassac Chamkarmon Phnom Penh

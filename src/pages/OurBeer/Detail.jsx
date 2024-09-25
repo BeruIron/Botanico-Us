@@ -152,7 +152,7 @@ function Detail() {
               Other Beers We Brewed
             </h1>
           </div>
-          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[10px] max-sm:mt-[45px] max-sm:h-[70px]">
+          <div className=" font-montserrat font-regular mx-auto container flex  mt-[40px] text-[12px] max-sm:mt-[45px] max-sm:h-[70px]">
             <div className=" flex-1 flex justify-center items-center max-sm:ml-8">
               <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px] ">
                 <p>Cambodian Amber Ale / w palm sugar</p>
@@ -163,7 +163,7 @@ function Detail() {
               </div>
             </div>
             <div className="flex-1 flex justify-center items-center ">
-              <div className="text-left space-y-2 text-[24px]  max-sm:text-[10px]">
+              <div className="text-left space-y-2 text-[24px]  max-sm:text-[12px]">
                 <p>Bassac Hoppy Lager</p>
                 <p>Tropical Mango Ale</p>
                 <p>Sundown Dark Lager</p>

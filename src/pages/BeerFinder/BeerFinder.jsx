@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import img1 from "../../image/slider.png"; // Adjust this path if necessary
-import img2 from "../../image/slide.png";   // Adjust this path if necessary
-import img3 from "../../image/sld.png";     // Adjust this path if necessary
-import img4 from "../../image/sd.png";      // Adjust this path if necessary
-import img5 from "../../image/sli.png";     // Adjust this path if necessary
+import img1 from "../../image/Botanico4.jpg"; // Adjust this path if necessary
+import img2 from "../../image/Botanico5.jpg";   // Adjust this path if necessary
+import img3 from "../../image/Botanico7.jpg";     // Adjust this path if necessary
+import img4 from "../../image/Botanico8.jpg";      // Adjust this path if necessary
+import img5 from "../../image/Botanico9.jpg";     // Adjust this path if necessary
 
 const BeerFinder = () => {
   const [location, setLocation] = useState("Botanico, Cambodia");
@@ -75,7 +75,7 @@ const BeerFinder = () => {
 
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
           <div className="text-center px-4 md:px-8 lg:px-16">
-            <h1 className="text-white text-[30px] max-sm:text-[20px] font-abc font-bold mb-4">
+            <h1 className="text-white text-[50px] max-sm:text-[20px] font-abc font-bold mb-4">
               Botanico Brewing Company
             </h1>
           </div>
