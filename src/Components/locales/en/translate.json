@@ -128,14 +128,23 @@
 "taproom-time20":"Contact Us.",
 
 "detail-t":"Core Beers",
-"detail1":"CENTURION",
-"detail2":"AMERICAN PALE ALE",
-"detail3":"ABV: 5.6%",
-"detail4":"IBU: 38",
-"detail5":"This beer is all about balance! Moderate alcohol level, moderate",
-"detail6":"bitterness, moderate flavor. Citrus tones will hit the nose, the",
-"detail7":"malty sweetness harmonizes in a lovely way with the bitterness",
-"detail8":"and the body is neither too thick nor too thin. Cheers!"
+
+"contact":"Contact Us",
+"contact1":"First name",
+"contact2":"Enter your first name",
+"contact3":"Last name",
+"contact4":"Enter your last name",
+"contact5":"Email",
+"contact6":"Enter your email",
+"contact7":"Phone number",
+"contact8":"Enter your phone number",
+"contact9":"Message",
+"contact10":"Type your message here.....",
+"contact11":"Submit"
+
+
+
+
 
 
 

@@ -12,7 +12,7 @@ function OurBeer() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/data.json")
+    fetch("/data_en.json")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching data:", error));
