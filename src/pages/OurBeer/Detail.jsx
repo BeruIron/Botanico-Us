@@ -101,7 +101,7 @@ function Detail() {
               </div>
             </div>
 
-            <div className="flex flex-row justify-center items-center gap-4 container mx-auto  mt-[50px] max-sm:hidden ">
+            <div className="flex flex-row justify-center items-center gap-4 container mx-auto  mt-[50px] ">
               {products
                 .filter((p) => p.id !== parseInt(id, 10))
                 .map((product) => (

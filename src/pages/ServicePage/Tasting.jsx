@@ -94,6 +94,7 @@ import img3 from "../../image/beer (37).jpg";
 import img from "../../image/beer (40).jpg";
 import Button from "../../Components/Button";
 import Footer from "../../Components/Footer";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function TestingBeer() {
@@ -155,9 +156,13 @@ function TestingBeer() {
           </div>
         </div>
       </div>
-      <div className="h-[100px] flex justify-center items-center max-sm:h-[60px]">
-        <Button color="Button-black" name={t("event-contact")} />
-      </div>
+
+      <Link to="/contact">
+         <div className="h-[100px] flex justify-center items-center max-sm:h-[60px]">
+           <Button color="Button-black" name={t("event-contact")} />
+         </div>
+      </Link>
+
       <Footer />
     </div>
   );

@@ -178,15 +178,15 @@ function Event() {
       <p className="text-[20px] max-sm:w-[80%]  w-[40%] font-abc text-center mx-auto max-sm:text-[10px] mt-[30px]">
        {t("event-footer1")}
        {t("event-footer2")}
-        <Link className="text-red-600" to="/story">
          {t("event-here")}
-        </Link>
+       
         .
       </p>
-
-      <div className="h-[100px] flex justify-center items-center max-sm:h-[60px]">
-        <Button color="Button-black" name={t("event-contact")} />
-      </div>
+      <Link to="/contact">
+         <div className="h-[100px] flex justify-center items-center max-sm:h-[60px]">
+           <Button color="Button-black" name={t("event-contact")} />
+         </div>
+      </Link>
 
       <Footer />
     </div>
