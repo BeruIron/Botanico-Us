@@ -48,10 +48,10 @@ function Story() {
           />
 
           
-          <div>
+          <div className="max-sm:mt-[20px]">
 
 
-            <p className="text-[20px] font-light leading-10 h-[170px] max-sm:leading-7 max-sm:text-[12px] max-sm:h-[170px] flex">
+            <p className="text-[20px] font-light leading-10 h-[170px] max-sm:leading-7 max-sm:text-[12px] max-sm:h-[120px] flex">
              {t("ourstory-p")}
              {t("ourstory-p1")}
              {t("ourstory-p2")}
@@ -60,7 +60,7 @@ function Story() {
              {t("ourstory-p5")}
 
             </p>
-            <p className="text-[20px] pt-16 font-light leading-10 max-sm:leading-7 max-sm:h-[150px] max-sm:text-[12px] h-[100px]">
+            <p className="text-[20px] pt-16 font-light leading-10 max-sm:leading-7 max-sm:h-[170px] max-sm:text-[12px] h-[100px]">
             {t("ourstory-h")}
             {t("ourstory-h1")}
             {t("ourstory-h2")}
@@ -81,7 +81,7 @@ function Story() {
 
         </p>
 
-        <p className="font-abc font-bold  text-[30px] max-sm:mt-[50px] max-sm:text-[20px]"> Real Cambodian Craft Beer</p>
+        <p className="font-abc font-bold  text-[30px] max-sm:mt-[10px] max-sm:text-[20px]"> Real Cambodian Craft Beer</p>
 
         </div>
 
@@ -96,12 +96,11 @@ function Story() {
           />
         </div>
 
-        <div className="flex justify-center items-center font-abc h-[150px] max-sm:h-[50px]">
+        <div className="flex justify-center items-center font-abc h-[150px] max-sm:h-[50px] max-sm:mt-[14px] max-sm:mb-4">
 
-        <Link to="/ourBeer">
-
-          <Button name="View Products" color="Button-black" />
-          </Link>
+           <Link to="/ourBeer">
+             <Button name="View Products" color="Button-black" />
+           </Link>
 
         </div>
       </div>

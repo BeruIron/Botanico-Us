@@ -299,7 +299,7 @@ function Taproom() {
         </div>
       </div>
 
-      <div className="flex flex-row w-[80%] max-sm:flex-col max-sm:w-[90%] mx-auto space-x-10 max-sm:space-x-0">
+      <div className="flex flex-row w-[80%] max-sm:flex-col max-sm:w-[80%] mx-auto space-x-10 max-sm:space-x-0">
         <div className="space-y-5 font-abc w-full">
           <h2 className="text-[30px] max-sm:text-[20px] font-extrabold">
           {t("taproom-time9")}
@@ -337,13 +337,13 @@ function Taproom() {
         {t("taproom-time17")}  <span className="text-red-600">{t("taproom-time18")}</span>{t("taproom-time19")}
         </p>
       </div>
-
-      <div className="justify-center  flex h-[100px] max-sm:h-[50px]">
-        <button className="w-[120px] h-[40px] text-white bg-black my-1 hover:bg-gray-600 max-sm:w-[60px] max-sm:h-[20px] max-sm:text-[7px]">
-        {t("taproom-time20")}
-        </button>
-      </div>
-    
+      <Link to="/contact">
+         <div className="justify-center  flex h-[100px] max-sm:h-[50px]">
+           <Button 
+           color={"Button-black"}
+           name={t("taproom-time20")}/>
+         </div>
+      </Link>
       <Footer />
     </>
   );

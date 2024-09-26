@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Sa from "../../Components/SlideAutomatic";
 import Footer from "../../Components/Footer";
+import { Link } from "react-router-dom";
 import B from "../../image/Botanico_BBox_logo-01.png";
 import { useTranslation } from 'react-i18next';
 
@@ -51,7 +52,7 @@ function OurBeer() {
               className="flex justify-center "
               onClick={() => handleCardClick(product.id)}
             >
-              <div className=" shadow-xl hover:shadow-lg transition w-[630px] h-[750px]  max-sm:h-[80%] mb-[90px] max-sm:w-full">
+              <div className=" shadow-xl hover:shadow-lg transition w-[630px] h-[750px]  max-sm:h-[80%] mb-[90px] max-sm:w-[80%]">
                 <div className="flex justify-between items-center gap-1 h-[70%]">
                   <div className="w-full h-full bg-slate-400">
                     <img
@@ -85,6 +86,13 @@ function OurBeer() {
             </div>
           ))}
         </div>
+        <Link to="/beerfinder">
+            <div className="flex justify-center pb-10">
+            <button className="w-[150px] h-[50px] text-[15px] max-sm:w-[80px] max-sm:h-[35px] max-sm:text-[7px] font-abc font-bold text-white bg-slate-400 my-1 hover:bg-gray-600">
+                {("View Maps")} 
+            </button>
+            </div>
+        </Link>
 
         <div>
           <hr className="w-[759px] h-0.5 mx-auto mt-[10px] border-black border-2 my-1 max-sm:w-[250px] max-sm:border "/>

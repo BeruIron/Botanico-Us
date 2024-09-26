@@ -122,6 +122,7 @@ import React from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import Button from "../../Components/Button";
+import { Link } from "react-router-dom";
 import img4 from "../../image/beer (37).jpg";
 import img2 from "../../image/beer (37).jpg";
 import img3 from "../../image/beer (37).jpg";
@@ -224,10 +225,12 @@ const { t } = useTranslation();
         <span className="text-red-600">{t("restaurant-p16")}</span>
       </p>
       </div>
-      
+
+      <Link to="/contact">
       <div className="bg-gray-100  flex items-center justify-center h-[100px] ">
         <Button name={t("restaurant-p17")} color="Button-black" />
       </div>
+      </Link>
 
       <Footer />
     </div>

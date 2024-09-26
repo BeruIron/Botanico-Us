@@ -25,7 +25,7 @@ function Home() {
         <div className="flex justify-center max-sm:mt-7 mt-16 max-sm:space-x-3 space-x-20">
           <div>
             <img
-              className=" w-[600px] h-[500px] object-cover max-sm:h-[300px] max-sm:w-[500px] "
+              className=" w-[600px] h-[500px] object-cover max-sm:h-[300px] max-sm:w-[300px] "
               src={img}
               alt="example"
             />
@@ -37,7 +37,7 @@ function Home() {
               Botanico Brewing Co.
             </h1>
 
-            <p className="text-[20px]  my-8 font-light max-sm:text-[10px] max-sm:my-2">
+            <p className="text-[20px]  my-8 font-abc max-sm:text-[10px] max-sm:my-2">
             {t("p1")} <br />
             {t("p2")} <br />
             {t("p3")} <br />
@@ -46,7 +46,7 @@ function Home() {
 
             </p>
 
-            <p className="text-[20px]  font-light max-sm:text-[10px]">
+            <p className="text-[20px]  font-abc max-sm:text-[10px]">
             {t("h1")} <br />
             {t("h2")} <br />
             {t("h3")} <br />
@@ -54,7 +54,7 @@ function Home() {
              
             </p>
 
-            <Link to="/story"><div className="flex justify-center mt-[30px]">
+            <Link to="/story"><div className="flex justify-center mt-[20px]">
               <Button name={t("learnMore")} color="Button-black" />
             </div>
             </Link>
